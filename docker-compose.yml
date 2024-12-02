@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  neo4j-gaiax:
+    image: neo4j:latest
+    container_name: neo4j-gaiax
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    env_file:
+      - neo4j-config/neo4j.env
+    volumes:
+      - ./neo4j-data/data:/data
+      - ./neo4j-data/logs:/logs
+      - ./neo4j-data/plugins:/plugins
+      - ./neo4j-data/import:/var/lib/neo4j/import
+      - ./neo4j-config/init_constraints.cypher:/var/lib/neo4j/import/init_constraints.cypher  # Montar el script de constraints
