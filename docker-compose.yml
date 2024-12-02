@@ -1,8 +1,8 @@
 version: '3.8'
 services:
-  neo4j-gaiax:
+  neo4j-upm-gaiax:
     image: neo4j:latest
-    container_name: neo4j-gaiax
+    container_name: neo4j-upm-gaiax
     ports:
       - "7474:7474"
       - "7687:7687"
@@ -14,3 +14,12 @@ services:
       - ./neo4j-data/plugins:/plugins
       - ./neo4j-data/import:/var/lib/neo4j/import
       - ./neo4j-config/init_constraints.cypher:/var/lib/neo4j/import/init_constraints.cypher  # Montar el script de constraints
+
+  neo4j-api-upm-gaiax:
+    build: ./neo4j-api-upm-gaiax
+    env_file:
+      - neo4j-config/neo4j.env
+    ports:
+      - "8000:80"
+    depends_on:
+      - neo4j-upm-gaiax
