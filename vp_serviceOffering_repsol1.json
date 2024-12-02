@@ -1,0 +1,213 @@
+{
+  "@context": "https://www.w3.org/ns/credentials/v2",
+  "type": "VerifiablePresentation",
+  "verifiableCredential": [
+    {
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://w3id.org/security/suites/jws-2020/v1",
+        "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"
+      ],
+      "type": [
+        "VerifiableCredential"
+      ],
+      "id": "did:web:registrationnumber.notary.lab.gaia-x.eu:development:22c74e70-3dbd-46c8-8688-2faeaca13554",
+      "issuer": "did:web:registrationnumber.notary.lab.gaia-x.eu:development",
+      "issuanceDate": "2024-05-06T12:54:03.874+00:00",
+      "credentialSubject": {
+        "id": "https://repsol.digital.tecnalia.dev/.well-known/lrn.json",
+        "type": "gx:legalRegistrationNumber",
+        "gx:vatID": "ESG48975767",
+        "gx:vatID-countryCode": "ES"
+      },
+      "evidence": [
+        {
+          "gx:evidenceOf": "VAT_ID",
+          "gx:evidenceURL": "http://ec.europa.eu/taxation_customs/vies/services/checkVatService",
+          "gx:executionDate": "2024-05-06T12:54:03.873+00:00"
+        }
+      ],
+      "proof": {
+        "type": "JsonWebSignature2020",
+        "created": "2024-05-06T12:54:03.874+00:00",
+        "proofPurpose": "assertionMethod",
+        "verificationMethod": "did:web:registrationnumber.notary.lab.gaia-x.eu:development#X509-JWK2020",
+        "@context": [
+          "https://www.w3.org/2018/credentials/v1",
+          "https://w3id.org/security/suites/jws-2020/v1"
+        ],
+        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..YZzewalsxXCk1_mrUR97KOy-5SBPglSuu9Y5r1QBZq9Ixm6Y45tV3ZtjuS8cZOuuTOn7_CCkETJW_b68iIwOV8h2yPKeHbExtaycgnoCiFYvD225BXgk-U7mQ0EmwW2ba9L7DJON6EG1yqmHVG9sDQ5yFlekgj3tnlEvKKsjQLpqlyNhBSKv87sFL1MB6uxohD65mtY7HOeJB647c19BsUuaI4twjU8n689LsfHn0Zv2OO2JHXVp1LtKXurv7S4fKSICipvBNSaa2FczKeRF0MyICvLKmPBz-R5MFDuOHuHWjPPVugzi4f6cObgZtINTyk6mqj4o370mt0uCoiLkQg"
+      }
+    },
+    {
+      "@context": [
+        "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#",
+        "https://www.w3.org/2018/credentials/v1",
+        "https://w3id.org/security/suites/jws-2020/v1"
+      ],
+      "type": "VerifiableCredential",
+      "id": "https://repsol.digital.tecnalia.dev/.well-known/tsandcs.json",
+      "issuer": "did:web:repsol.digital.tecnalia.dev",
+      "issuanceDate": "2024-05-06T12:54:05.584902",
+      "credentialSubject": {
+        "@context": "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#",
+        "type": "gx:GaiaXTermsAndConditions",
+        "id": "https://repsol.digital.tecnalia.dev/.well-known/tsandcs.json",
+        "gx:termsAndConditions": "The PARTICIPANT signing the Self-Description agrees as follows:\n- to update its descriptions about any changes, be it technical, organizational, or legal - especially but not limited to contractual in regards to the indicated attributes present in the descriptions.\n\nThe keypair used to sign Verifiable Credentials will be revoked where Gaia-X Association becomes aware of any inaccurate statements in regards to the claims which result in a non-compliance with the Trust Framework and policy rules defined in the Policy Rules and Labelling Document (PRLD)."
+      },
+      "proof": {
+        "type": "JsonWebSignature2020",
+        "proofPurpose": "assertionMethod",
+        "verificationMethod": "did:web:repsol.digital.tecnalia.dev#JWK2020-RSA",
+        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..cxUFkDJDjmS08Vbppo3q3oXpcjP5YZdh8bXcByUE8VILTk3WsIKrN5KeBRXLYVYz3k-3M2EVS2BxNYffuawjJZB7wN3GVpIYcGqegqArc5m7rXMoZJpCHuWNe6pVyyp1MjO_idj6FRx5fGQ7bKbub5iATQi9RK1VS8NByunLxtFi1fq2adT2U3s5XhXFlsCxaj3Klc7xkIAVzsoZu8JGKyTF8Id9ZMdOn9W09Ecj3ImZcNxhkKEf4y6D0tmLja-d_SnQceJdJM_o1v5U2SOvhvfhAMzofxHRQ0Pj-91ecGQS4Em6xyFM81DDORerC8PoiPCPjRKomNgo7UuBxNzG4A"
+      }
+    },
+    {
+      "@context": [
+        "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#",
+        "https://www.w3.org/2018/credentials/v1",
+        "https://w3id.org/security/suites/jws-2020/v1"
+      ],
+      "type": [
+        "VerifiableCredential"
+      ],
+      "id": "https://repsol.digital.tecnalia.dev/.well-known/participant.json",
+      "issuer": "did:web:repsol.digital.tecnalia.dev",
+      "issuanceDate": "2024-05-06T12:54:07.209138",
+      "credentialSubject": {
+        "id": "https://repsol.digital.tecnalia.dev/.well-known/participant.json",
+        "type": "gx:LegalParticipant",
+        "gx:legalName": "repsol",
+        "gx:legalRegistrationNumber": {
+          "id": "https://repsol.digital.tecnalia.dev/.well-known/lrn.json"
+        },
+        "gx:headquarterAddress": {
+          "gx:countrySubdivisionCode": "ES-PV"
+        },
+        "gx:legalAddress": {
+          "gx:countrySubdivisionCode": "ES-PV"
+        },
+        "gx-terms-and-conditions:gaiaxTermsAndConditions": "https://repsol.digital.tecnalia.dev/.well-known/tsandcs.json"
+      },
+      "proof": {
+        "type": "JsonWebSignature2020",
+        "proofPurpose": "assertionMethod",
+        "verificationMethod": "did:web:repsol.digital.tecnalia.dev#JWK2020-RSA",
+        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..EJtz-xVnCY_G6mj5iMWfb6J1SgLAd2-fKD7PR9K6pPmGbBQ1XOw2ezNahWnAr1Zrzo2_QrUjRhuxHmm9x-CZeqGrzEVfEyxaKekQXl7HnHpNt4fpD7gYBxpQWrVUSU2-dVnsPTQ6QgOjD8DFyOy5RP0AserYaLZ7mQeJi-4HJOAQMsNfooS5fjtHhS4LF763XW-Urpd6zDDhFPZAKq7thBspa06tEM3SuZTiGLuMmyzWym0tA684VZqHje2WuNUm1KTAlDTDQck0nW6h03Y-pZsaMqX9e8ARktnv2hwCHkfK7emwW4e5lP87xT8gVdjB97UDQd1vya7ON-BV8g3GPg"
+      }
+    },
+    {
+      "@context": [
+        "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#",
+        "https://www.w3.org/2018/credentials/v1",
+        "https://w3id.org/security/suites/jws-2020/v1"
+      ],
+      "type": "VerifiableCredential",
+      "id": "https://repsol.digital.tecnalia.dev/.well-known/serviceAccessPoint0_1715003307842.json",
+      "issuer": "did:web:repsol.digital.tecnalia.dev",
+      "issuanceDate": "2024-05-06T13:48:27.841582",
+      "credentialSubject": {
+        "type": "gx:ServiceOffering",
+        "gx:providedBy": {
+          "id": "https://repsol.digital.tecnalia.dev/.well-known/participant.json"
+        },
+        "gx:policy": "{'@context': 'http://www.w3.org/ns/odrl.jsonld','@type':'Set','uid':'http://example.com/policy:1010','permission':[{'target':'http://example.com/asset:9898.movie','action':'use'}]}",
+        "gx:termsAndConditions": {
+          "gx:URL": "https://aws.amazon.com/service-terms/",
+          "gx:hash": "e50c57a33d690ba062ee7f4c8c5bd2f179501cbd86fa7845ff692c724a7394ee"
+        },
+        "gx:openAPI": "https://providerConnector",
+        "gx:dataAccountExport": [
+          {
+            "gx:requestType": "API",
+            "gx:accessType": "digital",
+            "gx:formatType": "application/json"
+          }
+        ],
+        "id": "https://repsol.digital.tecnalia.dev/.well-known/serviceAccessPoint0_1715003307842.json"
+      },
+      "proof": {
+        "type": "JsonWebSignature2020",
+        "proofPurpose": "assertionMethod",
+        "verificationMethod": "did:web:repsol.digital.tecnalia.dev#JWK2020-RSA",
+        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..UeP8YOxn59G95eJj4lTnsZpuLralPnNy-JA60hakWJChaGAjOBeahdGD7rk-prFFQSIf2Ir2bbldKncCE9Hv4u2W7Tec4XHteyT4zkqwRiLZ5z6a11Lsux2nA1PmYmgpiVRl5jQS9iheT24hDeCdgf_BwndupVAEQXUM2DvFRibp49fd8llHhR34jT4aD_Rc8qRvH67raUdCpLrtxivkh607YUWmfxkuytyhbFT43Uk-uMf6cHYPRi4QzYHBWHYKlevgmKiFp0n4-g5g0Yk25sty7MlyFB1U5N9f_-ZeFghzM6U--6cUaKKmEwXf9KegfTzhL82hY_orZB6KwvntRA"
+      }
+    },
+    {
+      "@context": [
+        "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#",
+        "https://www.w3.org/2018/credentials/v1",
+        "https://w3id.org/security/suites/jws-2020/v1"
+      ],
+      "type": "VerifiableCredential",
+      "id": "https://repsol.digital.tecnalia.dev/.well-known/dataresource0_1715003307842.json",
+      "issuer": "did:web:repsol.digital.tecnalia.dev",
+      "issuanceDate": "2024-05-06T13:48:29.624666",
+      "credentialSubject": {
+        "gx:name": "dataresource2",
+        "gx:description": "description 2",
+        "type": "gx:DataResource",
+        "gx:containsPII": false,
+        "gx:policy": "{'@context': 'http://www.w3.org/ns/odrl.jsonld','@type':'Set','uid':'http://example.com/policy:1010','permission':[{'target':'http://example.com/asset:9898.movie','action':'use'}]}",
+        "gx:license": "EPL-2.0",
+        "gx:copyrightOwnedBy": "original owner",
+        "gx:producedBy": {
+          "@id": "https://repsol.digital.tecnalia.dev/.well-known/participant.json"
+        },
+        "gx:exposedThrough": {
+          "@id": "https://repsol.digital.tecnalia.dev/.well-known/serviceAccessPoint0_1715003307842.json"
+        },
+        "id": "https://repsol.digital.tecnalia.dev/.well-known/dataresource0_1715003307842.json"
+      },
+      "proof": {
+        "type": "JsonWebSignature2020",
+        "proofPurpose": "assertionMethod",
+        "verificationMethod": "did:web:repsol.digital.tecnalia.dev#JWK2020-RSA",
+        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..C1bl-nfUfhRie2c0Sex2cGOUW7mB1zb2My4AWfzE3Lqy84So4ZesDMRb_XZbk1X9jxAynHHjxaXHJt9CLpKUVQz-Zsr3NtpPZwRyqx6dy2Ra2V1aFTPqLi4HXLtcU_qeQ5grd13DSlriKxPfkzAkm2kpXbfPxDyawKYFNssOVO2ZJp60s2z-SH26hAVqFVcD0CW4K2pHKn4JKh-fxYSWFAxTL8Bp3E5nSdKlcWa0fLrO9GPm9coyv6e02PV9YISFruvfYtVH5zzSFFesOGjxTFsSWqlWQTvAzRr3egtx_UydDKqTbUgLHX9Gk1J7RrxWkpv0J7I0F-5o685Gh2r1QA"
+      }
+    },
+    {
+      "@context": [
+        "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#",
+        "https://www.w3.org/2018/credentials/v1",
+        "https://w3id.org/security/suites/jws-2020/v1"
+      ],
+      "type": "VerifiableCredential",
+      "id": "https://repsol.digital.tecnalia.dev/.well-known/serviceOffering_c5d3a300-0ce4-42a7-be35-8a3f6054726a.json",
+      "issuer": "did:web:repsol.digital.tecnalia.dev",
+      "issuanceDate": "2024-05-06T13:48:30.873626",
+      "credentialSubject": {
+        "gx:serviceOffering:name": "Dataproduct 2 example  xxxx",
+        "gx:serviceOffering:description": "Description of data product 2",
+        "type": "gx:ServiceOffering",
+        "gx:providedBy": {
+          "id": "https://repsol.digital.tecnalia.dev/.well-known/participant.json"
+        },
+        "gx:policy": "{'@context': 'http://www.w3.org/ns/odrl.jsonld','@type':'Set','uid':'http://example.com/policy:1010','permission':[{'target':'http://example.com/asset:9898.movie','action':'use'}]}",
+        "gx:termsAndConditions": {
+          "gx:URL": "https://aws.amazon.com/service-terms/",
+          "gx:hash": "e50c57a33d690ba062ee7f4c8c5bd2f179501cbd86fa7845ff692c724a7394ee"
+        },
+        "gx:dataAccountExport": [
+          {
+            "gx:requestType": "API",
+            "gx:accessType": "digital",
+            "gx:formatType": "application/json"
+          }
+        ],
+        "id": "https://repsol.digital.tecnalia.dev/.well-known/serviceOffering_c5d3a300-0ce4-42a7-be35-8a3f6054726a.json",
+        "gx:aggregationOf": [
+          {
+            "@id": "https://repsol.digital.tecnalia.dev/.well-known/dataresource0_1715003307842.json"
+          }
+        ]
+      },
+      "proof": {
+        "type": "JsonWebSignature2020",
+        "proofPurpose": "assertionMethod",
+        "verificationMethod": "did:web:repsol.digital.tecnalia.dev#JWK2020-RSA",
+        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..hzNoy1JjkYJ141v4ufh-1s6C8Mh0NkKWP9Nyi7ltdw602fbyLLFpAJX9GhQMZYbDrpn_UqGT6IQVFl71jYZpC4vi7jxQWAcZBdYC807DwGpdpCiir_22RyDyYIPPPlilhfA9LS09JHcgf9AQ8YVrgwArmb2WEALmSelXdagzaT8r3MXzOBzLyB82hiOPfMtNkpMFyACnrCLZ_Mu7oTkWJJr3ujTgPz8O0GLXyuqSgezXSspODJwf9XrwZR_PUBkDG1ORU8yexlW-kHmKkUzyazVx0lZNz2eFVedcZuzO2EuhnzrFofYD_hzWfu6Yzp0RAbUOPytG6IhbWkZ46IEYVQ"
+      }
+    }
+  ]
+}
