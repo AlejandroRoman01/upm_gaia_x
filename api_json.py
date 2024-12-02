@@ -1,7 +1,7 @@
 import json
 
 # Cargar el archivo JSON
-with open('vp_serviceOffering_repsol1.json', 'r') as file:
+with open('serviceOfferings/vp_serviceOffering_upm.json', 'r') as file:
     data = json.load(file)
 
 # Inicializar variables para los campos requeridos

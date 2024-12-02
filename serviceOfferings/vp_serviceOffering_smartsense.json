@@ -1,0 +1,40 @@
+{
+  "name": "XFSC Cloud Service UPM 2",
+  "verificationMethod": "did:web:13.dev.smart-x.smartsenselabs.com",
+  "participantJsonUrl": "https://13.dev.smart-x.smartsenselabs.com/cd27d35e-d21f-40cb-8a24-52675ceb5bfe/participant.json#0",
+  "privateKey": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCbwsyUYqd/7hdf\nVSbYik+XHBl4XBZI0ozTpZF2EVVtfm8F6HVlKNktcL9Ps9cyrV2CHY4wmTNDCLqv\nFmV3qG1p/l4sBmrQ84ghiy4d7fwjSPlcoL/3tJcWDOwn642ew1NLcnzPbo6UowYU\ntMZqhy1aHozk6mwUXCNYdcT6uAZuIZTuSpwWgZPmUmKGZLJguafwsxPZs1q/Oy5y\nhcBpmJsLdAlHy7ey5z6Oc6bY7GD9gFF9Rb4xIO73TdXwxsSCbSrOjXMd3AAkMNF1\nqYpoOLmW/aoloVPgaLqVWoPa23MWLmcwFaRyDcKfw04ZtQcgm/BtmU/JBl10ut4r\niIggAd5FAgMBAAECggEAC7ZaK84/Sh9dIo4EncPIuFQklihWhKNQc5m/lmE3S0R2\nlLsmGLU5n3Ea8aNUSzs+DMqsJnten2vIneHRP24qzA2Uhzr0TUICuoL8tMNwcjbK\niWyNAtNRiRbvqxDLVWTanpG9UNu/XO3lRylQwjHn9x7U+WGnPuCux7gTV8b+tMkz\nn+fwLjv/WyhTWROkwdz7wJ56Mux1z2QPFgJ8a2vkT4YFqBDUFqEWc+mmAHrgu457\n2evuCY3q9mUodX8Pzxz+IPX4gRANPrRnK8/TyjzS6GxDj7ViLZe6I3dxlCBvME2Q\nZwS8fMtBi61Xn6dEobRioNL0CRfDrXump2gcN73nAQKBgQDMJA35LiIVjP0h47x1\npUDdw5laB/Zl8/0++35d0cDh0jbyEbsGMsLA9Y1yvmLCwHUuaw0Tmg4eLJOcrmfZ\n26Ftk84b3biAB+Dt8AwvawMariK0ogKdWNJDfJNZXZayLdj50xuSXapa+pRnIOBx\nzMYmQ3kBte8EggsVsB8SxMwT3wKBgQDDVHD+2MeDy6Kg+mXbMxHZQwK46lPGdsf9\nEmAxqbJVuLOtwIiU2niXGo5qb0VmN0QaUqX3mpu5S41ma4ncndGzXJzFbj1axcjv\nJaqswICTACvKgKlrkeDeaVG1hk6OKv7y8X02klLeJGjpnx8qeMTw9Xj80080Gp4d\nGjq5hRLyWwKBgEJ2Zpo++9faXDuhYqVG1TSeTxoxx3XwFv5fcQfol4yuHTd4sFRX\nSHL8Pz4hYBQaBszDC7HbEUefqbt0SNl0GT2Mxqjp6fy9E+1DnyP9CjiwgxoeOQ2z\nclmIgIyy3LJMHP1RTwO7PRB7zr84w/oo+kZQ51+4NQZZtHQuMB+zNOIvAoGAECgy\n9JGf50H34NL1i+0sg8ksN3mCln8Kyd80P8dmrfqKOkwbwBxWL0GOGDW+Ctd1davy\neIm8adZbCubIT4xqZSi6+wXEY3bKySVXedSujfpMpQKBgRle/Wa+0IIci1v5HMVm\n8xWlbySZ3QFBhbTZrYjQijE8cvXksEmUI/Zi+9MCgYB6HH13h9x30SMJ4Ulj6vzr\nYNx+irmiZ49JYKhRQSPgYLJpoEFQTjJrktUjeuizYG96UUexcn8SHIMED5wyEyYV\nj3e7Xbp6qj/8TmyGMmUkpMLykIbqqZgZXzeKv5v/o4hkAhQ4VXtmnsIECSr7EixY\naHz9nq5btFW1hrS4VADl0Q==\n-----END PRIVATE KEY-----",
+  "credentialSubject": {
+    "gx:termsAndConditions": {
+      "gx:URL": "https://www.smartsensesolutions.com/privacy-policy"
+    },
+    "gx:policy": {
+      "gx:location": [
+        "AD-02"
+      ]
+    },
+    "gx:dataAccountExport": {
+      "gx:requestType": "API",
+      "gx:accessType": "digital",
+      "gx:formatType": [
+        "application/3gppHal+json"
+      ]
+    },
+    "gx:aggregationOfExists": [
+      {
+        "id": "https://wizard-api.dev.smart-x.smartsenselabs.com/9871a17d-1a71-4a8b-b7ec-c12283cac007/resource_38cff6d9-c551-462f-9b23-f492d4d0d30e.json"
+      }
+    ],
+    "gx:dataProtectionRegime": [
+      "GDPR2016"
+    ],
+    "gx:criteria": {
+      "gx:P1.1.1": {
+        "gx:response": "Confirm"
+      },
+      "gx:P5.2.1": {
+        "gx:response": "Confirm"
+      }
+    },
+    "type": "gx:ServiceOffering"
+  }
+}

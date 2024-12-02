@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+neo4j
+pydantic
+sqlalchemy
+python-multipart
+requests
+influxdb-client
