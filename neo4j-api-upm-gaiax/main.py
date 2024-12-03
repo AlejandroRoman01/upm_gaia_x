@@ -5,6 +5,7 @@ from database import get_db, close_db
 from services import create_nodes_and_relationships
 from uploadMongoDB import upload_json_to_Mongo 
 import json
+import requests
 
 app = FastAPI()
 
@@ -18,40 +19,39 @@ async def process_json(file: UploadFile = File(...), db: Session = Depends(get_d
         # Carga el contenido del archivo JSON en memoria
         contents = await file.read()  # Leer el contenido del archivo
         data = json.loads(contents)  # Cargar el contenido JSON
-        complianceCredential = data["complianceCredential"]
+        #complianceCredential = data["complianceCredential"]
+        complianceCredential = data.get("data", {}).get("completeSD", {}).get("complianceCredential", {})
         # TODO añadirlo al data y meterlo en CES
 
         destination_json = {
-    "specversion": "1.0",
-    "type": "eu.gaia-x.credential",
-    "source": "/mycontext",
-    "time": "2024-01-01T06:00:00Z",
-    "datacontenttype": "application/json",
-    "data": {}
-    }
+        "specversion": "1.0",
+        "type": "eu.gaia-x.credential",
+        "source": "/mycontext",
+        "time": "2024-01-01T06:00:00Z",
+        "datacontenttype": "application/json",
+        "data": {}
+        }
 
         # Insertar "complianceCredential" dentro del apartado "data"
         destination_json["data"] = complianceCredential
 
         # Guardar el JSON destino actualizado 
-        with open('./serviceOfferings/cestemplateUpdate.json', 'w') as destination_file:
-            json.dump(destination_json, destination_file, indent=4)
+        #with open('./serviceOfferings/cestemplateUpdate.json', 'w') as destination_file:
+        #    json.dump(destination_json, destination_file, indent=4)
 
         # TODO subirlo a CES
         response = requests.post("https://ces-main.lab.gaia-x.eu/credentials-events", json=destination_json, headers={"Content-Type": "application/json"})
         print(response)
-        #Manejo de la respuesta
-        if response.status_code == 201:
-            # Extraer el UUID del JSON de la respuesta
-            response_data = response.json()
-            uuid = response_data.get("uuid")  # Ajusta la clave según la estructura de la respuesta
-            if uuid:
-                print(f"El UUID generado es: {uuid}")
-            else:
-                print("No se encontró un UUID en la respuesta.")
-        else:
-            print(f"Error en la solicitud: {response.status_code}, {response.text}")
 
+        # Recupera el valor del encabezado 'Location'
+        location_header = response.headers.get("Location")
+
+        if location_header:
+            print(f"Location: {location_header}")
+        else:
+            print("El encabezado 'Location' no está presente en la respuesta.")
+        uuid = location_header.split("/")[-1]
+        print(f"UUID: {uuid}")
         # Cargar el JSON desde un archivo y que el uuid sea el que nos devuelve lo CES
         upload_json_to_Mongo(data, uuid)
 

@@ -171,6 +171,14 @@
 				"description": "Generated from cURL: curl -X 'POST' \\\r\n  'http://localhost:8000/v1/gaia-x/service-offering' \\\r\n  -H 'accept: application/json' \\\r\n  -H 'Content-Type: application/json' \\\r\n  -d '{\r\n  \"privateKey\": \"Vault Key || Base64 -----BEGIN PRIVATE KEY-----\\n...\\n-----END PRIVATE KEY-----\",\r\n  \"isVault\": false,\r\n  \"issuer\": \"did:web:lakhani02.dev.smart-x.smartsenselabs.com\",\r\n  \"verificationMethod\": \"did:web:lakhani02.dev.smart-x.smartsenselabs.com\",\r\n  \"vcs\": {\r\n    \"serviceOffering\": {\r\n      \"type\": \"VerifiableCredential\",\r\n      \"id\": \"did:web:lakhani02.dev.smart-x.smartsenselabs.com\",\r\n      \"issuer\": \"did:web:lakhani02.dev.smart-x.smartsenselabs.com\",\r\n      \"issuanceDate\": \"2023-08-10T13:13:12.552192251Z\",\r\n      \"credentialSubject\": {\r\n        \"gx:termsAndConditions\": {\r\n          \"gx:URL\": \"https://aws.amazon.com/service-terms/\",\r\n          \"gx:hash\": \"689be3192f5686526bdddb450463f6c2f752c23b2820a2aae35e6779889e817a\"\r\n        },\r\n        \"gx:policy\": [\r\n          \"https://wizard-api.smart-x.smartsenselabs.com/12081064-8878-477e-8092-564a240c69e2/service_tc3p_policy.json\"\r\n        ],\r\n        \"gx:dataAccountExport\": {\r\n          \"gx:requestType\": \"API\",\r\n          \"gx:accessType\": \"physical\",\r\n          \"gx:formatType\": \"pdf\"\r\n        },\r\n        \"gx:aggregationOf\": [\r\n          {\r\n            \"id\": \"https://wizard-api.smart-x.smartsenselabs.com/12081064-8878-477e-8092-564a240c69e2/resource_f1b1d420-d44d-439a-8de3-1aeb58f9a493.json\"\r\n          },\r\n          {\r\n            \"id\": \"https://wizard-api.smart-x.smartsenselabs.com/12081064-8878-477e-8092-564a240c69e2/resource_19c2bf19-dffe-486e-99bf-bec2301eb061.json\"\r\n          }\r\n        ],\r\n        \"gx:dependsOn\": [\r\n          {\r\n            \"id\": \"https://wizard-api.smart-x.smartsenselabs.com/12081064-8878-477e-8092-564a240c69e2/service_xSoK.json\"\r\n          },\r\n          {\r\n            \"id\": \"https://wizard-api.smart-x.smartsenselabs.com/12081064-8878-477e-8092-564a240c69e2/service_Mxt9.json\"\r\n          }\r\n        ],\r\n        \"gx:dataProtectionRegime\": \"GDPR2016\",\r\n        \"type\": \"gx:ServiceOffering\",\r\n        \"gx:providedBy\": {\r\n          \"id\": \"https://lakhani02.dev.smart-x.smartsenselabs.com/0ae2975f-367a-4cf5-920f-1bef6c32f252/participant.json#0\"\r\n        },\r\n        \"id\": \"https://wizard-api.smart-x.smartsenselabs.com/12081064-8878-477e-8092-564a240c69e2/service_tc3p.json\"\r\n      },\r\n      \"@context\": [\r\n        \"https://www.w3.org/2018/credentials/v1\",\r\n        \"https://w3id.org/security/suites/jws-2020/v1\"\r\n      ]\r\n    }\r\n  }\r\n}'"
 			},
 			"response": []
+		},
+		{
+			"name": "UPM Tecnalia API - Upload Service Offering",
+			"request": {
+				"method": "POST",
+				"header": []
+			},
+			"response": []
 		}
 	]
 }
