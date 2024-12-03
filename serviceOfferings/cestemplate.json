@@ -1,0 +1,10 @@
+{
+  "specversion": "1.0",
+  "type": "eu.gaia-x.credential",
+  "source": "/mycontext",
+  "time": "2024-01-01T06:00:00Z",
+  "datacontenttype": "application/json",
+  "data": {
+
+  }
+}

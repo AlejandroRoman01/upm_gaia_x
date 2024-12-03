@@ -18,7 +18,14 @@ async def process_json(file: UploadFile = File(...), db: Session = Depends(get_d
         # Carga el contenido del archivo JSON en memoria
         contents = await file.read()  # Leer el contenido del archivo
         data = json.loads(contents)  # Cargar el contenido JSON
+        complianceCredential = data["complianceCredential"]
+        # TODO añadirlo al data y meterlo en CES
+
+        # TODO nos devuelve
+
+        # Cargar el JSON desde un archivo y que el uuid sea el que nos devuelve lo CES
         uuid = upload_json_to_Mongo(data)
+
          # Leer el archivo JSON
         # TODO añadir el uuid al grafo
         create_nodes_and_relationships(db, data)
