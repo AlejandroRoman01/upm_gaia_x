@@ -82,10 +82,10 @@
           "id": "https://upm.digital.gaiax.dev/.well-known/lrn.json"
         },
         "gx:headquarterAddress": {
-          "gx:countrySubdivisionCode": "ES-PV"
+          "gx:countrySubdivisionCode": "ES-ES"
         },
         "gx:legalAddress": {
-          "gx:countrySubdivisionCode": "ES-PV"
+          "gx:countrySubdivisionCode": "ES-ES"
         },
         "gx-terms-and-conditions:gaiaxTermsAndConditions": "https://upm.digital.gaiax.dev/.well-known/tsandcs.json"
       },
