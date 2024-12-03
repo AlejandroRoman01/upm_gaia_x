@@ -1,0 +1,8 @@
+PORT=8000
+COMPLIANCE_SERVICE="https://compliance.lab.gaia-x.eu/development/api/credential-offers"
+REGISTRATION_SERVICE="https://registrationnumber.notary.lab.gaia-x.eu/development/registrationNumberVC"
+REGISTRY_TRUST_ANCHOR_URL="https://registry.lab.gaia-x.eu/development/api"
+WIZARD_VAULT_HOST=
+WIZARD_VAULT_SECRETPATH=
+WIZARD_VAULT_ROLEID=
+WIZARD_VAULT_SECRETID=

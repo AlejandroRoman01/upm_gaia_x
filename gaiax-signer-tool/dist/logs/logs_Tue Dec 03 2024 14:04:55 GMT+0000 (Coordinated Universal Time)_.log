@@ -1,0 +1,594 @@
+2024-12-03T14:05:22.224Z - error: [v1/SignerToolController.js ~ VerifyWebDID] b847e218-326b-4a11-b938-8eddfa1f44f4 - ❌ Verification Method not found in DDO: 'did:web:lakhani02.dev.smart-x.smartsenselabs.com' {} 
+2024-12-03T14:06:59.102Z - debug: [v1/SignerToolController.js ~ GXLegalParticipant] b28b1814-b513-4a9f-9fef-d0354313345b - req.body {
+  issuer: 'did:web:datamite.digital.tecnalia.dev',
+  verificationMethod: 'did:web:datamite.digital.tecnalia.dev',
+  isVault: false
+} 
+2024-12-03T14:06:59.102Z - debug: [v1/SignerToolController.js ~ GXLegalParticipant] b28b1814-b513-4a9f-9fef-d0354313345b - req.body {
+  "legalParticipant": {
+    "credentialSubject": {
+      "gx:legalName": "Tecnalia",
+      "gx:headquarterAddress": {
+        "gx:countrySubdivisionCode": "ES-PV"
+      },
+      "gx:legalAddress": {
+        "gx:countrySubdivisionCode": "ES-PV"
+      },
+      "id": "https://datamite.digital.tecnalia.dev/.well-known/participant.json",
+      "type": "gx:LegalParticipant",
+      "gx:legalRegistrationNumber": {
+        "id": "https://datamite.digital.tecnalia.dev/.well-known/lrn.json"
+      }
+    },
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1",
+      "https://w3id.org/security/suites/jws-2020/v1",
+      "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"
+    ],
+    "type": [
+      "VerifiableCredential"
+    ],
+    "id": "https://datamite.digital.tecnalia.dev/.well-known/participant.json",
+    "issuer": "did:web:datamite.digital.tecnalia.dev",
+    "issuanceDate": "2024-09-02T11:10:56.55791193Z"
+  },
+  "legalRegistrationNumber": {
+    "@context": [
+      "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/participant"
+    ],
+    "type": "gx:legalRegistrationNumber",
+    "id": "https://datamite.digital.tecnalia.dev/.well-known/lrn.json",
+    "gx:vatID": "ESG48975767",
+    "gx:vatID-countryCode": "ES"
+  },
+  "gaiaXTermsAndConditions": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1",
+      "https://w3id.org/security/suites/jws-2020/v1",
+      "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"
+    ],
+    "credentialSubject": {
+      "gx:termsAndConditions": "The PARTICIPANT signing the Self-Description agrees as follows:\n- to update its descriptions about any changes, be it technical, organizational, or legal - especially but not limited to contractual in regards to the indicated attributes present in the descriptions.\n\nThe keypair used to sign Verifiable Credentials will be revoked where Gaia-X Association becomes aware of any inaccurate statements in regards to the claims which result in a non-compliance with the Trust Framework and policy rules defined in the Policy Rules and Labelling Document (PRLD).",
+      "id": "https://datamite.digital.tecnalia.dev/.well-known/tsandcs.json",
+      "type": "gx:GaiaXTermsAndConditions",
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://w3id.org/security/suites/jws-2020/v1",
+        "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"
+      ]
+    },
+    "id": "https://datamite.digital.tecnalia.dev/.well-known/tsandcs.json",
+    "issuanceDate": "2024-09-02T11:10:56.55791193Z",
+    "issuer": "did:web:datamite.digital.tecnalia.dev",
+    "type": [
+      "VerifiableCredential"
+    ],
+    "proof": {
+      "type": "JsonWebSignature2020",
+      "created": "2024-09-03T08:46:39.503Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:web:datamite.digital.tecnalia.dev",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..dY89JSGQNYZ87I9dhCmXH_6Px55KKnOCho1JEE_Lww49DS6_x92FoSZEPTIAj3Ud7SxfOoYElTohQtYgXrwEFhVbityCoIoJWxwPGqKjy_VmZUqO5IkcJSpjqSBVgDOtSz4qyNUm_oVx0RDYom6_MizF7ps_5fHEyX-w4LX1lpmOX-rly2LWshypP-LdEXSH-D_5kg3kRpv1ijfMYhdbIwT2mgAhuExJyeBP71z2gJe7TcHB_5UhnKZ5Gsjmm6DzXHMefMYtAUYAgCHWWwm424tRQaoNIaHD0YOBW8WT6lD6kmfkO-eLS0SPMBLI57dnKkNCq5n0UFE5Xa7fSbOEtA"
+    }
+  }
+} 
+2024-12-03T14:07:03.571Z - info: [v1/SignerToolController.js ~ GXLegalParticipant] {"@context":["https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1"],"type":["VerifiableCredential"],"id":"https://datamite.digital.tecnalia.dev/.well-known/lrn.json","issuer":"did:web:registration.lab.gaia-x.eu:v1-staging","issuanceDate":"2024-12-03T14:07:03.483Z","credentialSubject":{"@context":"https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#","type":"gx:legalRegistrationNumber","id":"https://datamite.digital.tecnalia.dev/.well-known/lrn.json","gx:vatID":"ESG48975767","gx:vatID-countryCode":"ES"},"evidence":[{"gx:evidenceURL":"http://ec.europa.eu/taxation_customs/vies/services/checkVatService","gx:executionDate":"2024-12-03T14:07:03.483Z","gx:evidenceOf":"gx:vatID"}],"proof":{"type":"JsonWebSignature2020","created":"2024-12-03T14:07:03.498Z","proofPurpose":"assertionMethod","verificationMethod":"did:web:registration.lab.gaia-x.eu:v1-staging#X509-JWK2020","jws":"eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..HVXNr0osf9QG9CTjTjBgVCn1lx3yxS6_wX0D2E9K7NJ1qS_li_O1f972SuYfMY8hsb4Szb-cQR9ggC3852_tpajotX15Wf2qVimoSv2k8UL5Hyi8OQ-G44-JPO9HOqW_2mt0hfR0m2G81DhkCjFyCYLFROiKpwPBlAtqxHVSit3Wi7B7_1vEGrc7FR8OHxonH8dbq9ZL109zILXDpWkfSLOy8Tpz886RetovAUGjky--eaBKUaqKzBtvcWiLZZCFinB9_XG0gLgr5N8dPFahEAKDi-eNg2oO7iPPjLmQqYP54W-NsEHNGLtmAYUzoEJDdRGsh3y3AwBx7FoxAIDG-w"}} - legalRegistrationNumber vc created {} 
+2024-12-03T14:07:05.281Z - info: [common-functions/common-functions.js ~ addProof]  - 📈 Hashed canonized SD 908c84c534b56ec5814ec4f52d2c16e306f6a3840731831d0b6b4b1741991c31 {} 
+2024-12-03T14:07:05.288Z - info: [common-functions/common-functions.js ~ addProof] https://datamite.digital.tecnalia.dev/.well-known/x509CertificateChain.pem - 🔒 SD signed successfully {} 
+2024-12-03T14:07:05.473Z - info: [common-functions/common-functions.js ~ addProof]  - ✅ Verification successful {} 
+2024-12-03T14:07:05.474Z - debug: [v1/SignerToolController.js ~ GXLegalParticipant] b28b1814-b513-4a9f-9fef-d0354313345b - selfDescription {"@context":"https://www.w3.org/2018/credentials/v1","type":["VerifiablePresentation"],"verifiableCredential":[{"credentialSubject":{"gx:legalName":"Tecnalia","gx:headquarterAddress":{"gx:countrySubdivisionCode":"ES-PV"},"gx:legalAddress":{"gx:countrySubdivisionCode":"ES-PV"},"id":"https://datamite.digital.tecnalia.dev/.well-known/participant.json","type":"gx:LegalParticipant","gx:legalRegistrationNumber":{"id":"https://datamite.digital.tecnalia.dev/.well-known/lrn.json"}},"@context":["https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1","https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"],"type":["VerifiableCredential"],"id":"https://datamite.digital.tecnalia.dev/.well-known/participant.json","issuer":"did:web:datamite.digital.tecnalia.dev","issuanceDate":"2024-09-02T11:10:56.55791193Z","proof":{"type":"JsonWebSignature2020","created":"2024-12-03T14:07:05.281Z","proofPurpose":"assertionMethod","verificationMethod":"did:web:datamite.digital.tecnalia.dev#JWK2020-RSA","jws":"eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..wT9JMxppqvpx6PaKJMAUllFckWcTe0KqQ0XEDv5mRXtJhCxfcqsWRig_PkjNY7tPNJ-ZGic6QPpiRDdaHDWyzLY5x25vFt6KaFjnGZ9jEHM48V3TQUhAq5qDhsOZhGUQS4AVW5SOXMnuzhD065fJ1EPS0qLNdqNiwqmfB04hyj9MOoFdfzSjZbBvQGyQxn5A_rDLjVnkrt-eHiTrPQNOtIeg1R8GZTX-6SZhrxT1WqTMs5WZ2MB9YMGiba9dRjAPb5SKIlQYZK-I-Mr4NVohT8jj9Q3i9sGQhxGztCvVP2bVJdE3lF02Gqu20kabMWuE-VQhhhj4M-QrITFMLpCNKQ"}},{"@context":["https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1"],"type":["VerifiableCredential"],"id":"https://datamite.digital.tecnalia.dev/.well-known/lrn.json","issuer":"did:web:registration.lab.gaia-x.eu:v1-staging","issuanceDate":"2024-12-03T14:07:03.483Z","credentialSubject":{"@context":"https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#","type":"gx:legalRegistrationNumber","id":"https://datamite.digital.tecnalia.dev/.well-known/lrn.json","gx:vatID":"ESG48975767","gx:vatID-countryCode":"ES"},"evidence":[{"gx:evidenceURL":"http://ec.europa.eu/taxation_customs/vies/services/checkVatService","gx:executionDate":"2024-12-03T14:07:03.483Z","gx:evidenceOf":"gx:vatID"}],"proof":{"type":"JsonWebSignature2020","created":"2024-12-03T14:07:03.498Z","proofPurpose":"assertionMethod","verificationMethod":"did:web:registration.lab.gaia-x.eu:v1-staging#X509-JWK2020","jws":"eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..HVXNr0osf9QG9CTjTjBgVCn1lx3yxS6_wX0D2E9K7NJ1qS_li_O1f972SuYfMY8hsb4Szb-cQR9ggC3852_tpajotX15Wf2qVimoSv2k8UL5Hyi8OQ-G44-JPO9HOqW_2mt0hfR0m2G81DhkCjFyCYLFROiKpwPBlAtqxHVSit3Wi7B7_1vEGrc7FR8OHxonH8dbq9ZL109zILXDpWkfSLOy8Tpz886RetovAUGjky--eaBKUaqKzBtvcWiLZZCFinB9_XG0gLgr5N8dPFahEAKDi-eNg2oO7iPPjLmQqYP54W-NsEHNGLtmAYUzoEJDdRGsh3y3AwBx7FoxAIDG-w"}},{"@context":["https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1","https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"],"credentialSubject":{"gx:termsAndConditions":"The PARTICIPANT signing the Self-Description agrees as follows:\n- to update its descriptions about any changes, be it technical, organizational, or legal - especially but not limited to contractual in regards to the indicated attributes present in the descriptions.\n\nThe keypair used to sign Verifiable Credentials will be revoked where Gaia-X Association becomes aware of any inaccurate statements in regards to the claims which result in a non-compliance with the Trust Framework and policy rules defined in the Policy Rules and Labelling Document (PRLD).","id":"https://datamite.digital.tecnalia.dev/.well-known/tsandcs.json","type":"gx:GaiaXTermsAndConditions","@context":["https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1","https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"]},"id":"https://datamite.digital.tecnalia.dev/.well-known/tsandcs.json","issuanceDate":"2024-09-02T11:10:56.55791193Z","issuer":"did:web:datamite.digital.tecnalia.dev","type":["VerifiableCredential"],"proof":{"type":"JsonWebSignature2020","created":"2024-09-03T08:46:39.503Z","proofPurpose":"assertionMethod","verificationMethod":"did:web:datamite.digital.tecnalia.dev","jws":"eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..dY89JSGQNYZ87I9dhCmXH_6Px55KKnOCho1JEE_Lww49DS6_x92FoSZEPTIAj3Ud7SxfOoYElTohQtYgXrwEFhVbityCoIoJWxwPGqKjy_VmZUqO5IkcJSpjqSBVgDOtSz4qyNUm_oVx0RDYom6_MizF7ps_5fHEyX-w4LX1lpmOX-rly2LWshypP-LdEXSH-D_5kg3kRpv1ijfMYhdbIwT2mgAhuExJyeBP71z2gJe7TcHB_5UhnKZ5Gsjmm6DzXHMefMYtAUYAgCHWWwm424tRQaoNIaHD0YOBW8WT6lD6kmfkO-eLS0SPMBLI57dnKkNCq5n0UFE5Xa7fSbOEtA"}}]} 
+2024-12-03T14:07:06.654Z - error: [v1/SignerToolController.js ~ GXLegalParticipant] b28b1814-b513-4a9f-9fef-d0354313345b - Request failed with status code 409 {} 
+2024-12-03T14:08:02.162Z - debug: [v1/SignerToolController.js ~ GXLegalParticipant] 306fb374-f7f1-4479-855d-b5834af49e16 - req.body {
+  issuer: 'did:web:datamite.digital.tecnalia.dev',
+  verificationMethod: 'did:web:datamite.digital.tecnalia.dev',
+  isVault: false
+} 
+2024-12-03T14:08:02.174Z - debug: [v1/SignerToolController.js ~ GXLegalParticipant] 306fb374-f7f1-4479-855d-b5834af49e16 - req.body {
+  "legalParticipant": {
+    "credentialSubject": {
+      "gx:legalName": "Tecnalia",
+      "gx:headquarterAddress": {
+        "gx:countrySubdivisionCode": "ES-PV"
+      },
+      "gx:legalAddress": {
+        "gx:countrySubdivisionCode": "ES-PV"
+      },
+      "id": "https://datamite.digital.tecnalia.dev/.well-known/participant.json",
+      "type": "gx:LegalParticipant",
+      "gx:legalRegistrationNumber": {
+        "id": "https://datamite.digital.tecnalia.dev/.well-known/lrn.json"
+      }
+    },
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1",
+      "https://w3id.org/security/suites/jws-2020/v1",
+      "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"
+    ],
+    "type": [
+      "VerifiableCredential"
+    ],
+    "id": "https://datamite.digital.tecnalia.dev/.well-known/participant.json",
+    "issuer": "did:web:datamite.digital.tecnalia.dev",
+    "issuanceDate": "2024-09-02T11:10:56.55791193Z"
+  },
+  "legalRegistrationNumber": {
+    "@context": [
+      "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/participant"
+    ],
+    "type": "gx:legalRegistrationNumber",
+    "id": "https://datamite.digital.tecnalia.dev/.well-known/lrn.json",
+    "gx:vatID": "ESG48975767",
+    "gx:vatID-countryCode": "ES"
+  },
+  "gaiaXTermsAndConditions": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1",
+      "https://w3id.org/security/suites/jws-2020/v1",
+      "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"
+    ],
+    "credentialSubject": {
+      "gx:termsAndConditions": "The PARTICIPANT signing the Self-Description agrees as follows:\n- to update its descriptions about any changes, be it technical, organizational, or legal - especially but not limited to contractual in regards to the indicated attributes present in the descriptions.\n\nThe keypair used to sign Verifiable Credentials will be revoked where Gaia-X Association becomes aware of any inaccurate statements in regards to the claims which result in a non-compliance with the Trust Framework and policy rules defined in the Policy Rules and Labelling Document (PRLD).",
+      "id": "https://datamite.digital.tecnalia.dev/.well-known/tsandcs.json",
+      "type": "gx:GaiaXTermsAndConditions",
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://w3id.org/security/suites/jws-2020/v1",
+        "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"
+      ]
+    },
+    "id": "https://datamite.digital.tecnalia.dev/.well-known/tsandcs.json",
+    "issuanceDate": "2024-09-02T11:10:56.55791193Z",
+    "issuer": "did:web:datamite.digital.tecnalia.dev",
+    "type": [
+      "VerifiableCredential"
+    ],
+    "proof": {
+      "type": "JsonWebSignature2020",
+      "created": "2024-09-03T08:46:39.503Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:web:datamite.digital.tecnalia.dev",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..dY89JSGQNYZ87I9dhCmXH_6Px55KKnOCho1JEE_Lww49DS6_x92FoSZEPTIAj3Ud7SxfOoYElTohQtYgXrwEFhVbityCoIoJWxwPGqKjy_VmZUqO5IkcJSpjqSBVgDOtSz4qyNUm_oVx0RDYom6_MizF7ps_5fHEyX-w4LX1lpmOX-rly2LWshypP-LdEXSH-D_5kg3kRpv1ijfMYhdbIwT2mgAhuExJyeBP71z2gJe7TcHB_5UhnKZ5Gsjmm6DzXHMefMYtAUYAgCHWWwm424tRQaoNIaHD0YOBW8WT6lD6kmfkO-eLS0SPMBLI57dnKkNCq5n0UFE5Xa7fSbOEtA"
+    }
+  }
+} 
+2024-12-03T14:08:03.163Z - info: [v1/SignerToolController.js ~ GXLegalParticipant] {"@context":["https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1"],"type":["VerifiableCredential"],"id":"https://datamite.digital.tecnalia.dev/.well-known/lrn.json","issuer":"did:web:registration.lab.gaia-x.eu:v1-staging","issuanceDate":"2024-12-03T14:08:03.053Z","credentialSubject":{"@context":"https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#","type":"gx:legalRegistrationNumber","id":"https://datamite.digital.tecnalia.dev/.well-known/lrn.json","gx:vatID":"ESG48975767","gx:vatID-countryCode":"ES"},"evidence":[{"gx:evidenceURL":"http://ec.europa.eu/taxation_customs/vies/services/checkVatService","gx:executionDate":"2024-12-03T14:08:03.053Z","gx:evidenceOf":"gx:vatID"}],"proof":{"type":"JsonWebSignature2020","created":"2024-12-03T14:08:03.063Z","proofPurpose":"assertionMethod","verificationMethod":"did:web:registration.lab.gaia-x.eu:v1-staging#X509-JWK2020","jws":"eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..MTFiyYF6IOeIKgg_IN4K3HXpsZbbjE8GJ0RJ5Smd9M6A-zijW0L1lkOwWPTmmbO3es8HmT7WVt74CzcfTwE4N9uslDqxZKBgEF0-WMBM1PgV0meWZgZ3M90nvnRmk178KMJ92KKz5G8dVGbDvrwWLQ151BmDKQJAHEocojj0mwLheRDFqwCmbLEJ7gJcxo4SBYgZP_evakoPVyq9kPHe5yL1U2eTbE33CM8fN7LqpO2pLVa0_FVaGl-4aZFzcJpMo324TwriVabZPzMcOWbdSfSa37EPXrr3_xBMEOJJoslVaqtmIZfrAzkj7oOZGDFQb3o8xwquUFYKjgx2EJIKsQ"}} - legalRegistrationNumber vc created {} 
+2024-12-03T14:08:04.880Z - info: [common-functions/common-functions.js ~ addProof]  - 📈 Hashed canonized SD 908c84c534b56ec5814ec4f52d2c16e306f6a3840731831d0b6b4b1741991c31 {} 
+2024-12-03T14:08:04.888Z - info: [common-functions/common-functions.js ~ addProof] https://datamite.digital.tecnalia.dev/.well-known/x509CertificateChain.pem - 🔒 SD signed successfully {} 
+2024-12-03T14:08:05.269Z - info: [common-functions/common-functions.js ~ addProof]  - ✅ Verification successful {} 
+2024-12-03T14:08:05.271Z - debug: [v1/SignerToolController.js ~ GXLegalParticipant] 306fb374-f7f1-4479-855d-b5834af49e16 - selfDescription {"@context":"https://www.w3.org/2018/credentials/v1","type":["VerifiablePresentation"],"verifiableCredential":[{"credentialSubject":{"gx:legalName":"Tecnalia","gx:headquarterAddress":{"gx:countrySubdivisionCode":"ES-PV"},"gx:legalAddress":{"gx:countrySubdivisionCode":"ES-PV"},"id":"https://datamite.digital.tecnalia.dev/.well-known/participant.json","type":"gx:LegalParticipant","gx:legalRegistrationNumber":{"id":"https://datamite.digital.tecnalia.dev/.well-known/lrn.json"}},"@context":["https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1","https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"],"type":["VerifiableCredential"],"id":"https://datamite.digital.tecnalia.dev/.well-known/participant.json","issuer":"did:web:datamite.digital.tecnalia.dev","issuanceDate":"2024-09-02T11:10:56.55791193Z","proof":{"type":"JsonWebSignature2020","created":"2024-12-03T14:08:04.880Z","proofPurpose":"assertionMethod","verificationMethod":"did:web:datamite.digital.tecnalia.dev#JWK2020-RSA","jws":"eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..soH8FsilAjP44Nd_WerCXnCxsx9CtwVtTusPkFPXgd7fP1_h-DW0OovYCeZQqKy5a2CtacFDEqtJ015NVtuRgdsxbQuUdfkvzyhiaN7RCWmnf7h0-TobSA6vm31yZZpsmJTptax-2Z9CTplYlcUJsPgpco8q02kTOo8Oz6YXY72sflCDS-Wz9Aj1aH4DqN3-4wZMPmX7I2SXzCqYNIXZHzaDB0BSQn8rIw9XnKs-P3vDLBpRnpYRdTcLMIs39r357MPAE-pQMDyUUyOD5UKDLCzm5p7mHf-Hbh81NlqJ791QsBI-P9S6nf7cUQUz2_XU4cJzjSgtdhJXPwwbGSNzuQ"}},{"@context":["https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1"],"type":["VerifiableCredential"],"id":"https://datamite.digital.tecnalia.dev/.well-known/lrn.json","issuer":"did:web:registration.lab.gaia-x.eu:v1-staging","issuanceDate":"2024-12-03T14:08:03.053Z","credentialSubject":{"@context":"https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#","type":"gx:legalRegistrationNumber","id":"https://datamite.digital.tecnalia.dev/.well-known/lrn.json","gx:vatID":"ESG48975767","gx:vatID-countryCode":"ES"},"evidence":[{"gx:evidenceURL":"http://ec.europa.eu/taxation_customs/vies/services/checkVatService","gx:executionDate":"2024-12-03T14:08:03.053Z","gx:evidenceOf":"gx:vatID"}],"proof":{"type":"JsonWebSignature2020","created":"2024-12-03T14:08:03.063Z","proofPurpose":"assertionMethod","verificationMethod":"did:web:registration.lab.gaia-x.eu:v1-staging#X509-JWK2020","jws":"eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..MTFiyYF6IOeIKgg_IN4K3HXpsZbbjE8GJ0RJ5Smd9M6A-zijW0L1lkOwWPTmmbO3es8HmT7WVt74CzcfTwE4N9uslDqxZKBgEF0-WMBM1PgV0meWZgZ3M90nvnRmk178KMJ92KKz5G8dVGbDvrwWLQ151BmDKQJAHEocojj0mwLheRDFqwCmbLEJ7gJcxo4SBYgZP_evakoPVyq9kPHe5yL1U2eTbE33CM8fN7LqpO2pLVa0_FVaGl-4aZFzcJpMo324TwriVabZPzMcOWbdSfSa37EPXrr3_xBMEOJJoslVaqtmIZfrAzkj7oOZGDFQb3o8xwquUFYKjgx2EJIKsQ"}},{"@context":["https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1","https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"],"credentialSubject":{"gx:termsAndConditions":"The PARTICIPANT signing the Self-Description agrees as follows:\n- to update its descriptions about any changes, be it technical, organizational, or legal - especially but not limited to contractual in regards to the indicated attributes present in the descriptions.\n\nThe keypair used to sign Verifiable Credentials will be revoked where Gaia-X Association becomes aware of any inaccurate statements in regards to the claims which result in a non-compliance with the Trust Framework and policy rules defined in the Policy Rules and Labelling Document (PRLD).","id":"https://datamite.digital.tecnalia.dev/.well-known/tsandcs.json","type":"gx:GaiaXTermsAndConditions","@context":["https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1","https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"]},"id":"https://datamite.digital.tecnalia.dev/.well-known/tsandcs.json","issuanceDate":"2024-09-02T11:10:56.55791193Z","issuer":"did:web:datamite.digital.tecnalia.dev","type":["VerifiableCredential"],"proof":{"type":"JsonWebSignature2020","created":"2024-09-03T08:46:39.503Z","proofPurpose":"assertionMethod","verificationMethod":"did:web:datamite.digital.tecnalia.dev","jws":"eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..dY89JSGQNYZ87I9dhCmXH_6Px55KKnOCho1JEE_Lww49DS6_x92FoSZEPTIAj3Ud7SxfOoYElTohQtYgXrwEFhVbityCoIoJWxwPGqKjy_VmZUqO5IkcJSpjqSBVgDOtSz4qyNUm_oVx0RDYom6_MizF7ps_5fHEyX-w4LX1lpmOX-rly2LWshypP-LdEXSH-D_5kg3kRpv1ijfMYhdbIwT2mgAhuExJyeBP71z2gJe7TcHB_5UhnKZ5Gsjmm6DzXHMefMYtAUYAgCHWWwm424tRQaoNIaHD0YOBW8WT6lD6kmfkO-eLS0SPMBLI57dnKkNCq5n0UFE5Xa7fSbOEtA"}}]} 
+2024-12-03T14:08:05.959Z - error: [v1/SignerToolController.js ~ GXLegalParticipant] 306fb374-f7f1-4479-855d-b5834af49e16 - Request failed with status code 409 {} 
+2024-12-03T14:09:57.163Z - debug: [v1/SignerToolController.js ~ GXLegalParticipant] d1e1f734-e737-4aec-8037-c18c9e474897 - req.body {
+  issuer: 'did:web:datamite.digital.tecnalia.dev',
+  verificationMethod: 'did:web:datamite.digital.tecnalia.dev',
+  isVault: false
+} 
+2024-12-03T14:09:57.164Z - debug: [v1/SignerToolController.js ~ GXLegalParticipant] d1e1f734-e737-4aec-8037-c18c9e474897 - req.body {
+  "legalParticipant": {
+    "credentialSubject": {
+      "gx:legalName": "Tecnalia",
+      "gx:headquarterAddress": {
+        "gx:countrySubdivisionCode": "ES-PV"
+      },
+      "gx:legalAddress": {
+        "gx:countrySubdivisionCode": "ES-PV"
+      },
+      "id": "https://datamite.digital.tecnalia.dev/.well-known/participant.json",
+      "type": "gx:LegalParticipant",
+      "gx:legalRegistrationNumber": {
+        "id": "https://datamite.digital.tecnalia.dev/.well-known/lrn.json"
+      }
+    },
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1",
+      "https://w3id.org/security/suites/jws-2020/v1",
+      "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"
+    ],
+    "type": [
+      "VerifiableCredential"
+    ],
+    "id": "https://datamite.digital.tecnalia.dev/.well-known/participant.json",
+    "issuer": "did:web:datamite.digital.tecnalia.dev",
+    "issuanceDate": "2024-09-02T11:10:56.55791193Z"
+  },
+  "legalRegistrationNumber": {
+    "@context": [
+      "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/participant"
+    ],
+    "type": "gx:legalRegistrationNumber",
+    "id": "https://datamite.digital.tecnalia.dev/.well-known/lrn.json",
+    "gx:vatID": "ESG48975767",
+    "gx:vatID-countryCode": "ES"
+  },
+  "gaiaXTermsAndConditions": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1",
+      "https://w3id.org/security/suites/jws-2020/v1",
+      "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"
+    ],
+    "credentialSubject": {
+      "gx:termsAndConditions": "The PARTICIPANT signing the Self-Description agrees as follows:\n- to update its descriptions about any changes, be it technical, organizational, or legal - especially but not limited to contractual in regards to the indicated attributes present in the descriptions.\n\nThe keypair used to sign Verifiable Credentials will be revoked where Gaia-X Association becomes aware of any inaccurate statements in regards to the claims which result in a non-compliance with the Trust Framework and policy rules defined in the Policy Rules and Labelling Document (PRLD).",
+      "id": "https://datamite.digital.tecnalia.dev/.well-known/tsandcs.json",
+      "type": "gx:GaiaXTermsAndConditions",
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://w3id.org/security/suites/jws-2020/v1",
+        "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"
+      ]
+    },
+    "id": "https://datamite.digital.tecnalia.dev/.well-known/tsandcs.json",
+    "issuanceDate": "2024-09-02T11:10:56.55791193Z",
+    "issuer": "did:web:datamite.digital.tecnalia.dev",
+    "type": [
+      "VerifiableCredential"
+    ],
+    "proof": {
+      "type": "JsonWebSignature2020",
+      "created": "2024-09-03T08:46:39.503Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:web:datamite.digital.tecnalia.dev",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..dY89JSGQNYZ87I9dhCmXH_6Px55KKnOCho1JEE_Lww49DS6_x92FoSZEPTIAj3Ud7SxfOoYElTohQtYgXrwEFhVbityCoIoJWxwPGqKjy_VmZUqO5IkcJSpjqSBVgDOtSz4qyNUm_oVx0RDYom6_MizF7ps_5fHEyX-w4LX1lpmOX-rly2LWshypP-LdEXSH-D_5kg3kRpv1ijfMYhdbIwT2mgAhuExJyeBP71z2gJe7TcHB_5UhnKZ5Gsjmm6DzXHMefMYtAUYAgCHWWwm424tRQaoNIaHD0YOBW8WT6lD6kmfkO-eLS0SPMBLI57dnKkNCq5n0UFE5Xa7fSbOEtA"
+    }
+  }
+} 
+2024-12-03T14:09:58.997Z - info: [v1/SignerToolController.js ~ GXLegalParticipant] {"@context":["https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1"],"type":["VerifiableCredential"],"id":"https://datamite.digital.tecnalia.dev/.well-known/lrn.json","issuer":"did:web:registration.lab.gaia-x.eu:v1-staging","issuanceDate":"2024-12-03T14:09:58.971Z","credentialSubject":{"@context":"https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#","type":"gx:legalRegistrationNumber","id":"https://datamite.digital.tecnalia.dev/.well-known/lrn.json","gx:vatID":"ESG48975767","gx:vatID-countryCode":"ES"},"evidence":[{"gx:evidenceURL":"http://ec.europa.eu/taxation_customs/vies/services/checkVatService","gx:executionDate":"2024-12-03T14:09:58.971Z","gx:evidenceOf":"gx:vatID"}],"proof":{"type":"JsonWebSignature2020","created":"2024-12-03T14:09:58.985Z","proofPurpose":"assertionMethod","verificationMethod":"did:web:registration.lab.gaia-x.eu:v1-staging#X509-JWK2020","jws":"eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..i9Ln5HF2FZXuVbLVOZXZ2MbyA99SVBhrCfMHJL7yhQL2PExr8CH1iEIClayJIpr75HzC90oPsD_CrYyZw8Z5OMXRepI079cXG9jCDs5yY1kFy8UzKj70MwIEbGHuf7s6GGhcnbJLu2DVEWn8Vfv4UHG7JhKy0F8mHbr1lDUAPu13Ie07N-QuGIDQ4RqonXRZXFW41tScyuwVUbuvT6LULRLMdiGXj-uZZwLJWdOKSIc5aipXkTKkWL4xE-lmBvVcWOG-_qnHvDMRjEgSqDzMzfvVKH-CV1oOB6ZzpQqH-5OFZLQNGW5hHWcDCBd8D9AAVrbWG2Xpm3c26sHgdBYVfg"}} - legalRegistrationNumber vc created {} 
+2024-12-03T14:09:59.297Z - info: [common-functions/common-functions.js ~ addProof]  - 📈 Hashed canonized SD 908c84c534b56ec5814ec4f52d2c16e306f6a3840731831d0b6b4b1741991c31 {} 
+2024-12-03T14:09:59.302Z - info: [common-functions/common-functions.js ~ addProof] https://datamite.digital.tecnalia.dev/.well-known/x509CertificateChain.pem - 🔒 SD signed successfully {} 
+2024-12-03T14:09:59.392Z - info: [common-functions/common-functions.js ~ addProof]  - ✅ Verification successful {} 
+2024-12-03T14:09:59.393Z - debug: [v1/SignerToolController.js ~ GXLegalParticipant] d1e1f734-e737-4aec-8037-c18c9e474897 - selfDescription {"@context":"https://www.w3.org/2018/credentials/v1","type":["VerifiablePresentation"],"verifiableCredential":[{"credentialSubject":{"gx:legalName":"Tecnalia","gx:headquarterAddress":{"gx:countrySubdivisionCode":"ES-PV"},"gx:legalAddress":{"gx:countrySubdivisionCode":"ES-PV"},"id":"https://datamite.digital.tecnalia.dev/.well-known/participant.json","type":"gx:LegalParticipant","gx:legalRegistrationNumber":{"id":"https://datamite.digital.tecnalia.dev/.well-known/lrn.json"}},"@context":["https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1","https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"],"type":["VerifiableCredential"],"id":"https://datamite.digital.tecnalia.dev/.well-known/participant.json","issuer":"did:web:datamite.digital.tecnalia.dev","issuanceDate":"2024-09-02T11:10:56.55791193Z","proof":{"type":"JsonWebSignature2020","created":"2024-12-03T14:09:59.297Z","proofPurpose":"assertionMethod","verificationMethod":"did:web:datamite.digital.tecnalia.dev#JWK2020-RSA","jws":"eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..bp-gCtGSRTJijuvmhItSrFFd1yz5iE_2kawHwp-UtAnZDPBADA3M7iXNraUyGpcfnACCAmVgCDCm4gudSs8j-HzUs68RGGIo75Zd6bgbhfMGkjAE3GCwxy5gsphppK8H0lr5i5BaGWtnISf0NYIC5o43LQvdPqSHxJsppKWVqhqJJwflmuzfDHKvHaHf71EtiBV3aA_VmGhG71z1gb8sh_enYwn5LVYN1pPVLq1fbywkUa0Gg8VGlhc2Qj5ef4wsuFx8RJz8Yb3N4ExXT5EONYHBJZU5IL19Nk4WcNhiOffRujwAKj4BgLU0kR_7NJl71JuGAR9RMD3Eu-L5LimIwQ"}},{"@context":["https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1"],"type":["VerifiableCredential"],"id":"https://datamite.digital.tecnalia.dev/.well-known/lrn.json","issuer":"did:web:registration.lab.gaia-x.eu:v1-staging","issuanceDate":"2024-12-03T14:09:58.971Z","credentialSubject":{"@context":"https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#","type":"gx:legalRegistrationNumber","id":"https://datamite.digital.tecnalia.dev/.well-known/lrn.json","gx:vatID":"ESG48975767","gx:vatID-countryCode":"ES"},"evidence":[{"gx:evidenceURL":"http://ec.europa.eu/taxation_customs/vies/services/checkVatService","gx:executionDate":"2024-12-03T14:09:58.971Z","gx:evidenceOf":"gx:vatID"}],"proof":{"type":"JsonWebSignature2020","created":"2024-12-03T14:09:58.985Z","proofPurpose":"assertionMethod","verificationMethod":"did:web:registration.lab.gaia-x.eu:v1-staging#X509-JWK2020","jws":"eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..i9Ln5HF2FZXuVbLVOZXZ2MbyA99SVBhrCfMHJL7yhQL2PExr8CH1iEIClayJIpr75HzC90oPsD_CrYyZw8Z5OMXRepI079cXG9jCDs5yY1kFy8UzKj70MwIEbGHuf7s6GGhcnbJLu2DVEWn8Vfv4UHG7JhKy0F8mHbr1lDUAPu13Ie07N-QuGIDQ4RqonXRZXFW41tScyuwVUbuvT6LULRLMdiGXj-uZZwLJWdOKSIc5aipXkTKkWL4xE-lmBvVcWOG-_qnHvDMRjEgSqDzMzfvVKH-CV1oOB6ZzpQqH-5OFZLQNGW5hHWcDCBd8D9AAVrbWG2Xpm3c26sHgdBYVfg"}},{"@context":["https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1","https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"],"credentialSubject":{"gx:termsAndConditions":"The PARTICIPANT signing the Self-Description agrees as follows:\n- to update its descriptions about any changes, be it technical, organizational, or legal - especially but not limited to contractual in regards to the indicated attributes present in the descriptions.\n\nThe keypair used to sign Verifiable Credentials will be revoked where Gaia-X Association becomes aware of any inaccurate statements in regards to the claims which result in a non-compliance with the Trust Framework and policy rules defined in the Policy Rules and Labelling Document (PRLD).","id":"https://datamite.digital.tecnalia.dev/.well-known/tsandcs.json","type":"gx:GaiaXTermsAndConditions","@context":["https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1","https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"]},"id":"https://datamite.digital.tecnalia.dev/.well-known/tsandcs.json","issuanceDate":"2024-09-02T11:10:56.55791193Z","issuer":"did:web:datamite.digital.tecnalia.dev","type":["VerifiableCredential"],"proof":{"type":"JsonWebSignature2020","created":"2024-09-03T08:46:39.503Z","proofPurpose":"assertionMethod","verificationMethod":"did:web:datamite.digital.tecnalia.dev","jws":"eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..dY89JSGQNYZ87I9dhCmXH_6Px55KKnOCho1JEE_Lww49DS6_x92FoSZEPTIAj3Ud7SxfOoYElTohQtYgXrwEFhVbityCoIoJWxwPGqKjy_VmZUqO5IkcJSpjqSBVgDOtSz4qyNUm_oVx0RDYom6_MizF7ps_5fHEyX-w4LX1lpmOX-rly2LWshypP-LdEXSH-D_5kg3kRpv1ijfMYhdbIwT2mgAhuExJyeBP71z2gJe7TcHB_5UhnKZ5Gsjmm6DzXHMefMYtAUYAgCHWWwm424tRQaoNIaHD0YOBW8WT6lD6kmfkO-eLS0SPMBLI57dnKkNCq5n0UFE5Xa7fSbOEtA"}}]} 
+2024-12-03T14:10:00.052Z - error: [v1/SignerToolController.js ~ GXLegalParticipant] d1e1f734-e737-4aec-8037-c18c9e474897 - Request failed with status code 409 {} 
+2024-12-03T14:12:07.319Z - debug: [v1/SignerToolController.js ~ GXLegalParticipant] 2ae42873-2bb9-411a-87ee-075d501ea5da - req.body {
+  issuer: 'did:web:datamite.digital.tecnalia.dev',
+  verificationMethod: 'did:web:datamite.digital.tecnalia.dev',
+  isVault: false
+} 
+2024-12-03T14:12:07.320Z - debug: [v1/SignerToolController.js ~ GXLegalParticipant] 2ae42873-2bb9-411a-87ee-075d501ea5da - req.body {
+  "legalParticipant": {
+    "credentialSubject": {
+      "gx:legalName": "Tecnalia",
+      "gx:headquarterAddress": {
+        "gx:countrySubdivisionCode": "ES-PV"
+      },
+      "gx:legalAddress": {
+        "gx:countrySubdivisionCode": "ES-PV"
+      },
+      "id": "https://datamite.digital.tecnalia.dev/.well-known/participant.json",
+      "type": "gx:LegalParticipant",
+      "gx:legalRegistrationNumber": {
+        "id": "https://datamite.digital.tecnalia.dev/.well-known/lrn.json"
+      }
+    },
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1",
+      "https://w3id.org/security/suites/jws-2020/v1",
+      "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"
+    ],
+    "type": [
+      "VerifiableCredential"
+    ],
+    "id": "https://datamite.digital.tecnalia.dev/.well-known/participant.json",
+    "issuer": "did:web:datamite.digital.tecnalia.dev",
+    "issuanceDate": "2024-09-02T11:10:56.55791193Z"
+  },
+  "legalRegistrationNumber": {
+    "@context": [
+      "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/participant"
+    ],
+    "type": "gx:legalRegistrationNumber",
+    "id": "https://datamite.digital.tecnalia.dev/.well-known/lrn.json",
+    "gx:vatID": "ESG48975767",
+    "gx:vatID-countryCode": "ES"
+  },
+  "gaiaXTermsAndConditions": {
+    "@context": [
+      "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#",
+      "https://www.w3.org/2018/credentials/v1",
+      "https://w3id.org/security/suites/jws-2020/v1"
+    ],
+    "type": "VerifiableCredential",
+    "id": "https://datamite.digital.tecnalia.dev/.well-known/tsandcs.json",
+    "issuer": "did:web:datamite.digital.tecnalia.dev",
+    "validFrom": "2024-11-18T10:43:29.159835",
+    "credentialSubject": {
+      "@context": "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#",
+      "type": "gx:GaiaXTermsAndConditions",
+      "id": "https://datamite.digital.tecnalia.dev/.well-known/tsandcs.json",
+      "gx:termsAndConditions": "The PARTICIPANT signing the Self-Description agrees as follows:\n- to update its descriptions about any changes, be it technical, organizational, or legal - especially but not limited to contractual in regards to the indicated attributes present in the descriptions.\n\nThe keypair used to sign Verifiable Credentials will be revoked where Gaia-X Association becomes aware of any inaccurate statements in regards to the claims which result in a non-compliance with the Trust Framework and policy rules defined in the Policy Rules and Labelling Document (PRLD)."
+    },
+    "proof": {
+      "type": "JsonWebSignature2020",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:web:datamite.digital.tecnalia.dev#JWK2020-RSA",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..SLQdhDQZcNC_xMEbUtA9zOTmEOPmHmbiO86GNhmr2MamZgi1WuIj2yKAm6h0Bp7ye9GsK1b1id7eekPyJNbPpHCdf7-CWifL8udoLQNS6N31-H4GS-WbL-mjSo7Ts9p5fueWsrym04QsyW_YzZ0nPtl5OFySnR-dQc7OfOrrm4ALSyOYccx0XJ83NmvUL1K8unRYdzFW0S7v-bZUs6qURZEEq4W8GrcCBFC_cPVWZVX3hwgiS3p6NUVdLtSjEyEHjjIuP9QfRVKn0ncqumX1QjXCoj-h3DNUiVP6nl9kUUdhd1S4WTT7wS2SRs8sgOm-nOhhmm07QRtS2Bg1Gve6gA"
+    }
+  }
+} 
+2024-12-03T14:12:07.904Z - info: [v1/SignerToolController.js ~ GXLegalParticipant] {"@context":["https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1"],"type":["VerifiableCredential"],"id":"https://datamite.digital.tecnalia.dev/.well-known/lrn.json","issuer":"did:web:registration.lab.gaia-x.eu:v1-staging","issuanceDate":"2024-12-03T14:12:07.872Z","credentialSubject":{"@context":"https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#","type":"gx:legalRegistrationNumber","id":"https://datamite.digital.tecnalia.dev/.well-known/lrn.json","gx:vatID":"ESG48975767","gx:vatID-countryCode":"ES"},"evidence":[{"gx:evidenceURL":"http://ec.europa.eu/taxation_customs/vies/services/checkVatService","gx:executionDate":"2024-12-03T14:12:07.872Z","gx:evidenceOf":"gx:vatID"}],"proof":{"type":"JsonWebSignature2020","created":"2024-12-03T14:12:07.888Z","proofPurpose":"assertionMethod","verificationMethod":"did:web:registration.lab.gaia-x.eu:v1-staging#X509-JWK2020","jws":"eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..DS2uVKfRjbNaNn4vH8zRtSN7jtR5gX6d8GBERkzzNgOGtXBvysgjYnbkbEJw0_Bv9v04Yv6IIwkkFzBNuJ6TLrjkV00bldFIKXTOXt4joLKM4N2465N7QtpBpLoxS-8cQ1j6FK0ThQkbq5gSinnoRT1TV54Hep4l0H2Q_LryZzfjq3QjuIj2ERtz_wd3vfAv-k2PDHy5xy8qUnGxjGPpF_kTc9RGh3LfPYaYJww-UUPgSzrz15n4DQNThNnRKwV-qT_mp3q7KBY84g_CR-BVNiNQzYPc4-fqkLeXwMVT6lNLpXpFY1vg9Dew3GabiS_f5wXpXWs-xTSj4WEKrMxekQ"}} - legalRegistrationNumber vc created {} 
+2024-12-03T14:12:09.641Z - info: [common-functions/common-functions.js ~ addProof]  - 📈 Hashed canonized SD 908c84c534b56ec5814ec4f52d2c16e306f6a3840731831d0b6b4b1741991c31 {} 
+2024-12-03T14:12:09.663Z - info: [common-functions/common-functions.js ~ addProof] https://datamite.digital.tecnalia.dev/.well-known/x509CertificateChain.pem - 🔒 SD signed successfully {} 
+2024-12-03T14:12:09.891Z - info: [common-functions/common-functions.js ~ addProof]  - ✅ Verification successful {} 
+2024-12-03T14:12:09.891Z - debug: [v1/SignerToolController.js ~ GXLegalParticipant] 2ae42873-2bb9-411a-87ee-075d501ea5da - selfDescription {"@context":"https://www.w3.org/2018/credentials/v1","type":["VerifiablePresentation"],"verifiableCredential":[{"credentialSubject":{"gx:legalName":"Tecnalia","gx:headquarterAddress":{"gx:countrySubdivisionCode":"ES-PV"},"gx:legalAddress":{"gx:countrySubdivisionCode":"ES-PV"},"id":"https://datamite.digital.tecnalia.dev/.well-known/participant.json","type":"gx:LegalParticipant","gx:legalRegistrationNumber":{"id":"https://datamite.digital.tecnalia.dev/.well-known/lrn.json"}},"@context":["https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1","https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"],"type":["VerifiableCredential"],"id":"https://datamite.digital.tecnalia.dev/.well-known/participant.json","issuer":"did:web:datamite.digital.tecnalia.dev","issuanceDate":"2024-09-02T11:10:56.55791193Z","proof":{"type":"JsonWebSignature2020","created":"2024-12-03T14:12:09.642Z","proofPurpose":"assertionMethod","verificationMethod":"did:web:datamite.digital.tecnalia.dev#JWK2020-RSA","jws":"eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..FifVuIlY2Mxhd1WrTossT3qIfipp8EGX1YqQrzSPJUuOzMckL4BVm5iaTGEpeTjQ4hIqLp2ie4gudgzUP57VntHjrEmWdNdyyRaXPl3e7wxHDcnMoyWKdY3NukkDbZ9cEBz7cejNOu-X-TirBwasLFyy04M1R452vrmclyiq7xYGWpQxNVUjsLUkDjmyEI-I2Idw4VNuyXhlzJ5s1NMfv_5q8oYwfJQlbwfehM7dK2bCUxSyEFG8vkFAflozSAkRl7qW3WyM1MmGy-x1sn-EKYZ04nhfH5VF3anAs1CI-HF90OHnT8AKgZNDyP_sHL-Bsd__EMT9nY3RMeQps7g_jg"}},{"@context":["https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1"],"type":["VerifiableCredential"],"id":"https://datamite.digital.tecnalia.dev/.well-known/lrn.json","issuer":"did:web:registration.lab.gaia-x.eu:v1-staging","issuanceDate":"2024-12-03T14:12:07.872Z","credentialSubject":{"@context":"https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#","type":"gx:legalRegistrationNumber","id":"https://datamite.digital.tecnalia.dev/.well-known/lrn.json","gx:vatID":"ESG48975767","gx:vatID-countryCode":"ES"},"evidence":[{"gx:evidenceURL":"http://ec.europa.eu/taxation_customs/vies/services/checkVatService","gx:executionDate":"2024-12-03T14:12:07.872Z","gx:evidenceOf":"gx:vatID"}],"proof":{"type":"JsonWebSignature2020","created":"2024-12-03T14:12:07.888Z","proofPurpose":"assertionMethod","verificationMethod":"did:web:registration.lab.gaia-x.eu:v1-staging#X509-JWK2020","jws":"eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..DS2uVKfRjbNaNn4vH8zRtSN7jtR5gX6d8GBERkzzNgOGtXBvysgjYnbkbEJw0_Bv9v04Yv6IIwkkFzBNuJ6TLrjkV00bldFIKXTOXt4joLKM4N2465N7QtpBpLoxS-8cQ1j6FK0ThQkbq5gSinnoRT1TV54Hep4l0H2Q_LryZzfjq3QjuIj2ERtz_wd3vfAv-k2PDHy5xy8qUnGxjGPpF_kTc9RGh3LfPYaYJww-UUPgSzrz15n4DQNThNnRKwV-qT_mp3q7KBY84g_CR-BVNiNQzYPc4-fqkLeXwMVT6lNLpXpFY1vg9Dew3GabiS_f5wXpXWs-xTSj4WEKrMxekQ"}},{"@context":["https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#","https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1"],"type":"VerifiableCredential","id":"https://datamite.digital.tecnalia.dev/.well-known/tsandcs.json","issuer":"did:web:datamite.digital.tecnalia.dev","validFrom":"2024-11-18T10:43:29.159835","credentialSubject":{"@context":"https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#","type":"gx:GaiaXTermsAndConditions","id":"https://datamite.digital.tecnalia.dev/.well-known/tsandcs.json","gx:termsAndConditions":"The PARTICIPANT signing the Self-Description agrees as follows:\n- to update its descriptions about any changes, be it technical, organizational, or legal - especially but not limited to contractual in regards to the indicated attributes present in the descriptions.\n\nThe keypair used to sign Verifiable Credentials will be revoked where Gaia-X Association becomes aware of any inaccurate statements in regards to the claims which result in a non-compliance with the Trust Framework and policy rules defined in the Policy Rules and Labelling Document (PRLD)."},"proof":{"type":"JsonWebSignature2020","proofPurpose":"assertionMethod","verificationMethod":"did:web:datamite.digital.tecnalia.dev#JWK2020-RSA","jws":"eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..SLQdhDQZcNC_xMEbUtA9zOTmEOPmHmbiO86GNhmr2MamZgi1WuIj2yKAm6h0Bp7ye9GsK1b1id7eekPyJNbPpHCdf7-CWifL8udoLQNS6N31-H4GS-WbL-mjSo7Ts9p5fueWsrym04QsyW_YzZ0nPtl5OFySnR-dQc7OfOrrm4ALSyOYccx0XJ83NmvUL1K8unRYdzFW0S7v-bZUs6qURZEEq4W8GrcCBFC_cPVWZVX3hwgiS3p6NUVdLtSjEyEHjjIuP9QfRVKn0ncqumX1QjXCoj-h3DNUiVP6nl9kUUdhd1S4WTT7wS2SRs8sgOm-nOhhmm07QRtS2Bg1Gve6gA"}}]} 
+2024-12-03T14:12:15.657Z - debug: [v1/SignerToolController.js ~ GXLegalParticipant] 2ae42873-2bb9-411a-87ee-075d501ea5da - complianceCRED {
+  status: 201,
+  statusText: 'Created',
+  headers: Object [AxiosHeaders] {
+    date: 'Tue, 03 Dec 2024 14:12:15 GMT',
+    'content-type': 'application/json; charset=utf-8',
+    'content-length': '2227',
+    connection: 'close',
+    'x-powered-by': 'Express',
+    'access-control-allow-origin': '*',
+    etag: 'W/"8b3-QvGZuzLsj4XdaHBTrhUobPieAsk"',
+    'strict-transport-security': 'max-age=31536000; includeSubDomains'
+  },
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [ 'xhr', 'http', 'fetch' ],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    env: { FormData: [Function], Blob: [class Blob] },
+    validateStatus: [Function: validateStatus],
+    headers: Object [AxiosHeaders] {
+      Accept: 'application/json, text/plain, */*',
+      'Content-Type': 'application/json',
+      'User-Agent': 'axios/1.7.8',
+      'Content-Length': '4632',
+      'Accept-Encoding': 'gzip, compress, deflate, br'
+    },
+    method: 'post',
+    url: 'https://compliance.lab.gaia-x.eu/v1-staging/api/credential-offers',
+    data: '{"@context":"https://www.w3.org/2018/credentials/v1","type":["VerifiablePresentation"],"verifiableCredential":[{"credentialSubject":{"gx:legalName":"Tecnalia","gx:headquarterAddress":{"gx:countrySubdivisionCode":"ES-PV"},"gx:legalAddress":{"gx:countrySubdivisionCode":"ES-PV"},"id":"https://datamite.digital.tecnalia.dev/.well-known/participant.json","type":"gx:LegalParticipant","gx:legalRegistrationNumber":{"id":"https://datamite.digital.tecnalia.dev/.well-known/lrn.json"}},"@context":["https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1","https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"],"type":["VerifiableCredential"],"id":"https://datamite.digital.tecnalia.dev/.well-known/participant.json","issuer":"did:web:datamite.digital.tecnalia.dev","issuanceDate":"2024-09-02T11:10:56.55791193Z","proof":{"type":"JsonWebSignature2020","created":"2024-12-03T14:12:09.642Z","proofPurpose":"assertionMethod","verificationMethod":"did:web:datamite.digital.tecnalia.dev#JWK2020-RSA","jws":"eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..FifVuIlY2Mxhd1WrTossT3qIfipp8EGX1YqQrzSPJUuOzMckL4BVm5iaTGEpeTjQ4hIqLp2ie4gudgzUP57VntHjrEmWdNdyyRaXPl3e7wxHDcnMoyWKdY3NukkDbZ9cEBz7cejNOu-X-TirBwasLFyy04M1R452vrmclyiq7xYGWpQxNVUjsLUkDjmyEI-I2Idw4VNuyXhlzJ5s1NMfv_5q8oYwfJQlbwfehM7dK2bCUxSyEFG8vkFAflozSAkRl7qW3WyM1MmGy-x1sn-EKYZ04nhfH5VF3anAs1CI-HF90OHnT8AKgZNDyP_sHL-Bsd__EMT9nY3RMeQps7g_jg"}},{"@context":["https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1"],"type":["VerifiableCredential"],"id":"https://datamite.digital.tecnalia.dev/.well-known/lrn.json","issuer":"did:web:registration.lab.gaia-x.eu:v1-staging","issuanceDate":"2024-12-03T14:12:07.872Z","credentialSubject":{"@context":"https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#","type":"gx:legalRegistrationNumber","id":"https://datamite.digital.tecnalia.dev/.well-known/lrn.json","gx:vatID":"ESG48975767","gx:vatID-countryCode":"ES"},"evidence":[{"gx:evidenceURL":"http://ec.europa.eu/taxation_customs/vies/services/checkVatService","gx:executionDate":"2024-12-03T14:12:07.872Z","gx:evidenceOf":"gx:vatID"}],"proof":{"type":"JsonWebSignature2020","created":"2024-12-03T14:12:07.888Z","proofPurpose":"assertionMethod","verificationMethod":"did:web:registration.lab.gaia-x.eu:v1-staging#X509-JWK2020","jws":"eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..DS2uVKfRjbNaNn4vH8zRtSN7jtR5gX6d8GBERkzzNgOGtXBvysgjYnbkbEJw0_Bv9v04Yv6IIwkkFzBNuJ6TLrjkV00bldFIKXTOXt4joLKM4N2465N7QtpBpLoxS-8cQ1j6FK0ThQkbq5gSinnoRT1TV54Hep4l0H2Q_LryZzfjq3QjuIj2ERtz_wd3vfAv-k2PDHy5xy8qUnGxjGPpF_kTc9RGh3LfPYaYJww-UUPgSzrz15n4DQNThNnRKwV-qT_mp3q7KBY84g_CR-BVNiNQzYPc4-fqkLeXwMVT6lNLpXpFY1vg9Dew3GabiS_f5wXpXWs-xTSj4WEKrMxekQ"}},{"@context":["https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#","https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1"],"type":"VerifiableCredential","id":"https://datamite.digital.tecnalia.dev/.well-known/tsandcs.json","issuer":"did:web:datamite.digital.tecnalia.dev","validFrom":"2024-11-18T10:43:29.159835","credentialSubject":{"@context":"https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#","type":"gx:GaiaXTermsAndConditions","id":"https://datamite.digital.tecnalia.dev/.well-known/tsandcs.json","gx:termsAndConditions":"The PARTICIPANT signing the Self-Description agrees as follows:\\n- to update its descriptions about any changes, be it technical, organizational, or legal - especially but not limited to contractual in regards to the indicated attributes present in the descriptions.\\n\\nThe keypair used to sign Verifiable Credentials will be revoked where Gaia-X Association becomes aware of any inaccurate statements in regards to the claims which result in a non-compliance with the Trust Framework and policy rules defined in the Policy Rules and Labelling Document (PRLD)."},"proof":{"type":"JsonWebSignature2020","proofPurpose":"assertionMethod","verificationMethod":"did:web:datamite.digital.tecnalia.dev#JWK2020-RSA","jws":"eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..SLQdhDQZcNC_xMEbUtA9zOTmEOPmHmbiO86GNhmr2MamZgi1WuIj2yKAm6h0Bp7ye9GsK1b1id7eekPyJNbPpHCdf7-CWifL8udoLQNS6N31-H4GS-WbL-mjSo7Ts9p5fueWsrym04QsyW_YzZ0nPtl5OFySnR-dQc7OfOrrm4ALSyOYccx0XJ83NmvUL1K8unRYdzFW0S7v-bZUs6qURZEEq4W8GrcCBFC_cPVWZVX3hwgiS3p6NUVdLtSjEyEHjjIuP9QfRVKn0ncqumX1QjXCoj-h3DNUiVP6nl9kUUdhd1S4WTT7wS2SRs8sgOm-nOhhmm07QRtS2Bg1Gve6gA"}}]}'
+  },
+  request: <ref *1> ClientRequest {
+    _events: [Object: null prototype] {
+      abort: [Function (anonymous)],
+      aborted: [Function (anonymous)],
+      connect: [Function (anonymous)],
+      error: [Function (anonymous)],
+      socket: [Function (anonymous)],
+      timeout: [Function (anonymous)],
+      finish: [Function: requestOnFinish]
+    },
+    _eventsCount: 7,
+    _maxListeners: undefined,
+    outputData: [],
+    outputSize: 0,
+    writable: true,
+    destroyed: false,
+    _last: true,
+    chunkedEncoding: false,
+    shouldKeepAlive: false,
+    maxRequestsOnConnectionReached: false,
+    _defaultKeepAlive: true,
+    useChunkedEncodingByDefault: true,
+    sendDate: false,
+    _removedConnection: false,
+    _removedContLen: false,
+    _removedTE: false,
+    strictContentLength: false,
+    _contentLength: '4632',
+    _hasBody: true,
+    _trailer: '',
+    finished: true,
+    _headerSent: true,
+    _closed: false,
+    socket: TLSSocket {
+      _tlsOptions: [Object],
+      _secureEstablished: true,
+      _securePending: false,
+      _newSessionPending: false,
+      _controlReleased: true,
+      secureConnecting: false,
+      _SNICallback: null,
+      servername: 'compliance.lab.gaia-x.eu',
+      alpnProtocol: false,
+      authorized: true,
+      authorizationError: null,
+      encrypted: true,
+      _events: [Object: null prototype],
+      _eventsCount: 10,
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: 'compliance.lab.gaia-x.eu',
+      _closeAfterHandlingError: false,
+      _readableState: [ReadableState],
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      allowHalfOpen: false,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: undefined,
+      _server: null,
+      ssl: [TLSWrap],
+      _requestCert: true,
+      _rejectUnauthorized: true,
+      parser: null,
+      _httpMessage: [Circular *1],
+      [Symbol(res)]: [TLSWrap],
+      [Symbol(verified)]: true,
+      [Symbol(pendingSession)]: null,
+      [Symbol(async_id_symbol)]: 1425,
+      [Symbol(kHandle)]: [TLSWrap],
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: null,
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kSetNoDelay)]: false,
+      [Symbol(kSetKeepAlive)]: true,
+      [Symbol(kSetKeepAliveInitialDelay)]: 60,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(connect-options)]: [Object]
+    },
+    _header: 'POST /v1-staging/api/credential-offers HTTP/1.1\r\n' +
+      'Accept: application/json, text/plain, */*\r\n' +
+      'Content-Type: application/json\r\n' +
+      'User-Agent: axios/1.7.8\r\n' +
+      'Content-Length: 4632\r\n' +
+      'Accept-Encoding: gzip, compress, deflate, br\r\n' +
+      'Host: compliance.lab.gaia-x.eu\r\n' +
+      'Connection: close\r\n' +
+      '\r\n',
+    _keepAliveTimeout: 0,
+    _onPendingData: [Function: nop],
+    agent: Agent {
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      defaultPort: 443,
+      protocol: 'https:',
+      options: [Object: null prototype],
+      requests: [Object: null prototype] {},
+      sockets: [Object: null prototype],
+      freeSockets: [Object: null prototype] {},
+      keepAliveMsecs: 1000,
+      keepAlive: false,
+      maxSockets: Infinity,
+      maxFreeSockets: 256,
+      scheduling: 'lifo',
+      maxTotalSockets: Infinity,
+      totalSocketCount: 1,
+      maxCachedSessions: 100,
+      _sessionCache: [Object],
+      [Symbol(kCapture)]: false
+    },
+    socketPath: undefined,
+    method: 'POST',
+    maxHeaderSize: undefined,
+    insecureHTTPParser: undefined,
+    joinDuplicateHeaders: undefined,
+    path: '/v1-staging/api/credential-offers',
+    _ended: true,
+    res: IncomingMessage {
+      _readableState: [ReadableState],
+      _events: [Object: null prototype],
+      _eventsCount: 4,
+      _maxListeners: undefined,
+      socket: [TLSSocket],
+      httpVersionMajor: 1,
+      httpVersionMinor: 1,
+      httpVersion: '1.1',
+      complete: true,
+      rawHeaders: [Array],
+      rawTrailers: [],
+      joinDuplicateHeaders: undefined,
+      aborted: false,
+      upgrade: false,
+      url: '',
+      method: null,
+      statusCode: 201,
+      statusMessage: 'Created',
+      client: [TLSSocket],
+      _consuming: false,
+      _dumped: false,
+      req: [Circular *1],
+      responseUrl: 'https://compliance.lab.gaia-x.eu/v1-staging/api/credential-offers',
+      redirects: [],
+      [Symbol(kCapture)]: false,
+      [Symbol(kHeaders)]: [Object],
+      [Symbol(kHeadersCount)]: 16,
+      [Symbol(kTrailers)]: null,
+      [Symbol(kTrailersCount)]: 0
+    },
+    aborted: false,
+    timeoutCb: null,
+    upgradeOrConnect: false,
+    parser: null,
+    maxHeadersCount: null,
+    reusedSocket: false,
+    host: 'compliance.lab.gaia-x.eu',
+    protocol: 'https:',
+    _redirectable: Writable {
+      _writableState: [WritableState],
+      _events: [Object: null prototype],
+      _eventsCount: 3,
+      _maxListeners: undefined,
+      _options: [Object],
+      _ended: true,
+      _ending: true,
+      _redirectCount: 0,
+      _redirects: [],
+      _requestBodyLength: 4632,
+      _requestBodyBuffers: [],
+      _onNativeResponse: [Function (anonymous)],
+      _currentRequest: [Circular *1],
+      _currentUrl: 'https://compliance.lab.gaia-x.eu/v1-staging/api/credential-offers',
+      [Symbol(kCapture)]: false
+    },
+    [Symbol(kCapture)]: false,
+    [Symbol(kBytesWritten)]: 0,
+    [Symbol(kNeedDrain)]: false,
+    [Symbol(corked)]: 0,
+    [Symbol(kOutHeaders)]: [Object: null prototype] {
+      accept: [Array],
+      'content-type': [Array],
+      'user-agent': [Array],
+      'content-length': [Array],
+      'accept-encoding': [Array],
+      host: [Array]
+    },
+    [Symbol(errored)]: null,
+    [Symbol(kHighWaterMark)]: 16384,
+    [Symbol(kRejectNonStandardBodyWrites)]: false,
+    [Symbol(kUniqueHeaders)]: null
+  },
+  data: {
+    '@context': [
+      'https://www.w3.org/2018/credentials/v1',
+      'https://w3id.org/security/suites/jws-2020/v1',
+      'https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#'
+    ],
+    type: [ 'VerifiableCredential' ],
+    id: 'https://compliance.lab.gaia-x.eu/v1-staging/credential-offers/71873d48-a83a-4ff0-b2cc-2a24460274a6',
+    issuer: 'did:web:compliance.lab.gaia-x.eu:v1-staging',
+    issuanceDate: '2024-12-03T14:12:15.604Z',
+    expirationDate: '2025-03-03T14:12:15.604Z',
+    credentialSubject: [ [Object], [Object], [Object] ],
+    proof: {
+      type: 'JsonWebSignature2020',
+      created: '2024-12-03T14:12:15.614Z',
+      proofPurpose: 'assertionMethod',
+      verificationMethod: 'did:web:compliance.lab.gaia-x.eu:v1-staging#X509-JWK2020',
+      jws: 'eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..SHEFarxGzwAkiLzjOkvEGJ4vua_X1ZBijQPHnAOcL1V7Qk06kPSpgeAwnv1LgKo2kkuDY82BMNb8iox17RKNVhC-SeBNgT0bPF_SqKoqQ3hoWqZdwI6dzr6BpzHwVbtV031vuUkgvd0VsmCQt6q18top1pgxNXIWTaxkO9Y2Yu2pLVwyA0X4XmpEUu5nJjMkQRa_icYA-EJ59lDuTcN8C-Rm2qdwKzelMFZqfPTpp3GMJyroV_0rK4V2kvL-NovK_4kZefHn3PrzLUK2oWTgvI9YrIT6gXa3Cg5NyL7PsYo6K2gVxsedOlEIUwf82-Cr1dh6VQ11lD8OSdRGpIrHew'
+    }
+  }
+} 
+2024-12-03T14:12:15.658Z - info: [v1/SignerToolController.js ~ GXLegalParticipant] 2ae42873-2bb9-411a-87ee-075d501ea5da - 🔒 SD signed successfully (compliance service) {} 
+2024-12-03T14:16:39.163Z - debug: [v1/SignerToolController.js ~ ServiceOffering] {"type":"VerifiableCredential","id":"https://datamite.digital.tecnalia.dev/.well-known/serviceOffering0.json","issuer":"did:web:datamite.digital.tecnalia.dev","issuanceDate":"2023-08-10T13:13:12.552192251Z","credentialSubject":{"gx:termsAndConditions":{"gx:URL":"https://aws.amazon.com/service-terms/","gx:hash":"689be3192f5686526bdddb450463f6c2f752c23b2820a2aae35e6779889e817a"},"gx:policy":"{'@context': {'edc': 'https://w3id.org/edc/v0.0.1/ns/', 'odrl': 'http://www.w3.org/ns/odrl/2/'}, '@id': 'no-restriction-policy', '@type': 'edc:PolicyDefinition', 'edc:policy': {'@type': 'odrl:Set', 'odrl:permission': [], 'odrl:prohibition': [], 'odrl:obligation': []}}","gx:dataAccountExport":{"gx:requestType":"API","gx:accessType":"physical","gx:formatType":"application/json"},"gx:aggregationOf":[{"@id":"https://datamite.digital.tecnalia.dev/.well-known/dataresource0.json"}],"type":"gx:ServiceOffering","gx:providedBy":{"id":"https://datamite.digital.tecnalia.dev/.well-known/participant.json"},"id":"https://datamite.digital.tecnalia.dev/.well-known/serviceOffering0.json"},"@context":["https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1","https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"]} - Service offering VC {} 
+2024-12-03T14:16:39.238Z - debug: [v1/SignerToolController.js ~ ServiceOffering] {"selfDescriptionCredential":{"@context":"https://www.w3.org/2018/credentials/v1","type":["VerifiablePresentation"],"verifiableCredential":[{"credentialSubject":{"gx:legalName":"Tecnalia","gx:headquarterAddress":{"gx:countrySubdivisionCode":"ES-PV"},"gx:legalAddress":{"gx:countrySubdivisionCode":"ES-PV"},"id":"https://datamite.digital.tecnalia.dev/.well-known/participant.json","type":"gx:LegalParticipant","gx:legalRegistrationNumber":{"id":"https://datamite.digital.tecnalia.dev/.well-known/lrn.json"}},"@context":["https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1","https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"],"type":["VerifiableCredential"],"id":"https://datamite.digital.tecnalia.dev/.well-known/participant.json","issuer":"did:web:datamite.digital.tecnalia.dev","issuanceDate":"2024-09-02T11:10:56.55791193Z","proof":{"type":"JsonWebSignature2020","created":"2024-12-03T08:11:34.490Z","proofPurpose":"assertionMethod","verificationMethod":"did:web:datamite.digital.tecnalia.dev#JWK2020-RSA","jws":"eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..DHjLw-cuHJorcsu8bk3-rmIf5Nkzd8G8X83vIP2xMNrYEMuiAWiRvqFmi4rbBFHSZbY21c_T70UNxF7Dz23IG3bgB6szkRwtFjU9EJ1ZhNb0TIJEZS51kQ7DWMXVoeMoTjhEW5hgcNTnlgeobsYwdchagL8aRn-yMxURUdOTld5whCYAOZoImAtT88kUJgou0PUMAS2PPE43tTFIIKsQ0jAbFdMjyGhxhbMtlPDEB_1SlQFwmrFOxPAqCPSPpZDahp8cvMA48zh5yVG4i7syVqVARnpTqjkJUPhokI55nN4NSZI_O6cXHphrmj2gg6bilc9CAsJG5JMsdCauLBzZuw"}},{"@context":["https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1"],"type":["VerifiableCredential"],"id":"https://datamite.digital.tecnalia.dev/.well-known/lrn.json","issuer":"did:web:registration.lab.gaia-x.eu:v1-staging","issuanceDate":"2024-12-03T08:11:34.101Z","credentialSubject":{"@context":"https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#","type":"gx:legalRegistrationNumber","id":"https://datamite.digital.tecnalia.dev/.well-known/lrn.json","gx:vatID":"ESG48975767","gx:vatID-countryCode":"ES"},"evidence":[{"gx:evidenceURL":"http://ec.europa.eu/taxation_customs/vies/services/checkVatService","gx:executionDate":"2024-12-03T08:11:34.101Z","gx:evidenceOf":"gx:vatID"}],"proof":{"type":"JsonWebSignature2020","created":"2024-12-03T08:11:34.120Z","proofPurpose":"assertionMethod","verificationMethod":"did:web:registration.lab.gaia-x.eu:v1-staging#X509-JWK2020","jws":"eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..PeOQJUmt42T7bzNJ_0B9BCp7Dq_Gg5RI0u18BImweTnx9KXkpTyTjtRP6HMOzRPU8cdRyNlcFECMWABoFPStdzp03z_AoK84FX85IL_M9TO98f4Dlrda_E-o8T-VQ_na6SGUCoOOnfzHR4V2zaYcaU5Q8C5XpJlieP7m2Sk4DczD4UEq7BtDP6lUyHLi4mL769K_9qiL5BRHYxSn5x-Jem7f4gWMg-a7JRi5nXLJ-GBVuwiaZtOrfP0-oAWoLHUvARzo-a_x2VfrYJKSHDFy9KBl_oy3goOWVZDJ2VMgrdmws4cFyIddfpm2VPiFwpfPtoscVAgViQ1NBcCflwiiOQ"}},{"@context":["https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#","https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1"],"type":"VerifiableCredential","id":"https://datamite.digital.tecnalia.dev/.well-known/tsandcs.json","issuer":"did:web:datamite.digital.tecnalia.dev","validFrom":"2024-11-18T10:43:29.159835","credentialSubject":{"@context":"https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#","type":"gx:GaiaXTermsAndConditions","id":"https://datamite.digital.tecnalia.dev/.well-known/tsandcs.json","gx:termsAndConditions":"The PARTICIPANT signing the Self-Description agrees as follows:\n- to update its descriptions about any changes, be it technical, organizational, or legal - especially but not limited to contractual in regards to the indicated attributes present in the descriptions.\n\nThe keypair used to sign Verifiable Credentials will be revoked where Gaia-X Association becomes aware of any inaccurate statements in regards to the claims which result in a non-compliance with the Trust Framework and policy rules defined in the Policy Rules and Labelling Document (PRLD)."},"proof":{"type":"JsonWebSignature2020","proofPurpose":"assertionMethod","verificationMethod":"did:web:datamite.digital.tecnalia.dev#JWK2020-RSA","jws":"eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..SLQdhDQZcNC_xMEbUtA9zOTmEOPmHmbiO86GNhmr2MamZgi1WuIj2yKAm6h0Bp7ye9GsK1b1id7eekPyJNbPpHCdf7-CWifL8udoLQNS6N31-H4GS-WbL-mjSo7Ts9p5fueWsrym04QsyW_YzZ0nPtl5OFySnR-dQc7OfOrrm4ALSyOYccx0XJ83NmvUL1K8unRYdzFW0S7v-bZUs6qURZEEq4W8GrcCBFC_cPVWZVX3hwgiS3p6NUVdLtSjEyEHjjIuP9QfRVKn0ncqumX1QjXCoj-h3DNUiVP6nl9kUUdhd1S4WTT7wS2SRs8sgOm-nOhhmm07QRtS2Bg1Gve6gA"}}]},"complianceCredential":{"@context":["https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1","https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"],"type":["VerifiableCredential"],"id":"https://compliance.lab.gaia-x.eu/v1-staging/credential-offers/f54dbe38-673f-4314-b9ba-8acee36d11e8","issuer":"did:web:compliance.lab.gaia-x.eu:v1-staging","issuanceDate":"2024-12-03T08:11:44.688Z","expirationDate":"2025-03-03T08:11:44.688Z","credentialSubject":[{"type":"gx:compliance","id":"https://datamite.digital.tecnalia.dev/.well-known/participant.json","gx:integrity":"sha256-30386c5867adee1f3e3f62c22fe9d244b6c3325a766e961effbc0bc9d626a744","gx:integrityNormalization":"RFC8785:JCS","gx:version":"22.10","gx:type":"gx:LegalParticipant"},{"type":"gx:compliance","id":"https://datamite.digital.tecnalia.dev/.well-known/lrn.json","gx:integrity":"sha256-8f97a962a224aef38a0be0ee66ce3adbf80518ef345fec0b1989160735477c26","gx:integrityNormalization":"RFC8785:JCS","gx:version":"22.10","gx:type":"gx:legalRegistrationNumber"},{"type":"gx:compliance","id":"https://datamite.digital.tecnalia.dev/.well-known/tsandcs.json","gx:integrity":"sha256-ae9c48e8d55ff85b721acd32d995acd04c4e5d10a9c4c96c621167f6e9a27347","gx:integrityNormalization":"RFC8785:JCS","gx:version":"22.10","gx:type":"gx:GaiaXTermsAndConditions"}],"proof":{"type":"JsonWebSignature2020","created":"2024-12-03T08:11:44.699Z","proofPurpose":"assertionMethod","verificationMethod":"did:web:compliance.lab.gaia-x.eu:v1-staging#X509-JWK2020","jws":"eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..kSz6i_ObNfXqI7cwQ0yLne2mfuoOluacj3dM1Ht_JrJlEZQSxxwHuXJfWQ0mBy2lOFnylNvrTRcBcmvaNsaG3gZJHexMCDlZTVG2wgMaTW9cmGpbxkYKmqVR8ek_qxbN0ONX4F6Nz9ttBvzRsFiukJKY5_hwQlJPFfvlDUAEEEO-JV8FFU9Kt_CjOYBquc8RGG7PCQW5iPGkygKIph6je38YnWVu9bVNN2wGWzB0cqRZCZgUMkYK0UnrL6N1JzhfC9ljSiSevtywDXu_Drs2rLqU5C-cWFS4jMD1o-sP85sh_JnyZhCmSKsLDqg3hvKUjCDe5xUAYf7-D79xCIedmw"}}} - ParticipantJSONNNNNNNN {} 
+2024-12-03T14:16:39.238Z - debug: [v1/SignerToolController.js ~ ServiceOffering] https://datamite.digital.tecnalia.dev/.well-known/dataresource0.json - DataResourceURL {} 
+2024-12-03T14:16:39.309Z - debug: [v1/SignerToolController.js ~ ServiceOffering] {"@context":["https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#","https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1"],"type":"VerifiableCredential","id":"https://datamite.digital.tecnalia.dev/.well-known/dataresource0.json","issuer":"did:web:datamite.digital.tecnalia.dev","issuanceDate":"2024-10-31T10:53:33.486717","credentialSubject":{"gx:name":"Placas solares","gx:description":"Placas solares","type":"gx:DataResource","gx:containsPII":false,"gx:policy":"{'@context': 'http://www.w3.org/ns/odrl.jsonld','@type':'Set','uid':'http://example.com/policy:1010','permission':[{'target':'http://example.com/asset:9898.movie','action':'use'}]}","gx:license":"EPL-2.0","gx:copyrightOwnedBy":"original owner","gx:producedBy":{"@id":"https://datamite.digital.tecnalia.dev/.well-known/participant.json"},"gx:exposedThrough":{"@id":"https://datamite.digital.tecnalia.dev/.well-known/serviceAccessPoint0.json"},"id":"https://datamite.digital.tecnalia.dev/.well-known/dataresource0.json"},"proof":{"type":"JsonWebSignature2020","proofPurpose":"assertionMethod","verificationMethod":"did:web:datamite.digital.tecnalia.dev#JWK2020-RSA","jws":"eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..IKrHCCLb0VYAq8MS9o4Xr8CCHwzZQA5JQjInOEVLHNRyD3a8IQpPnU4iPB7cVCUDhtUPKk4a0z2KY8HTYo6g6bKCaw8U82ZP6IRMxrzp9IvEW9xiS47WnBsi7bynT70fKzVCTs4Sa_AReKmPbniLInFuMDceTD47QDwf_0ySwjdZQbrD2ROHrGsKt-OupWuLyMSGQUZWEa-rVS4NYmIWjohA4eNvCJRh4FMRIHtA55lMbGcGp3WlYjYpyKsHWm_l9RY8J_8_MkHu8WPwCUwgWZ41vP9eXqrULsdXklvXQ-0E-EPCPcs25Rw1u0iweH6oEcCcp2CMQNgu2kJ3YVyQvw"}} - DataResource {} 
+2024-12-03T14:16:39.309Z - debug: [v1/SignerToolController.js ~ ServiceOffering] https://datamite.digital.tecnalia.dev/.well-known/serviceAccessPoint0.json - Exposed URL {} 
+2024-12-03T14:16:39.391Z - debug: [v1/SignerToolController.js ~ ServiceOffering] {"@context":["https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#","https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1"],"type":"VerifiableCredential","id":"https://datamite.digital.tecnalia.dev/.well-known/serviceAccessPoint0.json","issuer":"did:web:datamite.digital.tecnalia.dev","issuanceDate":"2024-10-31T10:53:32.235679","credentialSubject":{"type":"gx:ServiceOffering","gx:providedBy":{"id":"https://datamite.digital.tecnalia.dev/.well-known/participant.json"},"gx:policy":"{'@context': 'http://www.w3.org/ns/odrl.jsonld','@type':'Set','uid':'http://example.com/policy:1010','permission':[{'target':'http://example.com/asset:9898.movie','action':'use'}]}","gx:termsAndConditions":{"gx:URL":"https://aws.amazon.com/service-terms/","gx:hash":"e50c57a33d690ba062ee7f4c8c5bd2f179501cbd86fa7845ff692c724a7394ee"},"gx:openAPI":"https://ces-development.lab.gaia-x.eu/q/swagger-ui","gx:dataAccountExport":[{"gx:requestType":"API","gx:accessType":"digital","gx:formatType":"application/json"}],"id":"https://datamite.digital.tecnalia.dev/.well-known/serviceAccessPoint0.json"},"proof":{"type":"JsonWebSignature2020","proofPurpose":"assertionMethod","verificationMethod":"did:web:datamite.digital.tecnalia.dev#JWK2020-RSA","jws":"eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..rvOHM8KdbkDZ7cdyF-tQ2VUKhdOYqcSyhk18kdiGCAxAXkexA8RFZVAakDSXRyQKlPR1QQnaZq5wy2pJ0UZaHUyeQo4-sDTNl9v-XAl81pCtmkxJW7CrnGqeUndAWZWOqm2Gg4XDqTos_dOHuGQbH7HWw-5NY58qmYfPbhUtq73I4AaSZlRgLU67B73vlAZfowHW8wTp2j2OTPKbJJytslZNK2GtT3hZL-KsDt4c9CZDiKna4bLJvCaOmwL7tiiICaRraudW4aAI0b7tFHAVc9A3ZZ8NpNRZipbJtyRa6MncQgBMrurUPR43rrAwJ44JLniKRrKETw7M8WRm0vtiGQ"}} - exposed Json {} 
+2024-12-03T14:16:40.096Z - info: [common-functions/common-functions.js ~ addProof]  - 📈 Hashed canonized SD 160db7bbe30a369fe3c47af031be0b2e2a05c014a84e1064c05991a32aa2d4e1 {} 
+2024-12-03T14:16:40.103Z - info: [common-functions/common-functions.js ~ addProof] https://datamite.digital.tecnalia.dev/.well-known/x509CertificateChain.pem - 🔒 SD signed successfully {} 
+2024-12-03T14:16:40.178Z - info: [common-functions/common-functions.js ~ addProof]  - ✅ Verification successful {} 
+2024-12-03T14:16:40.179Z - debug: [common-functions/common-functions.js ~ callServiceOfferingCompliance] {"@context":"https://www.w3.org/2018/credentials/v1","type":["VerifiablePresentation"],"verifiableCredential":[{"credentialSubject":{"gx:legalName":"Tecnalia","gx:headquarterAddress":{"gx:countrySubdivisionCode":"ES-PV"},"gx:legalAddress":{"gx:countrySubdivisionCode":"ES-PV"},"id":"https://datamite.digital.tecnalia.dev/.well-known/participant.json","type":"gx:LegalParticipant","gx:legalRegistrationNumber":{"id":"https://datamite.digital.tecnalia.dev/.well-known/lrn.json"}},"@context":["https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1","https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"],"type":["VerifiableCredential"],"id":"https://datamite.digital.tecnalia.dev/.well-known/participant.json","issuer":"did:web:datamite.digital.tecnalia.dev","issuanceDate":"2024-09-02T11:10:56.55791193Z","proof":{"type":"JsonWebSignature2020","created":"2024-12-03T08:11:34.490Z","proofPurpose":"assertionMethod","verificationMethod":"did:web:datamite.digital.tecnalia.dev#JWK2020-RSA","jws":"eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..DHjLw-cuHJorcsu8bk3-rmIf5Nkzd8G8X83vIP2xMNrYEMuiAWiRvqFmi4rbBFHSZbY21c_T70UNxF7Dz23IG3bgB6szkRwtFjU9EJ1ZhNb0TIJEZS51kQ7DWMXVoeMoTjhEW5hgcNTnlgeobsYwdchagL8aRn-yMxURUdOTld5whCYAOZoImAtT88kUJgou0PUMAS2PPE43tTFIIKsQ0jAbFdMjyGhxhbMtlPDEB_1SlQFwmrFOxPAqCPSPpZDahp8cvMA48zh5yVG4i7syVqVARnpTqjkJUPhokI55nN4NSZI_O6cXHphrmj2gg6bilc9CAsJG5JMsdCauLBzZuw"}},{"@context":["https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1"],"type":["VerifiableCredential"],"id":"https://datamite.digital.tecnalia.dev/.well-known/lrn.json","issuer":"did:web:registration.lab.gaia-x.eu:v1-staging","issuanceDate":"2024-12-03T08:11:34.101Z","credentialSubject":{"@context":"https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#","type":"gx:legalRegistrationNumber","id":"https://datamite.digital.tecnalia.dev/.well-known/lrn.json","gx:vatID":"ESG48975767","gx:vatID-countryCode":"ES"},"evidence":[{"gx:evidenceURL":"http://ec.europa.eu/taxation_customs/vies/services/checkVatService","gx:executionDate":"2024-12-03T08:11:34.101Z","gx:evidenceOf":"gx:vatID"}],"proof":{"type":"JsonWebSignature2020","created":"2024-12-03T08:11:34.120Z","proofPurpose":"assertionMethod","verificationMethod":"did:web:registration.lab.gaia-x.eu:v1-staging#X509-JWK2020","jws":"eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..PeOQJUmt42T7bzNJ_0B9BCp7Dq_Gg5RI0u18BImweTnx9KXkpTyTjtRP6HMOzRPU8cdRyNlcFECMWABoFPStdzp03z_AoK84FX85IL_M9TO98f4Dlrda_E-o8T-VQ_na6SGUCoOOnfzHR4V2zaYcaU5Q8C5XpJlieP7m2Sk4DczD4UEq7BtDP6lUyHLi4mL769K_9qiL5BRHYxSn5x-Jem7f4gWMg-a7JRi5nXLJ-GBVuwiaZtOrfP0-oAWoLHUvARzo-a_x2VfrYJKSHDFy9KBl_oy3goOWVZDJ2VMgrdmws4cFyIddfpm2VPiFwpfPtoscVAgViQ1NBcCflwiiOQ"}},{"@context":["https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#","https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1"],"type":"VerifiableCredential","id":"https://datamite.digital.tecnalia.dev/.well-known/tsandcs.json","issuer":"did:web:datamite.digital.tecnalia.dev","validFrom":"2024-11-18T10:43:29.159835","credentialSubject":{"@context":"https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#","type":"gx:GaiaXTermsAndConditions","id":"https://datamite.digital.tecnalia.dev/.well-known/tsandcs.json","gx:termsAndConditions":"The PARTICIPANT signing the Self-Description agrees as follows:\n- to update its descriptions about any changes, be it technical, organizational, or legal - especially but not limited to contractual in regards to the indicated attributes present in the descriptions.\n\nThe keypair used to sign Verifiable Credentials will be revoked where Gaia-X Association becomes aware of any inaccurate statements in regards to the claims which result in a non-compliance with the Trust Framework and policy rules defined in the Policy Rules and Labelling Document (PRLD)."},"proof":{"type":"JsonWebSignature2020","proofPurpose":"assertionMethod","verificationMethod":"did:web:datamite.digital.tecnalia.dev#JWK2020-RSA","jws":"eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..SLQdhDQZcNC_xMEbUtA9zOTmEOPmHmbiO86GNhmr2MamZgi1WuIj2yKAm6h0Bp7ye9GsK1b1id7eekPyJNbPpHCdf7-CWifL8udoLQNS6N31-H4GS-WbL-mjSo7Ts9p5fueWsrym04QsyW_YzZ0nPtl5OFySnR-dQc7OfOrrm4ALSyOYccx0XJ83NmvUL1K8unRYdzFW0S7v-bZUs6qURZEEq4W8GrcCBFC_cPVWZVX3hwgiS3p6NUVdLtSjEyEHjjIuP9QfRVKn0ncqumX1QjXCoj-h3DNUiVP6nl9kUUdhd1S4WTT7wS2SRs8sgOm-nOhhmm07QRtS2Bg1Gve6gA"}},{"type":"VerifiableCredential","id":"https://datamite.digital.tecnalia.dev/.well-known/serviceOffering0.json","issuer":"did:web:datamite.digital.tecnalia.dev","issuanceDate":"2023-08-10T13:13:12.552192251Z","credentialSubject":{"gx:termsAndConditions":{"gx:URL":"https://aws.amazon.com/service-terms/","gx:hash":"689be3192f5686526bdddb450463f6c2f752c23b2820a2aae35e6779889e817a"},"gx:policy":"{'@context': {'edc': 'https://w3id.org/edc/v0.0.1/ns/', 'odrl': 'http://www.w3.org/ns/odrl/2/'}, '@id': 'no-restriction-policy', '@type': 'edc:PolicyDefinition', 'edc:policy': {'@type': 'odrl:Set', 'odrl:permission': [], 'odrl:prohibition': [], 'odrl:obligation': []}}","gx:dataAccountExport":{"gx:requestType":"API","gx:accessType":"physical","gx:formatType":"application/json"},"gx:aggregationOf":[{"@id":"https://datamite.digital.tecnalia.dev/.well-known/dataresource0.json"}],"type":"gx:ServiceOffering","gx:providedBy":{"id":"https://datamite.digital.tecnalia.dev/.well-known/participant.json"},"id":"https://datamite.digital.tecnalia.dev/.well-known/serviceOffering0.json"},"@context":["https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1","https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"],"proof":{"type":"JsonWebSignature2020","created":"2024-12-03T14:16:40.096Z","proofPurpose":"assertionMethod","verificationMethod":"did:web:datamite.digital.tecnalia.dev#JWK2020-RSA","jws":"eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..t33XPkDU55oqmTwknzbIW0fU8tpxbM01ycktZdO2xMUhvR_A4nOhWz_3RbpTzLFqZ6CXoc-z2H0NreD6gMubIJoBGm8-R_MrcjaVo7mqeF43NMQwp2TezIbNHM7PuTLfjzoa4J7een-46gmKVUUeMuUMGo6VfRiNxuTYUHMnRDtoh-OgVEKhjdh4TPlJzPDFK4qbLAv8RhTRVojARcJfsbrQzzUzCH0f6XgPn9z0Y07ZCULF45KHFMlj5wpuBN2fD2PHgDsRkA20XqD006iYyfPwhRZDZ-_abNVaOI8ut2f1uKIYQRVi8cbGYuJLCwDiA9sWQlgQgeD7_47-wX0t0Q"}},{"@context":["https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#","https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1"],"type":"VerifiableCredential","id":"https://datamite.digital.tecnalia.dev/.well-known/dataresource0.json","issuer":"did:web:datamite.digital.tecnalia.dev","issuanceDate":"2024-10-31T10:53:33.486717","credentialSubject":{"gx:name":"Placas solares","gx:description":"Placas solares","type":"gx:DataResource","gx:containsPII":false,"gx:policy":"{'@context': 'http://www.w3.org/ns/odrl.jsonld','@type':'Set','uid':'http://example.com/policy:1010','permission':[{'target':'http://example.com/asset:9898.movie','action':'use'}]}","gx:license":"EPL-2.0","gx:copyrightOwnedBy":"original owner","gx:producedBy":{"@id":"https://datamite.digital.tecnalia.dev/.well-known/participant.json"},"gx:exposedThrough":{"@id":"https://datamite.digital.tecnalia.dev/.well-known/serviceAccessPoint0.json"},"id":"https://datamite.digital.tecnalia.dev/.well-known/dataresource0.json"},"proof":{"type":"JsonWebSignature2020","proofPurpose":"assertionMethod","verificationMethod":"did:web:datamite.digital.tecnalia.dev#JWK2020-RSA","jws":"eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..IKrHCCLb0VYAq8MS9o4Xr8CCHwzZQA5JQjInOEVLHNRyD3a8IQpPnU4iPB7cVCUDhtUPKk4a0z2KY8HTYo6g6bKCaw8U82ZP6IRMxrzp9IvEW9xiS47WnBsi7bynT70fKzVCTs4Sa_AReKmPbniLInFuMDceTD47QDwf_0ySwjdZQbrD2ROHrGsKt-OupWuLyMSGQUZWEa-rVS4NYmIWjohA4eNvCJRh4FMRIHtA55lMbGcGp3WlYjYpyKsHWm_l9RY8J_8_MkHu8WPwCUwgWZ41vP9eXqrULsdXklvXQ-0E-EPCPcs25Rw1u0iweH6oEcCcp2CMQNgu2kJ3YVyQvw"}},{"@context":["https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#","https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1"],"type":"VerifiableCredential","id":"https://datamite.digital.tecnalia.dev/.well-known/serviceAccessPoint0.json","issuer":"did:web:datamite.digital.tecnalia.dev","issuanceDate":"2024-10-31T10:53:32.235679","credentialSubject":{"type":"gx:ServiceOffering","gx:providedBy":{"id":"https://datamite.digital.tecnalia.dev/.well-known/participant.json"},"gx:policy":"{'@context': 'http://www.w3.org/ns/odrl.jsonld','@type':'Set','uid':'http://example.com/policy:1010','permission':[{'target':'http://example.com/asset:9898.movie','action':'use'}]}","gx:termsAndConditions":{"gx:URL":"https://aws.amazon.com/service-terms/","gx:hash":"e50c57a33d690ba062ee7f4c8c5bd2f179501cbd86fa7845ff692c724a7394ee"},"gx:openAPI":"https://ces-development.lab.gaia-x.eu/q/swagger-ui","gx:dataAccountExport":[{"gx:requestType":"API","gx:accessType":"digital","gx:formatType":"application/json"}],"id":"https://datamite.digital.tecnalia.dev/.well-known/serviceAccessPoint0.json"},"proof":{"type":"JsonWebSignature2020","proofPurpose":"assertionMethod","verificationMethod":"did:web:datamite.digital.tecnalia.dev#JWK2020-RSA","jws":"eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..rvOHM8KdbkDZ7cdyF-tQ2VUKhdOYqcSyhk18kdiGCAxAXkexA8RFZVAakDSXRyQKlPR1QQnaZq5wy2pJ0UZaHUyeQo4-sDTNl9v-XAl81pCtmkxJW7CrnGqeUndAWZWOqm2Gg4XDqTos_dOHuGQbH7HWw-5NY58qmYfPbhUtq73I4AaSZlRgLU67B73vlAZfowHW8wTp2j2OTPKbJJytslZNK2GtT3hZL-KsDt4c9CZDiKna4bLJvCaOmwL7tiiICaRraudW4aAI0b7tFHAVc9A3ZZ8NpNRZipbJtyRa6MncQgBMrurUPR43rrAwJ44JLniKRrKETw7M8WRm0vtiGQ"}}]} - 📈 Calling ServiceOffering Compliance with request data :  {} 
+2024-12-03T14:16:45.748Z - debug: [v1/SignerToolController.js ~ ServiceOffering] eee3bef2-1d2c-4a25-bfe8-eceecdccf077 - 🔒 veracity calculated {} 
+2024-12-03T14:16:45.748Z - debug: [v1/SignerToolController.js ~ ServiceOffering] eee3bef2-1d2c-4a25-bfe8-eceecdccf077 - 🔒 transparency calculated {} 
+2024-12-03T14:16:45.749Z - debug: [v1/SignerToolController.js ~ ServiceOffering] eee3bef2-1d2c-4a25-bfe8-eceecdccf077 - 🔒 trustIndex calculated {} 
+2024-12-03T14:19:13.486Z - debug: [v1/SignerToolController.js ~ ServiceOffering] {"type":"VerifiableCredential","id":"https://datamite.digital.tecnalia.dev/.well-known/serviceOffering1.json","issuer":"did:web:datamite.digital.tecnalia.dev","issuanceDate":"2023-08-10T13:13:12.552192251Z","credentialSubject":{"gx:termsAndConditions":{"gx:URL":"https://aws.amazon.com/service-terms/","gx:hash":"689be3192f5686526bdddb450463f6c2f752c23b2820a2aae35e6779889e817a"},"gx:policy":"{'@context': {'edc': 'https://w3id.org/edc/v0.0.1/ns/', 'odrl': 'http://www.w3.org/ns/odrl/2/'}, '@id': 'no-restriction-policy', '@type': 'edc:PolicyDefinition', 'edc:policy': {'@type': 'odrl:Set', 'odrl:permission': [], 'odrl:prohibition': [], 'odrl:obligation': []}}","gx:dataAccountExport":{"gx:requestType":"API","gx:accessType":"physical","gx:formatType":"application/json"},"gx:aggregationOf":[{"@id":"https://datamite.digital.tecnalia.dev/.well-known/dataresource1.json"}],"type":"gx:ServiceOffering","gx:providedBy":{"id":"https://datamite.digital.tecnalia.dev/.well-known/participant.json"},"id":"https://datamite.digital.tecnalia.dev/.well-known/serviceOffering1.json"},"@context":["https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1","https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"]} - Service offering VC {} 
+2024-12-03T14:19:13.561Z - debug: [v1/SignerToolController.js ~ ServiceOffering] {"selfDescriptionCredential":{"@context":"https://www.w3.org/2018/credentials/v1","type":["VerifiablePresentation"],"verifiableCredential":[{"credentialSubject":{"gx:legalName":"Tecnalia","gx:headquarterAddress":{"gx:countrySubdivisionCode":"ES-PV"},"gx:legalAddress":{"gx:countrySubdivisionCode":"ES-PV"},"id":"https://datamite.digital.tecnalia.dev/.well-known/participant.json","type":"gx:LegalParticipant","gx:legalRegistrationNumber":{"id":"https://datamite.digital.tecnalia.dev/.well-known/lrn.json"}},"@context":["https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1","https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"],"type":["VerifiableCredential"],"id":"https://datamite.digital.tecnalia.dev/.well-known/participant.json","issuer":"did:web:datamite.digital.tecnalia.dev","issuanceDate":"2024-09-02T11:10:56.55791193Z","proof":{"type":"JsonWebSignature2020","created":"2024-12-03T08:11:34.490Z","proofPurpose":"assertionMethod","verificationMethod":"did:web:datamite.digital.tecnalia.dev#JWK2020-RSA","jws":"eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..DHjLw-cuHJorcsu8bk3-rmIf5Nkzd8G8X83vIP2xMNrYEMuiAWiRvqFmi4rbBFHSZbY21c_T70UNxF7Dz23IG3bgB6szkRwtFjU9EJ1ZhNb0TIJEZS51kQ7DWMXVoeMoTjhEW5hgcNTnlgeobsYwdchagL8aRn-yMxURUdOTld5whCYAOZoImAtT88kUJgou0PUMAS2PPE43tTFIIKsQ0jAbFdMjyGhxhbMtlPDEB_1SlQFwmrFOxPAqCPSPpZDahp8cvMA48zh5yVG4i7syVqVARnpTqjkJUPhokI55nN4NSZI_O6cXHphrmj2gg6bilc9CAsJG5JMsdCauLBzZuw"}},{"@context":["https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1"],"type":["VerifiableCredential"],"id":"https://datamite.digital.tecnalia.dev/.well-known/lrn.json","issuer":"did:web:registration.lab.gaia-x.eu:v1-staging","issuanceDate":"2024-12-03T08:11:34.101Z","credentialSubject":{"@context":"https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#","type":"gx:legalRegistrationNumber","id":"https://datamite.digital.tecnalia.dev/.well-known/lrn.json","gx:vatID":"ESG48975767","gx:vatID-countryCode":"ES"},"evidence":[{"gx:evidenceURL":"http://ec.europa.eu/taxation_customs/vies/services/checkVatService","gx:executionDate":"2024-12-03T08:11:34.101Z","gx:evidenceOf":"gx:vatID"}],"proof":{"type":"JsonWebSignature2020","created":"2024-12-03T08:11:34.120Z","proofPurpose":"assertionMethod","verificationMethod":"did:web:registration.lab.gaia-x.eu:v1-staging#X509-JWK2020","jws":"eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..PeOQJUmt42T7bzNJ_0B9BCp7Dq_Gg5RI0u18BImweTnx9KXkpTyTjtRP6HMOzRPU8cdRyNlcFECMWABoFPStdzp03z_AoK84FX85IL_M9TO98f4Dlrda_E-o8T-VQ_na6SGUCoOOnfzHR4V2zaYcaU5Q8C5XpJlieP7m2Sk4DczD4UEq7BtDP6lUyHLi4mL769K_9qiL5BRHYxSn5x-Jem7f4gWMg-a7JRi5nXLJ-GBVuwiaZtOrfP0-oAWoLHUvARzo-a_x2VfrYJKSHDFy9KBl_oy3goOWVZDJ2VMgrdmws4cFyIddfpm2VPiFwpfPtoscVAgViQ1NBcCflwiiOQ"}},{"@context":["https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#","https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1"],"type":"VerifiableCredential","id":"https://datamite.digital.tecnalia.dev/.well-known/tsandcs.json","issuer":"did:web:datamite.digital.tecnalia.dev","validFrom":"2024-11-18T10:43:29.159835","credentialSubject":{"@context":"https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#","type":"gx:GaiaXTermsAndConditions","id":"https://datamite.digital.tecnalia.dev/.well-known/tsandcs.json","gx:termsAndConditions":"The PARTICIPANT signing the Self-Description agrees as follows:\n- to update its descriptions about any changes, be it technical, organizational, or legal - especially but not limited to contractual in regards to the indicated attributes present in the descriptions.\n\nThe keypair used to sign Verifiable Credentials will be revoked where Gaia-X Association becomes aware of any inaccurate statements in regards to the claims which result in a non-compliance with the Trust Framework and policy rules defined in the Policy Rules and Labelling Document (PRLD)."},"proof":{"type":"JsonWebSignature2020","proofPurpose":"assertionMethod","verificationMethod":"did:web:datamite.digital.tecnalia.dev#JWK2020-RSA","jws":"eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..SLQdhDQZcNC_xMEbUtA9zOTmEOPmHmbiO86GNhmr2MamZgi1WuIj2yKAm6h0Bp7ye9GsK1b1id7eekPyJNbPpHCdf7-CWifL8udoLQNS6N31-H4GS-WbL-mjSo7Ts9p5fueWsrym04QsyW_YzZ0nPtl5OFySnR-dQc7OfOrrm4ALSyOYccx0XJ83NmvUL1K8unRYdzFW0S7v-bZUs6qURZEEq4W8GrcCBFC_cPVWZVX3hwgiS3p6NUVdLtSjEyEHjjIuP9QfRVKn0ncqumX1QjXCoj-h3DNUiVP6nl9kUUdhd1S4WTT7wS2SRs8sgOm-nOhhmm07QRtS2Bg1Gve6gA"}}]},"complianceCredential":{"@context":["https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1","https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"],"type":["VerifiableCredential"],"id":"https://compliance.lab.gaia-x.eu/v1-staging/credential-offers/f54dbe38-673f-4314-b9ba-8acee36d11e8","issuer":"did:web:compliance.lab.gaia-x.eu:v1-staging","issuanceDate":"2024-12-03T08:11:44.688Z","expirationDate":"2025-03-03T08:11:44.688Z","credentialSubject":[{"type":"gx:compliance","id":"https://datamite.digital.tecnalia.dev/.well-known/participant.json","gx:integrity":"sha256-30386c5867adee1f3e3f62c22fe9d244b6c3325a766e961effbc0bc9d626a744","gx:integrityNormalization":"RFC8785:JCS","gx:version":"22.10","gx:type":"gx:LegalParticipant"},{"type":"gx:compliance","id":"https://datamite.digital.tecnalia.dev/.well-known/lrn.json","gx:integrity":"sha256-8f97a962a224aef38a0be0ee66ce3adbf80518ef345fec0b1989160735477c26","gx:integrityNormalization":"RFC8785:JCS","gx:version":"22.10","gx:type":"gx:legalRegistrationNumber"},{"type":"gx:compliance","id":"https://datamite.digital.tecnalia.dev/.well-known/tsandcs.json","gx:integrity":"sha256-ae9c48e8d55ff85b721acd32d995acd04c4e5d10a9c4c96c621167f6e9a27347","gx:integrityNormalization":"RFC8785:JCS","gx:version":"22.10","gx:type":"gx:GaiaXTermsAndConditions"}],"proof":{"type":"JsonWebSignature2020","created":"2024-12-03T08:11:44.699Z","proofPurpose":"assertionMethod","verificationMethod":"did:web:compliance.lab.gaia-x.eu:v1-staging#X509-JWK2020","jws":"eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..kSz6i_ObNfXqI7cwQ0yLne2mfuoOluacj3dM1Ht_JrJlEZQSxxwHuXJfWQ0mBy2lOFnylNvrTRcBcmvaNsaG3gZJHexMCDlZTVG2wgMaTW9cmGpbxkYKmqVR8ek_qxbN0ONX4F6Nz9ttBvzRsFiukJKY5_hwQlJPFfvlDUAEEEO-JV8FFU9Kt_CjOYBquc8RGG7PCQW5iPGkygKIph6je38YnWVu9bVNN2wGWzB0cqRZCZgUMkYK0UnrL6N1JzhfC9ljSiSevtywDXu_Drs2rLqU5C-cWFS4jMD1o-sP85sh_JnyZhCmSKsLDqg3hvKUjCDe5xUAYf7-D79xCIedmw"}}} - ParticipantJSONNNNNNNN {} 
+2024-12-03T14:19:13.561Z - debug: [v1/SignerToolController.js ~ ServiceOffering] https://datamite.digital.tecnalia.dev/.well-known/dataresource1.json - DataResourceURL {} 
+2024-12-03T14:19:13.633Z - debug: [v1/SignerToolController.js ~ ServiceOffering] {"@context":["https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#","https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1"],"type":"VerifiableCredential","id":"https://datamite.digital.tecnalia.dev/.well-known/dataresource1.json","issuer":"did:web:datamite.digital.tecnalia.dev","issuanceDate":"2024-10-31T10:53:33.486717","credentialSubject":{"gx:name":"Antenas de la Comunidad de Madrid","gx:description":"Antenas de la Comunidad de Madrid","type":"gx:DataResource","gx:containsPII":false,"gx:policy":"{'@context': 'http://www.w3.org/ns/odrl.jsonld','@type':'Set','uid':'http://example.com/policy:1010','permission':[{'target':'http://example.com/asset:9898.movie','action':'use'}]}","gx:license":"EPL-2.0","gx:copyrightOwnedBy":"original owner","gx:producedBy":{"@id":"https://datamite.digital.tecnalia.dev/.well-known/participant.json"},"gx:exposedThrough":{"@id":"https://datamite.digital.tecnalia.dev/.well-known/serviceAccessPoint1.json"},"id":"https://datamite.digital.tecnalia.dev/.well-known/dataresource1.json"},"proof":{"type":"JsonWebSignature2020","proofPurpose":"assertionMethod","verificationMethod":"did:web:datamite.digital.tecnalia.dev#JWK2020-RSA","jws":"eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..yEHtQTHS8b7Vv6aSY7jn3bcKIUQ7NjWJ7yOl-Fi4S-mk_SFuefE1z26MHYBARACEF5j4shfHNJ5OpIlkBMyRWBvXuImsfaov09GIJbgmzcj1cG9Hp2PDIAJSMuJjg4jGSobeJ79MO63tfsPuXqbCBXAJV48caivAU-OqIrS3K9lInALC05d_CSV_PNsGJtRSdQKdwxX9owHR-KaAybxVL7qiLrLfhTQKVRch24jNaImoUnR_9xHpQsY_DHBJt_ft0MhXaxs6JRiz8vpG5yerbNCDoaj6ZKmYNpURARpn0zJLMC5thNMoQoxLKaYQI0z3rtRb4tYZ1xfP9FTtgjzkng"}} - DataResource {} 
+2024-12-03T14:19:13.634Z - debug: [v1/SignerToolController.js ~ ServiceOffering] https://datamite.digital.tecnalia.dev/.well-known/serviceAccessPoint1.json - Exposed URL {} 
+2024-12-03T14:19:13.733Z - debug: [v1/SignerToolController.js ~ ServiceOffering] {"@context":["https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#","https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1"],"type":"VerifiableCredential","id":"https://datamite.digital.tecnalia.dev/.well-known/serviceAccessPoint1.json","issuer":"did:web:datamite.digital.tecnalia.dev","issuanceDate":"2024-10-31T10:53:32.235679","credentialSubject":{"type":"gx:ServiceOffering","gx:providedBy":{"id":"https://datamite.digital.tecnalia.dev/.well-known/participant.json"},"gx:policy":"{'@context': 'http://www.w3.org/ns/odrl.jsonld','@type':'Set','uid':'http://example.com/policy:1010','permission':[{'target':'http://example.com/asset:9898.movie','action':'use'}]}","gx:termsAndConditions":{"gx:URL":"https://aws.amazon.com/service-terms/","gx:hash":"e50c57a33d690ba062ee7f4c8c5bd2f179501cbd86fa7845ff692c724a7394ee"},"gx:openAPI":"https://ces-development.lab.gaia-x.eu/q/swagger-ui","gx:dataAccountExport":[{"gx:requestType":"API","gx:accessType":"digital","gx:formatType":"application/json"}],"id":"https://datamite.digital.tecnalia.dev/.well-known/serviceAccessPoint1.json"},"proof":{"type":"JsonWebSignature2020","proofPurpose":"assertionMethod","verificationMethod":"did:web:datamite.digital.tecnalia.dev#JWK2020-RSA","jws":"eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..x5ngmjiBDiEeCXO3nhWjeCLTQZPraI2bGkBVrzfEsFB8vuE558MvzomSIlcNui507UMv6t8drI2qd7ZUBVOfqaXCB4ZasMVANcElKDFGHEQtPtewPdpNmBKZ_9Vtl8ucyKEv8DtSc7Es2ZqZ5QNdg6bB5grgH7hn4UxsWuhxQDpFXFKSAYTh0-CckDqt8neXfRPU5dS5vqHojDfw9_qaHzTL30aai8-reVDmlWNn13DDwcIwXPNn2KvWjXFzW429bOXRZoj2uTpvGZCFcuOeaLrcZzNeqNg8w3b28IgI0nRLR1eu_eHu_nzSwPpnlogrm-yuY72O-Ek_A8CAOHFoUw"}} - exposed Json {} 
+2024-12-03T14:19:14.249Z - info: [common-functions/common-functions.js ~ addProof]  - 📈 Hashed canonized SD 15ed485aab27b2e0928f26b9eeb1dcce731998366333b9b22fbbad331ec2b613 {} 
+2024-12-03T14:19:14.256Z - info: [common-functions/common-functions.js ~ addProof] https://datamite.digital.tecnalia.dev/.well-known/x509CertificateChain.pem - 🔒 SD signed successfully {} 
+2024-12-03T14:19:14.331Z - info: [common-functions/common-functions.js ~ addProof]  - ✅ Verification successful {} 
+2024-12-03T14:19:14.331Z - debug: [common-functions/common-functions.js ~ callServiceOfferingCompliance] {"@context":"https://www.w3.org/2018/credentials/v1","type":["VerifiablePresentation"],"verifiableCredential":[{"credentialSubject":{"gx:legalName":"Tecnalia","gx:headquarterAddress":{"gx:countrySubdivisionCode":"ES-PV"},"gx:legalAddress":{"gx:countrySubdivisionCode":"ES-PV"},"id":"https://datamite.digital.tecnalia.dev/.well-known/participant.json","type":"gx:LegalParticipant","gx:legalRegistrationNumber":{"id":"https://datamite.digital.tecnalia.dev/.well-known/lrn.json"}},"@context":["https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1","https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"],"type":["VerifiableCredential"],"id":"https://datamite.digital.tecnalia.dev/.well-known/participant.json","issuer":"did:web:datamite.digital.tecnalia.dev","issuanceDate":"2024-09-02T11:10:56.55791193Z","proof":{"type":"JsonWebSignature2020","created":"2024-12-03T08:11:34.490Z","proofPurpose":"assertionMethod","verificationMethod":"did:web:datamite.digital.tecnalia.dev#JWK2020-RSA","jws":"eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..DHjLw-cuHJorcsu8bk3-rmIf5Nkzd8G8X83vIP2xMNrYEMuiAWiRvqFmi4rbBFHSZbY21c_T70UNxF7Dz23IG3bgB6szkRwtFjU9EJ1ZhNb0TIJEZS51kQ7DWMXVoeMoTjhEW5hgcNTnlgeobsYwdchagL8aRn-yMxURUdOTld5whCYAOZoImAtT88kUJgou0PUMAS2PPE43tTFIIKsQ0jAbFdMjyGhxhbMtlPDEB_1SlQFwmrFOxPAqCPSPpZDahp8cvMA48zh5yVG4i7syVqVARnpTqjkJUPhokI55nN4NSZI_O6cXHphrmj2gg6bilc9CAsJG5JMsdCauLBzZuw"}},{"@context":["https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1"],"type":["VerifiableCredential"],"id":"https://datamite.digital.tecnalia.dev/.well-known/lrn.json","issuer":"did:web:registration.lab.gaia-x.eu:v1-staging","issuanceDate":"2024-12-03T08:11:34.101Z","credentialSubject":{"@context":"https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#","type":"gx:legalRegistrationNumber","id":"https://datamite.digital.tecnalia.dev/.well-known/lrn.json","gx:vatID":"ESG48975767","gx:vatID-countryCode":"ES"},"evidence":[{"gx:evidenceURL":"http://ec.europa.eu/taxation_customs/vies/services/checkVatService","gx:executionDate":"2024-12-03T08:11:34.101Z","gx:evidenceOf":"gx:vatID"}],"proof":{"type":"JsonWebSignature2020","created":"2024-12-03T08:11:34.120Z","proofPurpose":"assertionMethod","verificationMethod":"did:web:registration.lab.gaia-x.eu:v1-staging#X509-JWK2020","jws":"eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..PeOQJUmt42T7bzNJ_0B9BCp7Dq_Gg5RI0u18BImweTnx9KXkpTyTjtRP6HMOzRPU8cdRyNlcFECMWABoFPStdzp03z_AoK84FX85IL_M9TO98f4Dlrda_E-o8T-VQ_na6SGUCoOOnfzHR4V2zaYcaU5Q8C5XpJlieP7m2Sk4DczD4UEq7BtDP6lUyHLi4mL769K_9qiL5BRHYxSn5x-Jem7f4gWMg-a7JRi5nXLJ-GBVuwiaZtOrfP0-oAWoLHUvARzo-a_x2VfrYJKSHDFy9KBl_oy3goOWVZDJ2VMgrdmws4cFyIddfpm2VPiFwpfPtoscVAgViQ1NBcCflwiiOQ"}},{"@context":["https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#","https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1"],"type":"VerifiableCredential","id":"https://datamite.digital.tecnalia.dev/.well-known/tsandcs.json","issuer":"did:web:datamite.digital.tecnalia.dev","validFrom":"2024-11-18T10:43:29.159835","credentialSubject":{"@context":"https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#","type":"gx:GaiaXTermsAndConditions","id":"https://datamite.digital.tecnalia.dev/.well-known/tsandcs.json","gx:termsAndConditions":"The PARTICIPANT signing the Self-Description agrees as follows:\n- to update its descriptions about any changes, be it technical, organizational, or legal - especially but not limited to contractual in regards to the indicated attributes present in the descriptions.\n\nThe keypair used to sign Verifiable Credentials will be revoked where Gaia-X Association becomes aware of any inaccurate statements in regards to the claims which result in a non-compliance with the Trust Framework and policy rules defined in the Policy Rules and Labelling Document (PRLD)."},"proof":{"type":"JsonWebSignature2020","proofPurpose":"assertionMethod","verificationMethod":"did:web:datamite.digital.tecnalia.dev#JWK2020-RSA","jws":"eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..SLQdhDQZcNC_xMEbUtA9zOTmEOPmHmbiO86GNhmr2MamZgi1WuIj2yKAm6h0Bp7ye9GsK1b1id7eekPyJNbPpHCdf7-CWifL8udoLQNS6N31-H4GS-WbL-mjSo7Ts9p5fueWsrym04QsyW_YzZ0nPtl5OFySnR-dQc7OfOrrm4ALSyOYccx0XJ83NmvUL1K8unRYdzFW0S7v-bZUs6qURZEEq4W8GrcCBFC_cPVWZVX3hwgiS3p6NUVdLtSjEyEHjjIuP9QfRVKn0ncqumX1QjXCoj-h3DNUiVP6nl9kUUdhd1S4WTT7wS2SRs8sgOm-nOhhmm07QRtS2Bg1Gve6gA"}},{"type":"VerifiableCredential","id":"https://datamite.digital.tecnalia.dev/.well-known/serviceOffering1.json","issuer":"did:web:datamite.digital.tecnalia.dev","issuanceDate":"2023-08-10T13:13:12.552192251Z","credentialSubject":{"gx:termsAndConditions":{"gx:URL":"https://aws.amazon.com/service-terms/","gx:hash":"689be3192f5686526bdddb450463f6c2f752c23b2820a2aae35e6779889e817a"},"gx:policy":"{'@context': {'edc': 'https://w3id.org/edc/v0.0.1/ns/', 'odrl': 'http://www.w3.org/ns/odrl/2/'}, '@id': 'no-restriction-policy', '@type': 'edc:PolicyDefinition', 'edc:policy': {'@type': 'odrl:Set', 'odrl:permission': [], 'odrl:prohibition': [], 'odrl:obligation': []}}","gx:dataAccountExport":{"gx:requestType":"API","gx:accessType":"physical","gx:formatType":"application/json"},"gx:aggregationOf":[{"@id":"https://datamite.digital.tecnalia.dev/.well-known/dataresource1.json"}],"type":"gx:ServiceOffering","gx:providedBy":{"id":"https://datamite.digital.tecnalia.dev/.well-known/participant.json"},"id":"https://datamite.digital.tecnalia.dev/.well-known/serviceOffering1.json"},"@context":["https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1","https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"],"proof":{"type":"JsonWebSignature2020","created":"2024-12-03T14:19:14.249Z","proofPurpose":"assertionMethod","verificationMethod":"did:web:datamite.digital.tecnalia.dev#JWK2020-RSA","jws":"eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..kxTSNxgMupQU0NVk5ggdyLrF83C7GVjRQEFVvwfk7iQThAyU6KMUrr4I_aYvv56z6WauF3IBbDgg9LLpFmez4X7zvTAEPi8la2U5ToTUAnyWDeu_oZXYAO8fGQbrL9918aSek56e6VMW2Uea3RopwgClJYOMXywMTr79PCdfWkoalT9rAXfVdz4rZO6tkh96UsYYvWV5u8nI57tLyxYdzEZ7iJbJ3RF6aapi4PmdRs83SckEVVrTW_Bdzn3N4p5NfLHRCCVA0i66XiBx8thUTuYF0Co5xiOzBF0_x0h89Y7A0PoYgnn4uaR5-tNQ06nYoM4EwGqZ2ItFYUB7olFqrA"}},{"@context":["https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#","https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1"],"type":"VerifiableCredential","id":"https://datamite.digital.tecnalia.dev/.well-known/dataresource1.json","issuer":"did:web:datamite.digital.tecnalia.dev","issuanceDate":"2024-10-31T10:53:33.486717","credentialSubject":{"gx:name":"Antenas de la Comunidad de Madrid","gx:description":"Antenas de la Comunidad de Madrid","type":"gx:DataResource","gx:containsPII":false,"gx:policy":"{'@context': 'http://www.w3.org/ns/odrl.jsonld','@type':'Set','uid':'http://example.com/policy:1010','permission':[{'target':'http://example.com/asset:9898.movie','action':'use'}]}","gx:license":"EPL-2.0","gx:copyrightOwnedBy":"original owner","gx:producedBy":{"@id":"https://datamite.digital.tecnalia.dev/.well-known/participant.json"},"gx:exposedThrough":{"@id":"https://datamite.digital.tecnalia.dev/.well-known/serviceAccessPoint1.json"},"id":"https://datamite.digital.tecnalia.dev/.well-known/dataresource1.json"},"proof":{"type":"JsonWebSignature2020","proofPurpose":"assertionMethod","verificationMethod":"did:web:datamite.digital.tecnalia.dev#JWK2020-RSA","jws":"eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..yEHtQTHS8b7Vv6aSY7jn3bcKIUQ7NjWJ7yOl-Fi4S-mk_SFuefE1z26MHYBARACEF5j4shfHNJ5OpIlkBMyRWBvXuImsfaov09GIJbgmzcj1cG9Hp2PDIAJSMuJjg4jGSobeJ79MO63tfsPuXqbCBXAJV48caivAU-OqIrS3K9lInALC05d_CSV_PNsGJtRSdQKdwxX9owHR-KaAybxVL7qiLrLfhTQKVRch24jNaImoUnR_9xHpQsY_DHBJt_ft0MhXaxs6JRiz8vpG5yerbNCDoaj6ZKmYNpURARpn0zJLMC5thNMoQoxLKaYQI0z3rtRb4tYZ1xfP9FTtgjzkng"}},{"@context":["https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#","https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1"],"type":"VerifiableCredential","id":"https://datamite.digital.tecnalia.dev/.well-known/serviceAccessPoint1.json","issuer":"did:web:datamite.digital.tecnalia.dev","issuanceDate":"2024-10-31T10:53:32.235679","credentialSubject":{"type":"gx:ServiceOffering","gx:providedBy":{"id":"https://datamite.digital.tecnalia.dev/.well-known/participant.json"},"gx:policy":"{'@context': 'http://www.w3.org/ns/odrl.jsonld','@type':'Set','uid':'http://example.com/policy:1010','permission':[{'target':'http://example.com/asset:9898.movie','action':'use'}]}","gx:termsAndConditions":{"gx:URL":"https://aws.amazon.com/service-terms/","gx:hash":"e50c57a33d690ba062ee7f4c8c5bd2f179501cbd86fa7845ff692c724a7394ee"},"gx:openAPI":"https://ces-development.lab.gaia-x.eu/q/swagger-ui","gx:dataAccountExport":[{"gx:requestType":"API","gx:accessType":"digital","gx:formatType":"application/json"}],"id":"https://datamite.digital.tecnalia.dev/.well-known/serviceAccessPoint1.json"},"proof":{"type":"JsonWebSignature2020","proofPurpose":"assertionMethod","verificationMethod":"did:web:datamite.digital.tecnalia.dev#JWK2020-RSA","jws":"eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..x5ngmjiBDiEeCXO3nhWjeCLTQZPraI2bGkBVrzfEsFB8vuE558MvzomSIlcNui507UMv6t8drI2qd7ZUBVOfqaXCB4ZasMVANcElKDFGHEQtPtewPdpNmBKZ_9Vtl8ucyKEv8DtSc7Es2ZqZ5QNdg6bB5grgH7hn4UxsWuhxQDpFXFKSAYTh0-CckDqt8neXfRPU5dS5vqHojDfw9_qaHzTL30aai8-reVDmlWNn13DDwcIwXPNn2KvWjXFzW429bOXRZoj2uTpvGZCFcuOeaLrcZzNeqNg8w3b28IgI0nRLR1eu_eHu_nzSwPpnlogrm-yuY72O-Ek_A8CAOHFoUw"}}]} - 📈 Calling ServiceOffering Compliance with request data :  {} 
+2024-12-03T14:19:20.869Z - debug: [v1/SignerToolController.js ~ ServiceOffering] c55d060d-e51d-449a-b82d-f2e04de49d84 - 🔒 veracity calculated {} 
+2024-12-03T14:19:20.869Z - debug: [v1/SignerToolController.js ~ ServiceOffering] c55d060d-e51d-449a-b82d-f2e04de49d84 - 🔒 transparency calculated {} 
+2024-12-03T14:19:20.869Z - debug: [v1/SignerToolController.js ~ ServiceOffering] c55d060d-e51d-449a-b82d-f2e04de49d84 - 🔒 trustIndex calculated {} 

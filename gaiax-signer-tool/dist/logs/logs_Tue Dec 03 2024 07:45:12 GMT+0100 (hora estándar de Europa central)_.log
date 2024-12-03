@@ -1,0 +1,339 @@
+2024-12-03T06:45:12.867Z - error: uncaughtException: listen EADDRINUSE: address already in use :::8000 date=Tue Dec 03 2024 07:45:12 GMT+0100 (hora estándar de Europa central), pid=269361, uid=0, gid=0, cwd=/home/tecnalia/HACKHATON/gaia-x-signer-tool, execPath=/root/.nvm/versions/node/v18.19.0/bin/node, version=v18.19.0, argv=[/root/.nvm/versions/node/v18.19.0/bin/node, /home/tecnalia/HACKHATON/gaia-x-signer-tool/dist/server.js], rss=101429248, heapTotal=60608512, heapUsed=40036064, external=5399648, arrayBuffers=2026385, loadavg=[1.01, 0.59, 0.59], uptime=1748692.14, trace=[column=16, file=node:net, function=Server.setupListenHandle [as _listen2], line=1817, method=setupListenHandle [as _listen2], native=false, column=12, file=node:net, function=listenInCluster, line=1865, method=null, native=false, column=7, file=node:net, function=Server.listen, line=1953, method=listen, native=false, column=16, file=/home/tecnalia/HACKHATON/gaia-x-signer-tool/dist/server.js, function=null, line=24, method=null, native=false, column=null, file=null, function=Generator.next, line=null, method=next, native=false, column=71, file=/home/tecnalia/HACKHATON/gaia-x-signer-tool/dist/server.js, function=null, line=8, method=null, native=false, column=null, file=null, function=new Promise, line=null, method=null, native=false, column=12, file=/home/tecnalia/HACKHATON/gaia-x-signer-tool/dist/server.js, function=__awaiter, line=4, method=null, native=false, column=8, file=/home/tecnalia/HACKHATON/gaia-x-signer-tool/dist/server.js, function=null, line=22, method=null, native=false, column=4, file=/home/tecnalia/HACKHATON/gaia-x-signer-tool/dist/server.js, function=null, line=33, method=null, native=false, column=14, file=node:internal/modules/cjs/loader, function=Module._compile, line=1356, method=_compile, native=false, column=10, file=node:internal/modules/cjs/loader, function=Module._extensions..js, line=1414, method=.js, native=false, column=32, file=node:internal/modules/cjs/loader, function=Module.load, line=1197, method=load, native=false, column=12, file=node:internal/modules/cjs/loader, function=Module._load, line=1013, method=_load, native=false, column=12, file=node:internal/modules/run_main, function=Function.executeUserEntryPoint [as runMain], line=128, method=executeUserEntryPoint [as runMain], native=false, column=49, file=node:internal/main/run_main_module, function=null, line=28, method=null, native=false], stack=[Error: listen EADDRINUSE: address already in use :::8000,     at Server.setupListenHandle [as _listen2] (node:net:1817:16),     at listenInCluster (node:net:1865:12),     at Server.listen (node:net:1953:7),     at /home/tecnalia/HACKHATON/gaia-x-signer-tool/dist/server.js:24:16,     at Generator.next (<anonymous>),     at /home/tecnalia/HACKHATON/gaia-x-signer-tool/dist/server.js:8:71,     at new Promise (<anonymous>),     at __awaiter (/home/tecnalia/HACKHATON/gaia-x-signer-tool/dist/server.js:4:12),     at /home/tecnalia/HACKHATON/gaia-x-signer-tool/dist/server.js:22:8,     at Object.<anonymous> (/home/tecnalia/HACKHATON/gaia-x-signer-tool/dist/server.js:33:4),     at Module._compile (node:internal/modules/cjs/loader:1356:14),     at Module._extensions..js (node:internal/modules/cjs/loader:1414:10),     at Module.load (node:internal/modules/cjs/loader:1197:32),     at Module._load (node:internal/modules/cjs/loader:1013:12),     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:128:12),     at node:internal/main/run_main_module:28:49]
+2024-12-03T06:45:12.866Z - error: uncaughtException: listen EADDRINUSE: address already in use :::8000 date=Tue Dec 03 2024 07:45:12 GMT+0100 (hora estándar de Europa central), pid=269361, uid=0, gid=0, cwd=/home/tecnalia/HACKHATON/gaia-x-signer-tool, execPath=/root/.nvm/versions/node/v18.19.0/bin/node, version=v18.19.0, argv=[/root/.nvm/versions/node/v18.19.0/bin/node, /home/tecnalia/HACKHATON/gaia-x-signer-tool/dist/server.js], rss=101429248, heapTotal=60608512, heapUsed=40036064, external=5399648, arrayBuffers=2026385, loadavg=[1.01, 0.59, 0.59], uptime=1748692.14, trace=[column=16, file=node:net, function=Server.setupListenHandle [as _listen2], line=1817, method=setupListenHandle [as _listen2], native=false, column=12, file=node:net, function=listenInCluster, line=1865, method=null, native=false, column=7, file=node:net, function=Server.listen, line=1953, method=listen, native=false, column=16, file=/home/tecnalia/HACKHATON/gaia-x-signer-tool/dist/server.js, function=null, line=24, method=null, native=false, column=null, file=null, function=Generator.next, line=null, method=next, native=false, column=71, file=/home/tecnalia/HACKHATON/gaia-x-signer-tool/dist/server.js, function=null, line=8, method=null, native=false, column=null, file=null, function=new Promise, line=null, method=null, native=false, column=12, file=/home/tecnalia/HACKHATON/gaia-x-signer-tool/dist/server.js, function=__awaiter, line=4, method=null, native=false, column=8, file=/home/tecnalia/HACKHATON/gaia-x-signer-tool/dist/server.js, function=null, line=22, method=null, native=false, column=4, file=/home/tecnalia/HACKHATON/gaia-x-signer-tool/dist/server.js, function=null, line=33, method=null, native=false, column=14, file=node:internal/modules/cjs/loader, function=Module._compile, line=1356, method=_compile, native=false, column=10, file=node:internal/modules/cjs/loader, function=Module._extensions..js, line=1414, method=.js, native=false, column=32, file=node:internal/modules/cjs/loader, function=Module.load, line=1197, method=load, native=false, column=12, file=node:internal/modules/cjs/loader, function=Module._load, line=1013, method=_load, native=false, column=12, file=node:internal/modules/run_main, function=Function.executeUserEntryPoint [as runMain], line=128, method=executeUserEntryPoint [as runMain], native=false, column=49, file=node:internal/main/run_main_module, function=null, line=28, method=null, native=false], stack=[Error: listen EADDRINUSE: address already in use :::8000,     at Server.setupListenHandle [as _listen2] (node:net:1817:16),     at listenInCluster (node:net:1865:12),     at Server.listen (node:net:1953:7),     at /home/tecnalia/HACKHATON/gaia-x-signer-tool/dist/server.js:24:16,     at Generator.next (<anonymous>),     at /home/tecnalia/HACKHATON/gaia-x-signer-tool/dist/server.js:8:71,     at new Promise (<anonymous>),     at __awaiter (/home/tecnalia/HACKHATON/gaia-x-signer-tool/dist/server.js:4:12),     at /home/tecnalia/HACKHATON/gaia-x-signer-tool/dist/server.js:22:8,     at Object.<anonymous> (/home/tecnalia/HACKHATON/gaia-x-signer-tool/dist/server.js:33:4),     at Module._compile (node:internal/modules/cjs/loader:1356:14),     at Module._extensions..js (node:internal/modules/cjs/loader:1414:10),     at Module.load (node:internal/modules/cjs/loader:1197:32),     at Module._load (node:internal/modules/cjs/loader:1013:12),     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:128:12),     at node:internal/main/run_main_module:28:49]
+2024-12-03T06:45:12.922Z - error: uncaughtException: listen EADDRINUSE: address already in use :::8000 date=Tue Dec 03 2024 07:45:12 GMT+0100 (hora estándar de Europa central), pid=269357, uid=0, gid=0, cwd=/home/tecnalia/HACKHATON/gaia-x-signer-tool, execPath=/root/.nvm/versions/node/v18.19.0/bin/node, version=v18.19.0, argv=[/root/.nvm/versions/node/v18.19.0/bin/node, /home/tecnalia/HACKHATON/gaia-x-signer-tool/dist/server.js], rss=102510592, heapTotal=60346368, heapUsed=40061072, external=5399624, arrayBuffers=2026361, loadavg=[1.01, 0.59, 0.59], uptime=1748692.19, trace=[column=16, file=node:net, function=Server.setupListenHandle [as _listen2], line=1817, method=setupListenHandle [as _listen2], native=false, column=12, file=node:net, function=listenInCluster, line=1865, method=null, native=false, column=7, file=node:net, function=Server.listen, line=1953, method=listen, native=false, column=16, file=/home/tecnalia/HACKHATON/gaia-x-signer-tool/dist/server.js, function=null, line=24, method=null, native=false, column=null, file=null, function=Generator.next, line=null, method=next, native=false, column=71, file=/home/tecnalia/HACKHATON/gaia-x-signer-tool/dist/server.js, function=null, line=8, method=null, native=false, column=null, file=null, function=new Promise, line=null, method=null, native=false, column=12, file=/home/tecnalia/HACKHATON/gaia-x-signer-tool/dist/server.js, function=__awaiter, line=4, method=null, native=false, column=8, file=/home/tecnalia/HACKHATON/gaia-x-signer-tool/dist/server.js, function=null, line=22, method=null, native=false, column=4, file=/home/tecnalia/HACKHATON/gaia-x-signer-tool/dist/server.js, function=null, line=33, method=null, native=false, column=14, file=node:internal/modules/cjs/loader, function=Module._compile, line=1356, method=_compile, native=false, column=10, file=node:internal/modules/cjs/loader, function=Module._extensions..js, line=1414, method=.js, native=false, column=32, file=node:internal/modules/cjs/loader, function=Module.load, line=1197, method=load, native=false, column=12, file=node:internal/modules/cjs/loader, function=Module._load, line=1013, method=_load, native=false, column=12, file=node:internal/modules/run_main, function=Function.executeUserEntryPoint [as runMain], line=128, method=executeUserEntryPoint [as runMain], native=false, column=49, file=node:internal/main/run_main_module, function=null, line=28, method=null, native=false], stack=[Error: listen EADDRINUSE: address already in use :::8000,     at Server.setupListenHandle [as _listen2] (node:net:1817:16),     at listenInCluster (node:net:1865:12),     at Server.listen (node:net:1953:7),     at /home/tecnalia/HACKHATON/gaia-x-signer-tool/dist/server.js:24:16,     at Generator.next (<anonymous>),     at /home/tecnalia/HACKHATON/gaia-x-signer-tool/dist/server.js:8:71,     at new Promise (<anonymous>),     at __awaiter (/home/tecnalia/HACKHATON/gaia-x-signer-tool/dist/server.js:4:12),     at /home/tecnalia/HACKHATON/gaia-x-signer-tool/dist/server.js:22:8,     at Object.<anonymous> (/home/tecnalia/HACKHATON/gaia-x-signer-tool/dist/server.js:33:4),     at Module._compile (node:internal/modules/cjs/loader:1356:14),     at Module._extensions..js (node:internal/modules/cjs/loader:1414:10),     at Module.load (node:internal/modules/cjs/loader:1197:32),     at Module._load (node:internal/modules/cjs/loader:1013:12),     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:128:12),     at node:internal/main/run_main_module:28:49]
+2024-12-03T06:45:12.923Z - error: uncaughtException: listen EADDRINUSE: address already in use :::8000 date=Tue Dec 03 2024 07:45:12 GMT+0100 (hora estándar de Europa central), pid=269357, uid=0, gid=0, cwd=/home/tecnalia/HACKHATON/gaia-x-signer-tool, execPath=/root/.nvm/versions/node/v18.19.0/bin/node, version=v18.19.0, argv=[/root/.nvm/versions/node/v18.19.0/bin/node, /home/tecnalia/HACKHATON/gaia-x-signer-tool/dist/server.js], rss=102510592, heapTotal=60346368, heapUsed=40061072, external=5399624, arrayBuffers=2026361, loadavg=[1.01, 0.59, 0.59], uptime=1748692.19, trace=[column=16, file=node:net, function=Server.setupListenHandle [as _listen2], line=1817, method=setupListenHandle [as _listen2], native=false, column=12, file=node:net, function=listenInCluster, line=1865, method=null, native=false, column=7, file=node:net, function=Server.listen, line=1953, method=listen, native=false, column=16, file=/home/tecnalia/HACKHATON/gaia-x-signer-tool/dist/server.js, function=null, line=24, method=null, native=false, column=null, file=null, function=Generator.next, line=null, method=next, native=false, column=71, file=/home/tecnalia/HACKHATON/gaia-x-signer-tool/dist/server.js, function=null, line=8, method=null, native=false, column=null, file=null, function=new Promise, line=null, method=null, native=false, column=12, file=/home/tecnalia/HACKHATON/gaia-x-signer-tool/dist/server.js, function=__awaiter, line=4, method=null, native=false, column=8, file=/home/tecnalia/HACKHATON/gaia-x-signer-tool/dist/server.js, function=null, line=22, method=null, native=false, column=4, file=/home/tecnalia/HACKHATON/gaia-x-signer-tool/dist/server.js, function=null, line=33, method=null, native=false, column=14, file=node:internal/modules/cjs/loader, function=Module._compile, line=1356, method=_compile, native=false, column=10, file=node:internal/modules/cjs/loader, function=Module._extensions..js, line=1414, method=.js, native=false, column=32, file=node:internal/modules/cjs/loader, function=Module.load, line=1197, method=load, native=false, column=12, file=node:internal/modules/cjs/loader, function=Module._load, line=1013, method=_load, native=false, column=12, file=node:internal/modules/run_main, function=Function.executeUserEntryPoint [as runMain], line=128, method=executeUserEntryPoint [as runMain], native=false, column=49, file=node:internal/main/run_main_module, function=null, line=28, method=null, native=false], stack=[Error: listen EADDRINUSE: address already in use :::8000,     at Server.setupListenHandle [as _listen2] (node:net:1817:16),     at listenInCluster (node:net:1865:12),     at Server.listen (node:net:1953:7),     at /home/tecnalia/HACKHATON/gaia-x-signer-tool/dist/server.js:24:16,     at Generator.next (<anonymous>),     at /home/tecnalia/HACKHATON/gaia-x-signer-tool/dist/server.js:8:71,     at new Promise (<anonymous>),     at __awaiter (/home/tecnalia/HACKHATON/gaia-x-signer-tool/dist/server.js:4:12),     at /home/tecnalia/HACKHATON/gaia-x-signer-tool/dist/server.js:22:8,     at Object.<anonymous> (/home/tecnalia/HACKHATON/gaia-x-signer-tool/dist/server.js:33:4),     at Module._compile (node:internal/modules/cjs/loader:1356:14),     at Module._extensions..js (node:internal/modules/cjs/loader:1414:10),     at Module.load (node:internal/modules/cjs/loader:1197:32),     at Module._load (node:internal/modules/cjs/loader:1013:12),     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:128:12),     at node:internal/main/run_main_module:28:49]
+2024-12-03T06:51:29.741Z - debug: [v1/SignerToolController.js ~ ServiceOffering] {"type":"VerifiableCredential","id":"https://datamite.digital.tecnalia.dev/.well-known/serviceOffering.json","issuer":"did:web:datamite.digital.tecnalia.dev","issuanceDate":"2023-08-10T13:13:12.552192251Z","credentialSubject":{"gx:termsAndConditions":{"gx:URL":"https://aws.amazon.com/service-terms/","gx:hash":"689be3192f5686526bdddb450463f6c2f752c23b2820a2aae35e6779889e817a"},"gx:policy":["https://wizard-api.smart-x.smartsenselabs.com/12081064-8878-477e-8092-564a240c69e2/service_tc3p_policy.json"],"gx:dataAccountExport":{"gx:requestType":"API","gx:accessType":"physical","gx:formatType":"pdf"},"gx:aggregationOf":[{"id":"https://wizard-api.smart-x.smartsenselabs.com/12081064-8878-477e-8092-564a240c69e2/resource_f1b1d420-d44d-439a-8de3-1aeb58f9a493.json"}],"gx:dataProtectionRegime":"GDPR2016","type":"gx:ServiceOffering","gx:providedBy":{"id":"https://datamite.digital.tecnalia.dev/.well-known/participant.json"},"id":"https://datamite.digital.tecnalia.dev/.well-known/serviceOffering.json"},"@context":["https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1"]} - Service offering VC {} 
+2024-12-03T07:06:09.918Z - debug: [v1/SignerToolController.js ~ ServiceOffering] {"type":"VerifiableCredential","id":"https://datamite.digital.tecnalia.dev/.well-known/serviceOffering.json","issuer":"did:web:datamite.digital.tecnalia.dev","issuanceDate":"2023-08-10T13:13:12.552192251Z","credentialSubject":{"gx:termsAndConditions":{"gx:URL":"https://aws.amazon.com/service-terms/","gx:hash":"689be3192f5686526bdddb450463f6c2f752c23b2820a2aae35e6779889e817a"},"gx:policy":"{'@context': {'edc': 'https://w3id.org/edc/v0.0.1/ns/', 'odrl': 'http://www.w3.org/ns/odrl/2/'}, '@id': 'no-restriction-policy', '@type': 'edc:PolicyDefinition', 'edc:policy': {'@type': 'odrl:Set', 'odrl:permission': [], 'odrl:prohibition': [], 'odrl:obligation': []}}","gx:dataAccountExport":{"gx:requestType":"API","gx:accessType":"physical","gx:formatType":"pdf"},"gx:aggregationOf":[{"id":"https://datamite.digital.tecnalia.dev/.well-known/dataresource0_1730372012205.json"}],"gx:dataProtectionRegime":"GDPR2016","type":"gx:ServiceOffering","gx:providedBy":{"id":"https://datamite.digital.tecnalia.dev/.well-known/participant.json"},"id":"https://datamite.digital.tecnalia.dev/.well-known/serviceOffering.json"},"@context":["https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1"]} - Service offering VC {} 
+2024-12-03T07:11:40.506Z - debug: [v1/SignerToolController.js ~ ServiceOffering] {"type":"VerifiableCredential","id":"https://datamite.digital.tecnalia.dev/.well-known/serviceOffering.json","issuer":"did:web:datamite.digital.tecnalia.dev","issuanceDate":"2023-08-10T13:13:12.552192251Z","credentialSubject":{"gx:termsAndConditions":{"gx:URL":"https://aws.amazon.com/service-terms/","gx:hash":"689be3192f5686526bdddb450463f6c2f752c23b2820a2aae35e6779889e817a"},"gx:policy":"{'@context': {'edc': 'https://w3id.org/edc/v0.0.1/ns/', 'odrl': 'http://www.w3.org/ns/odrl/2/'}, '@id': 'no-restriction-policy', '@type': 'edc:PolicyDefinition', 'edc:policy': {'@type': 'odrl:Set', 'odrl:permission': [], 'odrl:prohibition': [], 'odrl:obligation': []}}","gx:dataAccountExport":{"gx:requestType":"API","gx:accessType":"physical","gx:formatType":"pdf"},"gx:aggregationOf":[{"id":"https://datamite.digital.tecnalia.dev/.well-known/dataresource0_1730372012205.json"}],"gx:dataProtectionRegime":"GDPR2016","type":"gx:ServiceOffering","gx:providedBy":{"id":"https://datamite.digital.tecnalia.dev/.well-known/participant.json"},"id":"https://datamite.digital.tecnalia.dev/.well-known/serviceOffering.json"},"@context":["https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1"]} - Service offering VC {} 
+2024-12-03T07:12:29.957Z - debug: [v1/SignerToolController.js ~ GXLegalParticipant] 58a1f749-fcd0-4e7d-bdc9-f37bdc5c1e2b - req.body {
+  issuer: 'did:web:datamite.digital.tecnalia.dev',
+  verificationMethod: 'did:web:datamite.digital.tecnalia.dev',
+  isVault: false
+} 
+2024-12-03T07:12:29.958Z - debug: [v1/SignerToolController.js ~ GXLegalParticipant] 58a1f749-fcd0-4e7d-bdc9-f37bdc5c1e2b - req.body {
+  "legalParticipant": {
+    "credentialSubject": {
+      "gx:legalName": "Tecnalia",
+      "gx:headquarterAddress": {
+        "gx:countrySubdivisionCode": "ES-PV"
+      },
+      "gx:legalAddress": {
+        "gx:countrySubdivisionCode": "ES-PV"
+      },
+      "id": "https://datamite.digital.tecnalia.dev/.well-known/participant.json",
+      "type": "gx:LegalParticipant",
+      "gx:legalRegistrationNumber": {
+        "id": "https://datamite.digital.tecnalia.dev/.well-known/lrn.json"
+      }
+    },
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1",
+      "https://w3id.org/security/suites/jws-2020/v1",
+      "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"
+    ],
+    "type": [
+      "VerifiableCredential"
+    ],
+    "id": "https://datamite.digital.tecnalia.dev/.well-known/participant.json",
+    "issuer": "did:web:datamite.digital.tecnalia.dev",
+    "issuanceDate": "2024-09-02T11:10:56.55791193Z"
+  },
+  "legalRegistrationNumber": {
+    "@context": [
+      "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/participant"
+    ],
+    "type": "gx:legalRegistrationNumber",
+    "id": "https://datamite.digital.tecnalia.dev/.well-known/lrn.json",
+    "gx:vatID": "ESG48975767",
+    "gx:vatID-countryCode": "ES"
+  },
+  "gaiaXTermsAndConditions": {
+    "@context": [
+      "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#",
+      "https://www.w3.org/2018/credentials/v1",
+      "https://w3id.org/security/suites/jws-2020/v1"
+    ],
+    "type": "VerifiableCredential",
+    "id": "https://datamite.digital.tecnalia.dev/.well-known/tsandcs.json",
+    "issuer": "did:web:datamite.digital.tecnalia.dev",
+    "validFrom": "2024-11-18T10:43:29.159835",
+    "credentialSubject": {
+      "@context": "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#",
+      "type": "gx:GaiaXTermsAndConditions",
+      "id": "https://datamite.digital.tecnalia.dev/.well-known/tsandcs.json",
+      "gx:termsAndConditions": "The PARTICIPANT signing the Self-Description agrees as follows:\n- to update its descriptions about any changes, be it technical, organizational, or legal - especially but not limited to contractual in regards to the indicated attributes present in the descriptions.\n\nThe keypair used to sign Verifiable Credentials will be revoked where Gaia-X Association becomes aware of any inaccurate statements in regards to the claims which result in a non-compliance with the Trust Framework and policy rules defined in the Policy Rules and Labelling Document (PRLD)."
+    },
+    "proof": {
+      "type": "JsonWebSignature2020",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:web:datamite.digital.tecnalia.dev#JWK2020-RSA",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..SLQdhDQZcNC_xMEbUtA9zOTmEOPmHmbiO86GNhmr2MamZgi1WuIj2yKAm6h0Bp7ye9GsK1b1id7eekPyJNbPpHCdf7-CWifL8udoLQNS6N31-H4GS-WbL-mjSo7Ts9p5fueWsrym04QsyW_YzZ0nPtl5OFySnR-dQc7OfOrrm4ALSyOYccx0XJ83NmvUL1K8unRYdzFW0S7v-bZUs6qURZEEq4W8GrcCBFC_cPVWZVX3hwgiS3p6NUVdLtSjEyEHjjIuP9QfRVKn0ncqumX1QjXCoj-h3DNUiVP6nl9kUUdhd1S4WTT7wS2SRs8sgOm-nOhhmm07QRtS2Bg1Gve6gA"
+    }
+  }
+} 
+2024-12-03T07:12:30.363Z - info: [v1/SignerToolController.js ~ GXLegalParticipant] {"@context":["https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1"],"type":["VerifiableCredential"],"id":"https://datamite.digital.tecnalia.dev/.well-known/lrn.json","issuer":"did:web:registration.lab.gaia-x.eu:v1-staging","issuanceDate":"2024-12-03T07:12:30.329Z","credentialSubject":{"@context":"https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#","type":"gx:legalRegistrationNumber","id":"https://datamite.digital.tecnalia.dev/.well-known/lrn.json","gx:vatID":"ESG48975767","gx:vatID-countryCode":"ES"},"evidence":[{"gx:evidenceURL":"http://ec.europa.eu/taxation_customs/vies/services/checkVatService","gx:executionDate":"2024-12-03T07:12:30.329Z","gx:evidenceOf":"gx:vatID"}],"proof":{"type":"JsonWebSignature2020","created":"2024-12-03T07:12:30.346Z","proofPurpose":"assertionMethod","verificationMethod":"did:web:registration.lab.gaia-x.eu:v1-staging#X509-JWK2020","jws":"eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..fGbEPLqUtBKBLhmI04PDh1fWQVPCctsGXPhHPOFMP6eZhOjIX5Y6cOd-9PxVV1q5bxi-7_IeV8NH1sfbMMaVG9DLF93ZMTmFas3ptpdIUsK9n-2iN5dFy_fc6uJ37cDlM4cJ50peIhyojtTBeWzRdLih8JI66Hk8scX7RFYtqGe9B90Aut6C31gxqoPj8KdiCWWOrmeiweadXjAXfPVY_HJ1jvC1s0ivdfhT4Jy9BSOT3Mly7KRWvKWU5CrNogLTUti5mroQg6u-BEQQhyHOT4_yeyacrsqb1GJcM1lh9t62ky1iEOTuVULWorIe8omyRF7E4dl5OEDQDqWbGiVqWQ"}} - legalRegistrationNumber vc created {} 
+2024-12-03T07:12:30.733Z - info: [common-functions/common-functions.js ~ addProof]  - 📈 Hashed canonized SD 908c84c534b56ec5814ec4f52d2c16e306f6a3840731831d0b6b4b1741991c31 {} 
+2024-12-03T07:12:30.743Z - info: [common-functions/common-functions.js ~ addProof] https://datamite.digital.tecnalia.dev/.well-known/x509CertificateChain.pem - 🔒 SD signed successfully {} 
+2024-12-03T07:12:30.771Z - info: [common-functions/common-functions.js ~ addProof]  - ✅ Verification successful {} 
+2024-12-03T07:12:30.773Z - debug: [v1/SignerToolController.js ~ GXLegalParticipant] 58a1f749-fcd0-4e7d-bdc9-f37bdc5c1e2b - selfDescription {"@context":"https://www.w3.org/2018/credentials/v1","type":["VerifiablePresentation"],"verifiableCredential":[{"credentialSubject":{"gx:legalName":"Tecnalia","gx:headquarterAddress":{"gx:countrySubdivisionCode":"ES-PV"},"gx:legalAddress":{"gx:countrySubdivisionCode":"ES-PV"},"id":"https://datamite.digital.tecnalia.dev/.well-known/participant.json","type":"gx:LegalParticipant","gx:legalRegistrationNumber":{"id":"https://datamite.digital.tecnalia.dev/.well-known/lrn.json"}},"@context":["https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1","https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"],"type":["VerifiableCredential"],"id":"https://datamite.digital.tecnalia.dev/.well-known/participant.json","issuer":"did:web:datamite.digital.tecnalia.dev","issuanceDate":"2024-09-02T11:10:56.55791193Z","proof":{"type":"JsonWebSignature2020","created":"2024-12-03T07:12:30.733Z","proofPurpose":"assertionMethod","verificationMethod":"did:web:datamite.digital.tecnalia.dev#JWK2020-RSA","jws":"eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..leeKH2Yx3wDI8t9G5GS5MAEwUgU5Pm-4eqMBVLKtNt-TG4Qsz7yWL8tIPXimz-0cSUQ9A4rqo7ebd176W-OUyww-8BpWaEI3zxgeG4ljiovhrjZqbmKxkbIDT4flz9NV7LFELG_eFrzHzgJer3YN77I6aAP3KABHXttRbHCpmVeg7rqbmGekhhxnaXeNfpYxL7XzMIZETtTT5Xxc69gaLuHju48AKBZjf0M72JfPRrmpHFc4bZuUsArILYe0nsxuBKi2Fu4VYn8e2ytvH3qpFCeV4qxa4M2mAKzPdCQvf7BOzg4HeJlEZEGWBOKEa0U001ACn5dswU0maFEAU5riPw"}},{"@context":["https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1"],"type":["VerifiableCredential"],"id":"https://datamite.digital.tecnalia.dev/.well-known/lrn.json","issuer":"did:web:registration.lab.gaia-x.eu:v1-staging","issuanceDate":"2024-12-03T07:12:30.329Z","credentialSubject":{"@context":"https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#","type":"gx:legalRegistrationNumber","id":"https://datamite.digital.tecnalia.dev/.well-known/lrn.json","gx:vatID":"ESG48975767","gx:vatID-countryCode":"ES"},"evidence":[{"gx:evidenceURL":"http://ec.europa.eu/taxation_customs/vies/services/checkVatService","gx:executionDate":"2024-12-03T07:12:30.329Z","gx:evidenceOf":"gx:vatID"}],"proof":{"type":"JsonWebSignature2020","created":"2024-12-03T07:12:30.346Z","proofPurpose":"assertionMethod","verificationMethod":"did:web:registration.lab.gaia-x.eu:v1-staging#X509-JWK2020","jws":"eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..fGbEPLqUtBKBLhmI04PDh1fWQVPCctsGXPhHPOFMP6eZhOjIX5Y6cOd-9PxVV1q5bxi-7_IeV8NH1sfbMMaVG9DLF93ZMTmFas3ptpdIUsK9n-2iN5dFy_fc6uJ37cDlM4cJ50peIhyojtTBeWzRdLih8JI66Hk8scX7RFYtqGe9B90Aut6C31gxqoPj8KdiCWWOrmeiweadXjAXfPVY_HJ1jvC1s0ivdfhT4Jy9BSOT3Mly7KRWvKWU5CrNogLTUti5mroQg6u-BEQQhyHOT4_yeyacrsqb1GJcM1lh9t62ky1iEOTuVULWorIe8omyRF7E4dl5OEDQDqWbGiVqWQ"}},{"@context":["https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#","https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1"],"type":"VerifiableCredential","id":"https://datamite.digital.tecnalia.dev/.well-known/tsandcs.json","issuer":"did:web:datamite.digital.tecnalia.dev","validFrom":"2024-11-18T10:43:29.159835","credentialSubject":{"@context":"https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#","type":"gx:GaiaXTermsAndConditions","id":"https://datamite.digital.tecnalia.dev/.well-known/tsandcs.json","gx:termsAndConditions":"The PARTICIPANT signing the Self-Description agrees as follows:\n- to update its descriptions about any changes, be it technical, organizational, or legal - especially but not limited to contractual in regards to the indicated attributes present in the descriptions.\n\nThe keypair used to sign Verifiable Credentials will be revoked where Gaia-X Association becomes aware of any inaccurate statements in regards to the claims which result in a non-compliance with the Trust Framework and policy rules defined in the Policy Rules and Labelling Document (PRLD)."},"proof":{"type":"JsonWebSignature2020","proofPurpose":"assertionMethod","verificationMethod":"did:web:datamite.digital.tecnalia.dev#JWK2020-RSA","jws":"eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..SLQdhDQZcNC_xMEbUtA9zOTmEOPmHmbiO86GNhmr2MamZgi1WuIj2yKAm6h0Bp7ye9GsK1b1id7eekPyJNbPpHCdf7-CWifL8udoLQNS6N31-H4GS-WbL-mjSo7Ts9p5fueWsrym04QsyW_YzZ0nPtl5OFySnR-dQc7OfOrrm4ALSyOYccx0XJ83NmvUL1K8unRYdzFW0S7v-bZUs6qURZEEq4W8GrcCBFC_cPVWZVX3hwgiS3p6NUVdLtSjEyEHjjIuP9QfRVKn0ncqumX1QjXCoj-h3DNUiVP6nl9kUUdhd1S4WTT7wS2SRs8sgOm-nOhhmm07QRtS2Bg1Gve6gA"}}]} 
+2024-12-03T07:12:34.860Z - debug: [v1/SignerToolController.js ~ GXLegalParticipant] 58a1f749-fcd0-4e7d-bdc9-f37bdc5c1e2b - complianceCRED {
+  status: 201,
+  statusText: 'Created',
+  headers: Object [AxiosHeaders] {
+    date: 'Tue, 03 Dec 2024 07:12:34 GMT',
+    'content-type': 'application/json; charset=utf-8',
+    'content-length': '2227',
+    connection: 'close',
+    'x-powered-by': 'Express',
+    'access-control-allow-origin': '*',
+    etag: 'W/"8b3-bhILcDi9kyMTCwuEn2qy7e+TLqM"',
+    'strict-transport-security': 'max-age=31536000; includeSubDomains'
+  },
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [ 'xhr', 'http', 'fetch' ],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    env: { FormData: [Function], Blob: [class Blob] },
+    validateStatus: [Function: validateStatus],
+    headers: Object [AxiosHeaders] {
+      Accept: 'application/json, text/plain, */*',
+      'Content-Type': 'application/json',
+      'User-Agent': 'axios/1.7.8',
+      'Content-Length': '4632',
+      'Accept-Encoding': 'gzip, compress, deflate, br'
+    },
+    method: 'post',
+    url: 'https://compliance.lab.gaia-x.eu/v1-staging/api/credential-offers',
+    data: '{"@context":"https://www.w3.org/2018/credentials/v1","type":["VerifiablePresentation"],"verifiableCredential":[{"credentialSubject":{"gx:legalName":"Tecnalia","gx:headquarterAddress":{"gx:countrySubdivisionCode":"ES-PV"},"gx:legalAddress":{"gx:countrySubdivisionCode":"ES-PV"},"id":"https://datamite.digital.tecnalia.dev/.well-known/participant.json","type":"gx:LegalParticipant","gx:legalRegistrationNumber":{"id":"https://datamite.digital.tecnalia.dev/.well-known/lrn.json"}},"@context":["https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1","https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"],"type":["VerifiableCredential"],"id":"https://datamite.digital.tecnalia.dev/.well-known/participant.json","issuer":"did:web:datamite.digital.tecnalia.dev","issuanceDate":"2024-09-02T11:10:56.55791193Z","proof":{"type":"JsonWebSignature2020","created":"2024-12-03T07:12:30.733Z","proofPurpose":"assertionMethod","verificationMethod":"did:web:datamite.digital.tecnalia.dev#JWK2020-RSA","jws":"eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..leeKH2Yx3wDI8t9G5GS5MAEwUgU5Pm-4eqMBVLKtNt-TG4Qsz7yWL8tIPXimz-0cSUQ9A4rqo7ebd176W-OUyww-8BpWaEI3zxgeG4ljiovhrjZqbmKxkbIDT4flz9NV7LFELG_eFrzHzgJer3YN77I6aAP3KABHXttRbHCpmVeg7rqbmGekhhxnaXeNfpYxL7XzMIZETtTT5Xxc69gaLuHju48AKBZjf0M72JfPRrmpHFc4bZuUsArILYe0nsxuBKi2Fu4VYn8e2ytvH3qpFCeV4qxa4M2mAKzPdCQvf7BOzg4HeJlEZEGWBOKEa0U001ACn5dswU0maFEAU5riPw"}},{"@context":["https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1"],"type":["VerifiableCredential"],"id":"https://datamite.digital.tecnalia.dev/.well-known/lrn.json","issuer":"did:web:registration.lab.gaia-x.eu:v1-staging","issuanceDate":"2024-12-03T07:12:30.329Z","credentialSubject":{"@context":"https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#","type":"gx:legalRegistrationNumber","id":"https://datamite.digital.tecnalia.dev/.well-known/lrn.json","gx:vatID":"ESG48975767","gx:vatID-countryCode":"ES"},"evidence":[{"gx:evidenceURL":"http://ec.europa.eu/taxation_customs/vies/services/checkVatService","gx:executionDate":"2024-12-03T07:12:30.329Z","gx:evidenceOf":"gx:vatID"}],"proof":{"type":"JsonWebSignature2020","created":"2024-12-03T07:12:30.346Z","proofPurpose":"assertionMethod","verificationMethod":"did:web:registration.lab.gaia-x.eu:v1-staging#X509-JWK2020","jws":"eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..fGbEPLqUtBKBLhmI04PDh1fWQVPCctsGXPhHPOFMP6eZhOjIX5Y6cOd-9PxVV1q5bxi-7_IeV8NH1sfbMMaVG9DLF93ZMTmFas3ptpdIUsK9n-2iN5dFy_fc6uJ37cDlM4cJ50peIhyojtTBeWzRdLih8JI66Hk8scX7RFYtqGe9B90Aut6C31gxqoPj8KdiCWWOrmeiweadXjAXfPVY_HJ1jvC1s0ivdfhT4Jy9BSOT3Mly7KRWvKWU5CrNogLTUti5mroQg6u-BEQQhyHOT4_yeyacrsqb1GJcM1lh9t62ky1iEOTuVULWorIe8omyRF7E4dl5OEDQDqWbGiVqWQ"}},{"@context":["https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#","https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1"],"type":"VerifiableCredential","id":"https://datamite.digital.tecnalia.dev/.well-known/tsandcs.json","issuer":"did:web:datamite.digital.tecnalia.dev","validFrom":"2024-11-18T10:43:29.159835","credentialSubject":{"@context":"https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#","type":"gx:GaiaXTermsAndConditions","id":"https://datamite.digital.tecnalia.dev/.well-known/tsandcs.json","gx:termsAndConditions":"The PARTICIPANT signing the Self-Description agrees as follows:\\n- to update its descriptions about any changes, be it technical, organizational, or legal - especially but not limited to contractual in regards to the indicated attributes present in the descriptions.\\n\\nThe keypair used to sign Verifiable Credentials will be revoked where Gaia-X Association becomes aware of any inaccurate statements in regards to the claims which result in a non-compliance with the Trust Framework and policy rules defined in the Policy Rules and Labelling Document (PRLD)."},"proof":{"type":"JsonWebSignature2020","proofPurpose":"assertionMethod","verificationMethod":"did:web:datamite.digital.tecnalia.dev#JWK2020-RSA","jws":"eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..SLQdhDQZcNC_xMEbUtA9zOTmEOPmHmbiO86GNhmr2MamZgi1WuIj2yKAm6h0Bp7ye9GsK1b1id7eekPyJNbPpHCdf7-CWifL8udoLQNS6N31-H4GS-WbL-mjSo7Ts9p5fueWsrym04QsyW_YzZ0nPtl5OFySnR-dQc7OfOrrm4ALSyOYccx0XJ83NmvUL1K8unRYdzFW0S7v-bZUs6qURZEEq4W8GrcCBFC_cPVWZVX3hwgiS3p6NUVdLtSjEyEHjjIuP9QfRVKn0ncqumX1QjXCoj-h3DNUiVP6nl9kUUdhd1S4WTT7wS2SRs8sgOm-nOhhmm07QRtS2Bg1Gve6gA"}}]}'
+  },
+  request: <ref *1> ClientRequest {
+    _events: [Object: null prototype] {
+      abort: [Function (anonymous)],
+      aborted: [Function (anonymous)],
+      connect: [Function (anonymous)],
+      error: [Function (anonymous)],
+      socket: [Function (anonymous)],
+      timeout: [Function (anonymous)],
+      finish: [Function: requestOnFinish]
+    },
+    _eventsCount: 7,
+    _maxListeners: undefined,
+    outputData: [],
+    outputSize: 0,
+    writable: true,
+    destroyed: false,
+    _last: true,
+    chunkedEncoding: false,
+    shouldKeepAlive: false,
+    maxRequestsOnConnectionReached: false,
+    _defaultKeepAlive: true,
+    useChunkedEncodingByDefault: true,
+    sendDate: false,
+    _removedConnection: false,
+    _removedContLen: false,
+    _removedTE: false,
+    strictContentLength: false,
+    _contentLength: '4632',
+    _hasBody: true,
+    _trailer: '',
+    finished: true,
+    _headerSent: true,
+    _closed: false,
+    socket: TLSSocket {
+      _tlsOptions: [Object],
+      _secureEstablished: true,
+      _securePending: false,
+      _newSessionPending: false,
+      _controlReleased: true,
+      secureConnecting: false,
+      _SNICallback: null,
+      servername: 'compliance.lab.gaia-x.eu',
+      alpnProtocol: false,
+      authorized: true,
+      authorizationError: null,
+      encrypted: true,
+      _events: [Object: null prototype],
+      _eventsCount: 10,
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: 'compliance.lab.gaia-x.eu',
+      _closeAfterHandlingError: false,
+      _readableState: [ReadableState],
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      allowHalfOpen: false,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: undefined,
+      _server: null,
+      ssl: [TLSWrap],
+      _requestCert: true,
+      _rejectUnauthorized: true,
+      parser: null,
+      _httpMessage: [Circular *1],
+      [Symbol(alpncallback)]: null,
+      [Symbol(res)]: [TLSWrap],
+      [Symbol(verified)]: true,
+      [Symbol(pendingSession)]: null,
+      [Symbol(async_id_symbol)]: 681,
+      [Symbol(kHandle)]: [TLSWrap],
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: null,
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kSetNoDelay)]: false,
+      [Symbol(kSetKeepAlive)]: true,
+      [Symbol(kSetKeepAliveInitialDelay)]: 60,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(connect-options)]: [Object]
+    },
+    _header: 'POST /v1-staging/api/credential-offers HTTP/1.1\r\n' +
+      'Accept: application/json, text/plain, */*\r\n' +
+      'Content-Type: application/json\r\n' +
+      'User-Agent: axios/1.7.8\r\n' +
+      'Content-Length: 4632\r\n' +
+      'Accept-Encoding: gzip, compress, deflate, br\r\n' +
+      'Host: compliance.lab.gaia-x.eu\r\n' +
+      'Connection: close\r\n' +
+      '\r\n',
+    _keepAliveTimeout: 0,
+    _onPendingData: [Function: nop],
+    agent: Agent {
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      defaultPort: 443,
+      protocol: 'https:',
+      options: [Object: null prototype],
+      requests: [Object: null prototype] {},
+      sockets: [Object: null prototype],
+      freeSockets: [Object: null prototype] {},
+      keepAliveMsecs: 1000,
+      keepAlive: false,
+      maxSockets: Infinity,
+      maxFreeSockets: 256,
+      scheduling: 'lifo',
+      maxTotalSockets: Infinity,
+      totalSocketCount: 1,
+      maxCachedSessions: 100,
+      _sessionCache: [Object],
+      [Symbol(kCapture)]: false
+    },
+    socketPath: undefined,
+    method: 'POST',
+    maxHeaderSize: undefined,
+    insecureHTTPParser: undefined,
+    joinDuplicateHeaders: undefined,
+    path: '/v1-staging/api/credential-offers',
+    _ended: true,
+    res: IncomingMessage {
+      _readableState: [ReadableState],
+      _events: [Object: null prototype],
+      _eventsCount: 4,
+      _maxListeners: undefined,
+      socket: [TLSSocket],
+      httpVersionMajor: 1,
+      httpVersionMinor: 1,
+      httpVersion: '1.1',
+      complete: true,
+      rawHeaders: [Array],
+      rawTrailers: [],
+      joinDuplicateHeaders: undefined,
+      aborted: false,
+      upgrade: false,
+      url: '',
+      method: null,
+      statusCode: 201,
+      statusMessage: 'Created',
+      client: [TLSSocket],
+      _consuming: false,
+      _dumped: false,
+      req: [Circular *1],
+      responseUrl: 'https://compliance.lab.gaia-x.eu/v1-staging/api/credential-offers',
+      redirects: [],
+      [Symbol(kCapture)]: false,
+      [Symbol(kHeaders)]: [Object],
+      [Symbol(kHeadersCount)]: 16,
+      [Symbol(kTrailers)]: null,
+      [Symbol(kTrailersCount)]: 0
+    },
+    aborted: false,
+    timeoutCb: null,
+    upgradeOrConnect: false,
+    parser: null,
+    maxHeadersCount: null,
+    reusedSocket: false,
+    host: 'compliance.lab.gaia-x.eu',
+    protocol: 'https:',
+    _redirectable: Writable {
+      _writableState: [WritableState],
+      _events: [Object: null prototype],
+      _eventsCount: 3,
+      _maxListeners: undefined,
+      _options: [Object],
+      _ended: true,
+      _ending: true,
+      _redirectCount: 0,
+      _redirects: [],
+      _requestBodyLength: 4632,
+      _requestBodyBuffers: [],
+      _onNativeResponse: [Function (anonymous)],
+      _currentRequest: [Circular *1],
+      _currentUrl: 'https://compliance.lab.gaia-x.eu/v1-staging/api/credential-offers',
+      [Symbol(kCapture)]: false
+    },
+    [Symbol(kCapture)]: false,
+    [Symbol(kBytesWritten)]: 0,
+    [Symbol(kNeedDrain)]: false,
+    [Symbol(corked)]: 0,
+    [Symbol(kOutHeaders)]: [Object: null prototype] {
+      accept: [Array],
+      'content-type': [Array],
+      'user-agent': [Array],
+      'content-length': [Array],
+      'accept-encoding': [Array],
+      host: [Array]
+    },
+    [Symbol(errored)]: null,
+    [Symbol(kHighWaterMark)]: 16384,
+    [Symbol(kRejectNonStandardBodyWrites)]: false,
+    [Symbol(kUniqueHeaders)]: null
+  },
+  data: {
+    '@context': [
+      'https://www.w3.org/2018/credentials/v1',
+      'https://w3id.org/security/suites/jws-2020/v1',
+      'https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#'
+    ],
+    type: [ 'VerifiableCredential' ],
+    id: 'https://compliance.lab.gaia-x.eu/v1-staging/credential-offers/4b1dc0d7-2c93-4d03-a2e1-c13d2cbd0f08',
+    issuer: 'did:web:compliance.lab.gaia-x.eu:v1-staging',
+    issuanceDate: '2024-12-03T07:12:34.821Z',
+    expirationDate: '2025-03-03T07:12:34.821Z',
+    credentialSubject: [ [Object], [Object], [Object] ],
+    proof: {
+      type: 'JsonWebSignature2020',
+      created: '2024-12-03T07:12:34.830Z',
+      proofPurpose: 'assertionMethod',
+      verificationMethod: 'did:web:compliance.lab.gaia-x.eu:v1-staging#X509-JWK2020',
+      jws: 'eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..RJ6OXL8wPTreO-2dxl0_l2BjiOl9lXyZ62S3dYc1hTdSVXaI3i8FTsdusMeQefGmfOY-J7am_mzX0VEc0F7We385c-38JpjuxeQDK-yK82YSWs5vjgjJKv0w4BIMPp5DG1wxDS2J6Igne9HiF4qtUb519OmcS0el6PlvF8nOUxXCp_lFSAKoYezvsO8-cbX4UPNHIxazZAjP9SHkG-4xT1doQ6hfxCWbspY75H-_WEhbINMwHJF_saRrzyO0mX6p0GrbVlDhhiGeS1DYUIzRNgdozvLP81_alTfrcpuGOxZI1w49cbODdmewLYp0HS7jeVuvl7qvxZYEeqedXJ7onQ'
+    }
+  }
+} 
+2024-12-03T07:12:34.861Z - info: [v1/SignerToolController.js ~ GXLegalParticipant] 58a1f749-fcd0-4e7d-bdc9-f37bdc5c1e2b - 🔒 SD signed successfully (compliance service) {} 
+2024-12-03T07:16:57.720Z - debug: [v1/SignerToolController.js ~ ServiceOffering] {"type":"VerifiableCredential","id":"https://datamite.digital.tecnalia.dev/.well-known/serviceOffering.json","issuer":"did:web:datamite.digital.tecnalia.dev","issuanceDate":"2023-08-10T13:13:12.552192251Z","credentialSubject":{"gx:termsAndConditions":{"gx:URL":"https://aws.amazon.com/service-terms/","gx:hash":"689be3192f5686526bdddb450463f6c2f752c23b2820a2aae35e6779889e817a"},"gx:policy":"{'@context': {'edc': 'https://w3id.org/edc/v0.0.1/ns/', 'odrl': 'http://www.w3.org/ns/odrl/2/'}, '@id': 'no-restriction-policy', '@type': 'edc:PolicyDefinition', 'edc:policy': {'@type': 'odrl:Set', 'odrl:permission': [], 'odrl:prohibition': [], 'odrl:obligation': []}}","gx:dataAccountExport":{"gx:requestType":"API","gx:accessType":"physical","gx:formatType":"application/json"},"gx:aggregationOf":[{"id":"https://datamite.digital.tecnalia.dev/.well-known/dataresource0_1730372012205.json"}],"gx:dataProtectionRegime":"GDPR2016","type":"gx:ServiceOffering","gx:providedBy":{"id":"https://datamite.digital.tecnalia.dev/.well-known/participant.json"},"id":"https://datamite.digital.tecnalia.dev/.well-known/serviceOffering.json"},"@context":["https://www.w3.org/2018/credentials/v1","https://w3id.org/security/suites/jws-2020/v1"]} - Service offering VC {} 

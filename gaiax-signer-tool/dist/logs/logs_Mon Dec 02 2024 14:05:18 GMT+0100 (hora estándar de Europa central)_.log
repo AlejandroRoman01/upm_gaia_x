@@ -1,0 +1,156 @@
+2024-12-02T13:09:59.848Z - error: [v1/SignerToolController.js ~ VerifyWebDID] 0886bfc7-54ed-46fe-895d-f71fd73a3dfe - ❌ Verification Method not found in DDO: 'did:web:datamite.digital.tecnalia.dev' {} 
+2024-12-02T13:10:33.591Z - error: [v1/SignerToolController.js ~ VerifyWebDID] 8b508a5f-3b74-4056-a13f-90c204fd74a6 - "pkcs8" must be PKCS#8 formatted string {} 
+2024-12-02T13:30:59.109Z - error: [common-functions/common-functions.js ~ issueRegistrationNumberVC]  - ❌ RegistrationNumber failed | Error: AxiosError: Request failed with status code 404 {} 
+2024-12-02T13:30:59.110Z - error: [v1/SignerToolController.js ~ ValidateRegistrationNumber] 42e40aa6-ef24-409b-853c-b7fb75ff48ae - ❌ RegistrationNumber failed | Error: AxiosError: Request failed with status code 404 {} 
+2024-12-02T13:31:33.590Z - error: [common-functions/common-functions.js ~ issueRegistrationNumberVC]  - ❌ RegistrationNumber failed | Error: AxiosError: Request failed with status code 404 {} 
+2024-12-02T13:31:33.591Z - error: [v1/SignerToolController.js ~ ValidateRegistrationNumber] 7d2940e1-5c5f-49da-9ac8-240412189f62 - ❌ RegistrationNumber failed | Error: AxiosError: Request failed with status code 404 {} 
+2024-12-02T13:40:49.402Z - debug: [v1/SignerToolController.js ~ GXLegalParticipant] 1648fa5e-6189-40df-913b-4ca65358b912 - req.body {
+  issuer: 'did:web:datamite.digital.tecnalia.dev',
+  verificationMethod: 'did:web:datamite.digital.tecnalia.dev#JWK2020-RSA',
+  isVault: false
+} 
+2024-12-02T13:40:49.403Z - debug: [v1/SignerToolController.js ~ GXLegalParticipant] 1648fa5e-6189-40df-913b-4ca65358b912 - req.body {
+  "legalParticipant": {
+    "credentialSubject": {
+      "gx:legalName": "Tecnalia",
+      "gx:headquarterAddress": {
+        "gx:countrySubdivisionCode": "ES-PV"
+      },
+      "gx:legalAddress": {
+        "gx:countrySubdivisionCode": "ES-PV"
+      },
+      "id": "https://lakhani1993.dev.smart-x.smartsenselabs.com/9a443f46-275d-4568-a3f6-56811c0f4716/participant.json#0",
+      "type": "gx:LegalParticipant",
+      "gx:legalRegistrationNumber": {
+        "id": "https://lakhani1993.dev.smart-x.smartsenselabs.com/9a443f46-275d-4568-a3f6-56811c0f4716/participant.json#1"
+      }
+    },
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1",
+      "https://w3id.org/security/suites/jws-2020/v1",
+      "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"
+    ],
+    "type": [
+      "VerifiableCredential"
+    ],
+    "id": "https://lakhani1993.dev.smart-x.smartsenselabs.com/9a443f46-275d-4568-a3f6-56811c0f4716/participant.json#0",
+    "issuer": "did:web:datamite.digital.tecnalia.dev",
+    "issuanceDate": "2024-09-02T11:10:56.55791193Z"
+  },
+  "legalRegistrationNumber": {
+    "@context": [
+      "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/participant"
+    ],
+    "type": "gx:legalRegistrationNumber",
+    "id": "https://lakhani1993.dev.smart-x.smartsenselabs.com/9a443f46-275d-4568-a3f6-56811c0f4716/participant.json#1",
+    "gx:vatID": "ESG48975767",
+    "gx:vatID-countryCode": "ES"
+  },
+  "gaiaXTermsAndConditions": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1",
+      "https://w3id.org/security/suites/jws-2020/v1",
+      "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"
+    ],
+    "credentialSubject": {
+      "gx:termsAndConditions": "The PARTICIPANT signing the Self-Description agrees as follows:\n- to update its descriptions about any changes, be it technical, organizational, or legal - especially but not limited to contractual in regards to the indicated attributes present in the descriptions.\n\nThe keypair used to sign Verifiable Credentials will be revoked where Gaia-X Association becomes aware of any inaccurate statements in regards to the claims which result in a non-compliance with the Trust Framework and policy rules defined in the Policy Rules and Labelling Document (PRLD).",
+      "id": "https://lakhani1993.dev.smart-x.smartsenselabs.com/9a443f46-275d-4568-a3f6-56811c0f4716/participant.json#2",
+      "type": "gx:GaiaXTermsAndConditions",
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://w3id.org/security/suites/jws-2020/v1",
+        "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"
+      ]
+    },
+    "id": "https://lakhani1993.dev.smart-x.smartsenselabs.com/9a443f46-275d-4568-a3f6-56811c0f4716/participant.json#2",
+    "issuanceDate": "2024-09-02T11:10:56.55791193Z",
+    "issuer": "did:web:datamite.digital.tecnalia.dev",
+    "type": [
+      "VerifiableCredential"
+    ],
+    "proof": {
+      "type": "JsonWebSignature2020",
+      "created": "2024-09-03T08:46:39.503Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:web:datamite.digital.tecnalia.dev#JWK2020-RSA",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..dY89JSGQNYZ87I9dhCmXH_6Px55KKnOCho1JEE_Lww49DS6_x92FoSZEPTIAj3Ud7SxfOoYElTohQtYgXrwEFhVbityCoIoJWxwPGqKjy_VmZUqO5IkcJSpjqSBVgDOtSz4qyNUm_oVx0RDYom6_MizF7ps_5fHEyX-w4LX1lpmOX-rly2LWshypP-LdEXSH-D_5kg3kRpv1ijfMYhdbIwT2mgAhuExJyeBP71z2gJe7TcHB_5UhnKZ5Gsjmm6DzXHMefMYtAUYAgCHWWwm424tRQaoNIaHD0YOBW8WT6lD6kmfkO-eLS0SPMBLI57dnKkNCq5n0UFE5Xa7fSbOEtA"
+    }
+  }
+} 
+2024-12-02T13:40:49.579Z - error: [common-functions/common-functions.js ~ issueRegistrationNumberVC]  - ❌ RegistrationNumber failed | Error: AxiosError: Request failed with status code 404 {} 
+2024-12-02T13:40:49.581Z - error: [v1/SignerToolController.js ~ GXLegalParticipant] 1648fa5e-6189-40df-913b-4ca65358b912 - ❌ RegistrationNumber failed | Error: AxiosError: Request failed with status code 404 {} 
+2024-12-02T13:43:26.896Z - debug: [v1/SignerToolController.js ~ GXLegalParticipant] 4e402074-f76c-4224-af84-c4ef0bab7f75 - req.body {
+  issuer: 'did:web:datamite.digital.tecnalia.dev',
+  verificationMethod: 'did:web:datamite.digital.tecnalia.dev#JWK2020-RSA',
+  isVault: false
+} 
+2024-12-02T13:43:26.896Z - debug: [v1/SignerToolController.js ~ GXLegalParticipant] 4e402074-f76c-4224-af84-c4ef0bab7f75 - req.body {
+  "legalParticipant": {
+    "credentialSubject": {
+      "gx:legalName": "Tecnalia",
+      "gx:headquarterAddress": {
+        "gx:countrySubdivisionCode": "ES-PV"
+      },
+      "gx:legalAddress": {
+        "gx:countrySubdivisionCode": "ES-PV"
+      },
+      "id": "https://datamite.digital.tecnalia.dev/.well-known/participant.json",
+      "type": "gx:LegalParticipant",
+      "gx:legalRegistrationNumber": {
+        "id": "https://datamite.digital.tecnalia.dev/.well-known/lrn.json"
+      }
+    },
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1",
+      "https://w3id.org/security/suites/jws-2020/v1",
+      "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"
+    ],
+    "type": [
+      "VerifiableCredential"
+    ],
+    "id": "https://datamite.digital.tecnalia.dev/.well-known/participant.json",
+    "issuer": "did:web:datamite.digital.tecnalia.dev",
+    "issuanceDate": "2024-09-02T11:10:56.55791193Z"
+  },
+  "legalRegistrationNumber": {
+    "@context": [
+      "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/participant"
+    ],
+    "type": "gx:legalRegistrationNumber",
+    "id": "https://datamite.digital.tecnalia.dev/.well-known/lrn.json",
+    "gx:vatID": "ESG48975767",
+    "gx:vatID-countryCode": "ES"
+  },
+  "gaiaXTermsAndConditions": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1",
+      "https://w3id.org/security/suites/jws-2020/v1",
+      "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"
+    ],
+    "credentialSubject": {
+      "gx:termsAndConditions": "The PARTICIPANT signing the Self-Description agrees as follows:\n- to update its descriptions about any changes, be it technical, organizational, or legal - especially but not limited to contractual in regards to the indicated attributes present in the descriptions.\n\nThe keypair used to sign Verifiable Credentials will be revoked where Gaia-X Association becomes aware of any inaccurate statements in regards to the claims which result in a non-compliance with the Trust Framework and policy rules defined in the Policy Rules and Labelling Document (PRLD).",
+      "id": "https://datamite.digital.tecnalia.dev/.well-known/tsandcs.json",
+      "type": "gx:GaiaXTermsAndConditions",
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://w3id.org/security/suites/jws-2020/v1",
+        "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"
+      ]
+    },
+    "id": "https://datamite.digital.tecnalia.dev/.well-known/tsandcs.json",
+    "issuanceDate": "2024-09-02T11:10:56.55791193Z",
+    "issuer": "did:web:datamite.digital.tecnalia.dev",
+    "type": [
+      "VerifiableCredential"
+    ],
+    "proof": {
+      "type": "JsonWebSignature2020",
+      "created": "2024-09-03T08:46:39.503Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:web:datamite.digital.tecnalia.dev#JWK2020-RSA",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..dY89JSGQNYZ87I9dhCmXH_6Px55KKnOCho1JEE_Lww49DS6_x92FoSZEPTIAj3Ud7SxfOoYElTohQtYgXrwEFhVbityCoIoJWxwPGqKjy_VmZUqO5IkcJSpjqSBVgDOtSz4qyNUm_oVx0RDYom6_MizF7ps_5fHEyX-w4LX1lpmOX-rly2LWshypP-LdEXSH-D_5kg3kRpv1ijfMYhdbIwT2mgAhuExJyeBP71z2gJe7TcHB_5UhnKZ5Gsjmm6DzXHMefMYtAUYAgCHWWwm424tRQaoNIaHD0YOBW8WT6lD6kmfkO-eLS0SPMBLI57dnKkNCq5n0UFE5Xa7fSbOEtA"
+    }
+  }
+} 
+2024-12-02T13:43:27.137Z - error: [common-functions/common-functions.js ~ issueRegistrationNumberVC]  - ❌ RegistrationNumber failed | Error: AxiosError: Request failed with status code 404 {} 
+2024-12-02T13:43:27.138Z - error: [v1/SignerToolController.js ~ GXLegalParticipant] 4e402074-f76c-4224-af84-c4ef0bab7f75 - ❌ RegistrationNumber failed | Error: AxiosError: Request failed with status code 404 {} 

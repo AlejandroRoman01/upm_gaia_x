@@ -1,0 +1,21 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const constants_1 = require("../../../utils/constants");
+const commonValidation_1 = require("../../../utils/validators/commonValidation");
+const SignerToolValidations_1 = __importDefault(require("../../../utils/validators/SignerToolValidations"));
+const SignerToolController_1 = __importDefault(require("./SignerToolController"));
+const router = (0, express_1.Router)();
+router.post(constants_1.ROUTES.V1_APIS.LEGAL_PARTICIPANT, SignerToolValidations_1.default.GXLegalParticipant, commonValidation_1.checkResults, SignerToolController_1.default.GXLegalParticipant);
+router.post(constants_1.ROUTES.V1_APIS.SERVICE_OFFERING, SignerToolValidations_1.default.ServiceOffering, commonValidation_1.checkResults, SignerToolController_1.default.ServiceOffering);
+router.post(constants_1.ROUTES.V1_APIS.RESOURCE, SignerToolValidations_1.default.Resource, commonValidation_1.checkResults, SignerToolController_1.default.Resource);
+router.post(constants_1.ROUTES.V1_APIS.LABEL_LEVEL, SignerToolValidations_1.default.LabelLevel, commonValidation_1.checkResults, SignerToolController_1.default.LabelLevel);
+router.post(constants_1.ROUTES.V1_APIS.VERIFY, SignerToolValidations_1.default.Verify, commonValidation_1.checkResults, SignerToolController_1.default.Verify);
+router.post(constants_1.ROUTES.V1_APIS.CREATE_WEB_DID, SignerToolValidations_1.default.CreateWebDID, commonValidation_1.checkResults, SignerToolController_1.default.CreateWebDID);
+router.post(constants_1.ROUTES.V1_APIS.VERIFY_WEB_DID, SignerToolValidations_1.default.VerifyWebDID, commonValidation_1.checkResults, SignerToolController_1.default.VerifyWebDID);
+router.post(constants_1.ROUTES.V1_APIS.GET_TRUST_INDEX, SignerToolValidations_1.default.TrustIndex, commonValidation_1.checkResults, SignerToolController_1.default.GetTrustIndex);
+router.post(constants_1.ROUTES.V1_APIS.REGISTRATION_NUMBER, SignerToolValidations_1.default.RegistrationNumber, commonValidation_1.checkResults, SignerToolController_1.default.ValidateRegistrationNumber);
+exports.default = router;

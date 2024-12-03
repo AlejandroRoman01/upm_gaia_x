@@ -1,0 +1,47 @@
+{
+    "env": {
+        "es6": true,
+        "node": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+        "@typescript-eslint",
+        "prettier",
+        "more"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
+        "prettier"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "rules": {
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "single",
+            {
+                "avoidEscape": true,
+                "allowTemplateLiterals": true
+            }
+        ],
+        /* "semi": [
+            "error",
+            "never"
+        ], */
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/semi": "off",
+        "@typescript-eslint/no-var-requires": "off",
+        "no-useless-escape": "off",
+        "require-yield": "off",
+        "@typescript-eslint/no-namespace": "off",
+        "more/no-hardcoded-password": 2
+    }
+}
