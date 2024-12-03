@@ -43,7 +43,7 @@ Este sistema está diseñado para ser modular, fácil de escalar y administrar, 
 
 ### Neo4j
 - **Descripción**: Vista de los grafos donde se visualizan esquemáticamente los servicios que se ofrecen.
-- **URL de acceso**: [http://localhost:7474/browser/](http://localhost:7474/browser/) (Credenciales: `upm/upmgaiax`)
+- **URL de acceso**: [http://localhost:7474/browser/](http://localhost:7474/browser/) (Credenciales: `neo4j/upmgaiax`)
 
 ---
 
