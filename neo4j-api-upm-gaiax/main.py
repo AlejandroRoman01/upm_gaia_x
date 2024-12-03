@@ -3,6 +3,7 @@ from fastapi.responses import JSONResponse
 from sqlalchemy.orm import Session
 from database import get_db, close_db
 from services import create_nodes_and_relationships
+from uploadMongoDB import upload_json_to_Mongo 
 import json
 
 app = FastAPI()
@@ -17,6 +18,7 @@ async def process_json(file: UploadFile = File(...), db: Session = Depends(get_d
         # Carga el contenido del archivo JSON en memoria
         contents = await file.read()  # Leer el contenido del archivo
         data = json.loads(contents)  # Cargar el contenido JSON
+        upload_json_to_Mongo(data)
          # Leer el archivo JSON
         #data = load_json_file('jsons/vp_serviceOffering.json')
         create_nodes_and_relationships(db, data)
