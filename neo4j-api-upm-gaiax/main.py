@@ -18,10 +18,12 @@ async def process_json(file: UploadFile = File(...), db: Session = Depends(get_d
         # Carga el contenido del archivo JSON en memoria
         contents = await file.read()  # Leer el contenido del archivo
         data = json.loads(contents)  # Cargar el contenido JSON
-        upload_json_to_Mongo(data)
+        uuid = upload_json_to_Mongo(data)
          # Leer el archivo JSON
-        #data = load_json_file('jsons/vp_serviceOffering.json')
+        # TODO añadir el uuid al grafo
         create_nodes_and_relationships(db, data)
+        # TODO añadir el json a CES
+
         return JSONResponse(content={"message": "Archivo JSON subido exitosamente", "filename": file.filename})
 
     except json.JSONDecodeError:

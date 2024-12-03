@@ -15,15 +15,6 @@ services:
       - ./neo4j-data/import:/var/lib/neo4j/import
       - ./neo4j-config/init_constraints.cypher:/var/lib/neo4j/import/init_constraints.cypher  # Montar el script de constraints
 
-  neo4j-api-upm-gaiax:
-    build: ./neo4j-api-upm-gaiax
-    env_file:
-      - neo4j-config/neo4j.env
-    ports:
-      - "8000:80"
-    depends_on:
-      - neo4j-upm-gaiax
-
   mongodb-upm-gaiax:
     image: mongo:latest # Usa la imagen oficial de MongoDB
     container_name: mongodb-upm-gaiax
@@ -45,3 +36,15 @@ services:
       ME_CONFIG_MONGODB_ADMINUSERNAME: upm
       ME_CONFIG_MONGODB_ADMINPASSWORD: upmgaiax
       ME_CONFIG_MONGODB_SERVER: mongodb-upm-gaiax
+    depends_on:
+      - mongodb-upm-gaiax
+
+  neo4j-api-upm-gaiax:
+    build: ./neo4j-api-upm-gaiax
+    env_file:
+      - neo4j-config/neo4j.env
+    ports:
+      - "8000:80"
+    depends_on:
+      - neo4j-upm-gaiax
+      - mongodb-upm-gaiax
