@@ -7,4 +7,3 @@ python-multipart
 requests
 influxdb-client
 pymongo
-requests
