@@ -21,10 +21,29 @@ async def process_json(file: UploadFile = File(...), db: Session = Depends(get_d
         complianceCredential = data["complianceCredential"]
         # TODO añadirlo al data y meterlo en CES
 
+        destination_json = {
+    "specversion": "1.0",
+    "type": "eu.gaia-x.credential",
+    "source": "/mycontext",
+    "time": "2024-01-01T06:00:00Z",
+    "datacontenttype": "application/json",
+    "data": {}
+    }
+
+        # Insertar "complianceCredential" dentro del apartado "data"
+        destination_json["data"] = complianceCredential
+
+        # Guardar el JSON destino actualizado 
+        with open('./serviceOfferings/cestemplateUpdate.json', 'w') as destination_file:
+            json.dump(destination_json, destination_file, indent=4)
+
+        #Subimos el cestemplateUpdate a CES
+        
+
         # TODO nos devuelve
 
         # Cargar el JSON desde un archivo y que el uuid sea el que nos devuelve lo CES
-        uuid = upload_json_to_Mongo(data)
+        upload_json_to_Mongo(data)
 
          # Leer el archivo JSON
         # TODO añadir el uuid al grafo

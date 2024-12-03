@@ -9,10 +9,6 @@ def upload_json_to_Mongo(data, db_name="gaiax_catalogue", collection_name="upm")
     db = client[db_name]
     collection = db[collection_name]
 
-    # Cargar el JSON desde un archivo
-    #with open(json_path, 'r') as file:
-    #    data = json.load(file)
-
     # Verificar si el JSON ya tiene un UUID
     if 'uuid' not in data:
         data['uuid'] = str(uuid.uuid4())  # Generar un UUID único
