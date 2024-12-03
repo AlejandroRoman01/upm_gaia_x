@@ -1,13 +1,13 @@
 version: '3.8'
 services:
-  gaia-x-signer-tool:
+  gaiax-signer-tool:
     build:
-      context: ./gaia-x-signer-tool
+      context: ./gaiax-signer-tool
       dockerfile: Dockerfile
     ports:
       - "3000:8000"  # Cambia si tu app usa otro puerto
     volumes:
-      - ./gaia-x-signer-tool:/usr/src/app # Sincroniza código local con contenedor (útil para desarrollo)
+      - ./gaiax-signer-tool:/usr/src/app # Sincroniza código local con contenedor (útil para desarrollo)
     environment:
       NODE_ENV: development # Configura las variables necesarias
     restart: unless-stopped
