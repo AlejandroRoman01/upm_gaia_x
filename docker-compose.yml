@@ -1,5 +1,17 @@
 version: '3.8'
 services:
+  gaia-x-signer-tool:
+    build:
+      context: ./gaia-x-signer-tool
+      dockerfile: Dockerfile
+    ports:
+      - "3000:8000"  # Cambia si tu app usa otro puerto
+    volumes:
+      - ./gaia-x-signer-tool:/usr/src/app # Sincroniza código local con contenedor (útil para desarrollo)
+    environment:
+      NODE_ENV: development # Configura las variables necesarias
+    restart: unless-stopped
+
   neo4j-upm-gaiax:
     image: neo4j:latest
     container_name: neo4j-upm-gaiax
