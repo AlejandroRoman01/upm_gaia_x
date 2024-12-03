@@ -59,4 +59,4 @@ Este sistema está diseñado para ser modular, fácil de escalar y administrar, 
 ### Acceso a los Servicios
 - **Mongo Express**: [http://localhost:8081/](http://localhost:8081/)
 - **FastAPI**: [http://localhost:8000/docs](http://localhost:8000/docs)
-- **Neo4j**: [http://localhost:7474/browser/](http://localhost:7474/browser/) (Credenciales: `upm/upmgaiax`)
+- **Neo4j**: [http://localhost:7474/browser/](http://localhost:7474/browser/) (Credenciales: `neo4j/upmgaiax`)
