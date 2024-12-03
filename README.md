@@ -6,7 +6,7 @@ El objetivo del proyecto es desarrollar una base de datos de grafos que sea fác
 ## Descripción
 Este proyecto utiliza **Docker Compose** para desplegar un entorno completo orientado a grafos y bases de datos. Incluye un contenedor de **Neo4j** como base de datos de grafos principal, acompañado de un servicio para aplicar restricciones y configuraciones iniciales. Además, incorpora **MongoDB** como base de datos para guardar el json y extraer un UUID, con persistencia de datos habilitada, y **Mongo Express** para la administración visual de MongoDB. Finalmente, se incluye una **API** específica para interactuar con Neo4j y MongoDB, facilitando la comunicación entre servicios. 
 
-## Herrrmaientas
+## Herramientas
 Signer tool: herramienta utilizada para firmar digitalmente datos 
 
 Service offering: conjunto definido de servicios que una organización ofrece a sus clientes o usuarios
