@@ -28,6 +28,6 @@ def upload_json_to_Mongo(json_path, db_name="gaiax_catalogue", collection_name="
 
 # Llamar a la función con la ruta del archivo JSON
 json_path = './mi_json.json'  # Cambia esto a la ubicación de tu archivo JSON
-uuid_generado = subir_json_a_mongo(json_path)
+uuid_generado = upload_json_to_Mongo(json_path)
 
 print(f"UUID generado o existente: {uuid_generado}")
