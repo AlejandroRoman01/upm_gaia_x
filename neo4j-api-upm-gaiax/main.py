@@ -37,15 +37,24 @@ async def process_json(file: UploadFile = File(...), db: Session = Depends(get_d
         with open('./serviceOfferings/cestemplateUpdate.json', 'w') as destination_file:
             json.dump(destination_json, destination_file, indent=4)
 
-        #Subimos el cestemplateUpdate a CES
-        
-
-        # TODO nos devuelve
+        # TODO subirlo a CES
+        response = requests.post("https://ces-main.lab.gaia-x.eu/credentials-events", json=destination_json, headers={"Content-Type": "application/json"})
+        print(response)
+        #Manejo de la respuesta
+        if response.status_code == 201:
+            # Extraer el UUID del JSON de la respuesta
+            response_data = response.json()
+            uuid = response_data.get("uuid")  # Ajusta la clave según la estructura de la respuesta
+            if uuid:
+                print(f"El UUID generado es: {uuid}")
+            else:
+                print("No se encontró un UUID en la respuesta.")
+        else:
+            print(f"Error en la solicitud: {response.status_code}, {response.text}")
 
         # Cargar el JSON desde un archivo y que el uuid sea el que nos devuelve lo CES
-        upload_json_to_Mongo(data)
+        upload_json_to_Mongo(data, uuid)
 
-         # Leer el archivo JSON
         # TODO añadir el uuid al grafo
         create_nodes_and_relationships(db, data)
         # TODO añadir el json a CES
