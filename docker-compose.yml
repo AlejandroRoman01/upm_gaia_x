@@ -26,7 +26,7 @@ services:
 
   mongodb-upm-gaiax:
     image: mongo:latest # Usa la imagen oficial de MongoDB
-    container_name: upmgaiax
+    container_name: mongodb-upm-gaiax
     restart: always
     ports:
       - "27017:27017" # Expone el puerto de MongoDB
@@ -34,4 +34,4 @@ services:
       MONGO_INITDB_ROOT_USERNAME: upm # Usuario raíz
       MONGO_INITDB_ROOT_PASSWORD: upmgaiax # Contraseña raíz
     volumes:
-      - mongo_data:/eo4j-api-upm-gaiax/mongodata # Persistencia de datos
+      - ./mongo-data:/data/db # Persistencia de datos

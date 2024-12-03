@@ -4,7 +4,7 @@ from pymongo import MongoClient
 
 def subir_json_a_mongo(json_path, db_name="gaiax_catalogue", collection_name="upm"):
     # Conexión al servidor MongoDB
-    client = MongoClient("mongodb://mongodb-upm.gaiax:27017")  # Cambia la URI si tu MongoDB está en otro lugar
+    client = MongoClient("mongodb://mongodb-upm-gaiax:27017")  # Cambia la URI si tu MongoDB está en otro lugar
     db = client[db_name]
     collection = db[collection_name]
 
