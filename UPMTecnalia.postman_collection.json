@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "9ae88858-ce15-47f8-baec-d9b80650a271",
-		"name": "Smart-sense signer",
+		"_postman_id": "73203758-6a5b-42ed-9444-f7012b7b3e7e",
+		"name": "UPM Tecnalia signer",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "4600933",
-		"_collection_link": "https://crimson-station-502136.postman.co/workspace/GXFS_WORKSHOP~26241d56-9954-48cc-8041-8ebe23d3629b/collection/4600933-9ae88858-ce15-47f8-baec-d9b80650a271?action=share&source=collection_link&creator=4600933"
+		"_exporter_id": "9450519",
+		"_collection_link": "https://interstellar-robot-4470.postman.co/workspace/GAIAX~df6e329a-5354-448b-ab20-3f86095c1c5f/collection/9450519-73203758-6a5b-42ed-9444-f7012b7b3e7e?action=share&source=collection_link&creator=9450519"
 	},
 	"item": [
 		{
@@ -31,97 +31,18 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8000/v1/create-web-did",
+					"raw": "http://localhost:3000/v1/create-web-did",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8000",
+					"port": "3000",
 					"path": [
 						"v1",
 						"create-web-did"
 					]
 				},
 				"description": "Generated from cURL: curl -X 'POST' \\\r\n  'http://localhost:8000/v1/create-web-did' \\\r\n  -H 'accept: application/json' \\\r\n  -H 'Content-Type: application/json' \\\r\n  -d '{\r\n  \"domain\": \"datamite.digital.tecnalia.dev\"\r\n}'"
-			},
-			"response": []
-		},
-		{
-			"name": "Verify Did",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "accept",
-						"value": "application/json"
-					},
-					{
-						"key": "Content-Type",
-						"value": "application/json"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n  \"did\": \"did:web:lakhani02.dev.smart-x.smartsenselabs.com\",\r\n  \"verificationMethod\": \"did:web:lakhani02.dev.smart-x.smartsenselabs.com\",\r\n  \"privateKey\": \"Vault Key || Base64 Encoded -----BEGIN PRIVATE KEY-----\\n...\\n-----END PRIVATE KEY-----\",\r\n  \"isVault\": false\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:8000/v1/verify-web-did",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8000",
-					"path": [
-						"v1",
-						"verify-web-did"
-					]
-				},
-				"description": "Generated from cURL: curl -X 'POST' \\\r\n  'http://localhost:8000/v1/verify-web-did' \\\r\n  -H 'accept: application/json' \\\r\n  -H 'Content-Type: application/json' \\\r\n  -d '{\r\n  \"did\": \"did:web:lakhani02.dev.smart-x.smartsenselabs.com\",\r\n  \"verificationMethod\": \"did:web:lakhani02.dev.smart-x.smartsenselabs.com\",\r\n  \"privateKey\": \"Vault Key || Base64 Encoded -----BEGIN PRIVATE KEY-----\\n...\\n-----END PRIVATE KEY-----\",\r\n  \"isVault\": false\r\n}'"
-			},
-			"response": []
-		},
-		{
-			"name": "Validate Registration  Number",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "accept",
-						"value": "application/json"
-					},
-					{
-						"key": "Content-Type",
-						"value": "application/json"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n  \"legalRegistrationNumber\": {\r\n    \"@context\": [\r\n      \"https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/participant\"\r\n    ],\r\n    \"type\": \"gx:legalRegistrationNumber\",\r\n    \"id\": \"did:web:gaia-x.eu:legalRegistrationNumber.json\",\r\n    \"gx:vatID\": \"ESG48975767\"\r\n  }\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:8000/v1/gaia-x/validate-registration-number",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8000",
-					"path": [
-						"v1",
-						"gaia-x",
-						"validate-registration-number"
-					]
-				},
-				"description": "Generated from cURL: curl -X 'POST' \\\r\n  'http://localhost:8000/v1/gaia-x/validate-registration-number' \\\r\n  -H 'accept: application/json' \\\r\n  -H 'Content-Type: application/json' \\\r\n  -d '{\r\n  \"legalRegistrationNumber\": {\r\n    \"@context\": [\r\n      \"https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/participant\"\r\n    ],\r\n    \"type\": \"gx:legalRegistrationNumber\",\r\n    \"id\": \"did:web:gaia-x.eu:legalRegistrationNumber.json\",\r\n    \"gx:vatID\": \"ESG48975767\"\r\n  }\r\n}'"
 			},
 			"response": []
 		},
@@ -149,15 +70,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://172.26.40.97:8000/v1/gaia-x/legal-participant",
+					"raw": "http://localhost:3000/v1/gaia-x/legal-participant",
 					"protocol": "http",
 					"host": [
-						"172",
-						"26",
-						"40",
-						"97"
+						"localhost"
 					],
-					"port": "8000",
+					"port": "3000",
 					"path": [
 						"v1",
 						"gaia-x",
@@ -251,49 +169,6 @@
 					]
 				},
 				"description": "Generated from cURL: curl -X 'POST' \\\r\n  'http://localhost:8000/v1/gaia-x/service-offering' \\\r\n  -H 'accept: application/json' \\\r\n  -H 'Content-Type: application/json' \\\r\n  -d '{\r\n  \"privateKey\": \"Vault Key || Base64 -----BEGIN PRIVATE KEY-----\\n...\\n-----END PRIVATE KEY-----\",\r\n  \"isVault\": false,\r\n  \"issuer\": \"did:web:lakhani02.dev.smart-x.smartsenselabs.com\",\r\n  \"verificationMethod\": \"did:web:lakhani02.dev.smart-x.smartsenselabs.com\",\r\n  \"vcs\": {\r\n    \"serviceOffering\": {\r\n      \"type\": \"VerifiableCredential\",\r\n      \"id\": \"did:web:lakhani02.dev.smart-x.smartsenselabs.com\",\r\n      \"issuer\": \"did:web:lakhani02.dev.smart-x.smartsenselabs.com\",\r\n      \"issuanceDate\": \"2023-08-10T13:13:12.552192251Z\",\r\n      \"credentialSubject\": {\r\n        \"gx:termsAndConditions\": {\r\n          \"gx:URL\": \"https://aws.amazon.com/service-terms/\",\r\n          \"gx:hash\": \"689be3192f5686526bdddb450463f6c2f752c23b2820a2aae35e6779889e817a\"\r\n        },\r\n        \"gx:policy\": [\r\n          \"https://wizard-api.smart-x.smartsenselabs.com/12081064-8878-477e-8092-564a240c69e2/service_tc3p_policy.json\"\r\n        ],\r\n        \"gx:dataAccountExport\": {\r\n          \"gx:requestType\": \"API\",\r\n          \"gx:accessType\": \"physical\",\r\n          \"gx:formatType\": \"pdf\"\r\n        },\r\n        \"gx:aggregationOf\": [\r\n          {\r\n            \"id\": \"https://wizard-api.smart-x.smartsenselabs.com/12081064-8878-477e-8092-564a240c69e2/resource_f1b1d420-d44d-439a-8de3-1aeb58f9a493.json\"\r\n          },\r\n          {\r\n            \"id\": \"https://wizard-api.smart-x.smartsenselabs.com/12081064-8878-477e-8092-564a240c69e2/resource_19c2bf19-dffe-486e-99bf-bec2301eb061.json\"\r\n          }\r\n        ],\r\n        \"gx:dependsOn\": [\r\n          {\r\n            \"id\": \"https://wizard-api.smart-x.smartsenselabs.com/12081064-8878-477e-8092-564a240c69e2/service_xSoK.json\"\r\n          },\r\n          {\r\n            \"id\": \"https://wizard-api.smart-x.smartsenselabs.com/12081064-8878-477e-8092-564a240c69e2/service_Mxt9.json\"\r\n          }\r\n        ],\r\n        \"gx:dataProtectionRegime\": \"GDPR2016\",\r\n        \"type\": \"gx:ServiceOffering\",\r\n        \"gx:providedBy\": {\r\n          \"id\": \"https://lakhani02.dev.smart-x.smartsenselabs.com/0ae2975f-367a-4cf5-920f-1bef6c32f252/participant.json#0\"\r\n        },\r\n        \"id\": \"https://wizard-api.smart-x.smartsenselabs.com/12081064-8878-477e-8092-564a240c69e2/service_tc3p.json\"\r\n      },\r\n      \"@context\": [\r\n        \"https://www.w3.org/2018/credentials/v1\",\r\n        \"https://w3id.org/security/suites/jws-2020/v1\"\r\n      ]\r\n    }\r\n  }\r\n}'"
-			},
-			"response": []
-		},
-		{
-			"name": "Create resource",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "accept",
-						"value": "application/json"
-					},
-					{
-						"key": "Content-Type",
-						"value": "application/json"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n  \"privateKey\": \"Vault Key || Base64 Encoded -----BEGIN PRIVATE KEY-----\\n...\\n-----END PRIVATE KEY-----\",\r\n  \"isVault\": false,\r\n  \"issuer\": \"did:web:lakhani02.dev.smart-x.smartsenselabs.com\",\r\n  \"verificationMethod\": \"did:web:lakhani02.dev.smart-x.smartsenselabs.com\",\r\n  \"vcs\": {\r\n    \"resource\": {\r\n      \"@context\": [\r\n        \"https://www.w3.org/2018/credentials/v1\",\r\n        \"https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#\"\r\n      ],\r\n      \"issuer\": \"did:web:lakhani02.dev.smart-x.smartsenselabs.com\",\r\n      \"id\": \"https://lakhani02.dev.smart-x.smartsenselabs.com/0ae2975f-367a-4cf5-920f-1bef6c32f252/resource_561ef50b-69f1-4d5d-89ba-0c9d0150ff5c.json\",\r\n      \"type\": [\r\n        \"VerifiableCredential\"\r\n      ],\r\n      \"issuanceDate\": \"2024-09-04T09:47:00.458087652Z\",\r\n      \"credentialSubject\": {\r\n        \"id\": \"https://lakhani02.dev.smart-x.smartsenselabs.com/0ae2975f-367a-4cf5-920f-1bef6c32f252/resource_561ef50b-69f1-4d5d-89ba-0c9d0150ff5c.json\",\r\n        \"type\": \"gx:DataResource\",\r\n        \"gx:name\": \"AWS\",\r\n        \"gx:description\": \"Fill the following form to publish your service to the relevant Gaia-X catalogue\",\r\n        \"gx:copyrightOwnedBy\": [\r\n          {\r\n            \"id\": \"https://lakhani02.dev.smart-x.smartsenselabs.com/0ae2975f-367a-4cf5-920f-1bef6c32f252/participant.json#0\"\r\n          }\r\n        ],\r\n        \"gx:producedBy\": {\r\n          \"id\": \"https://lakhani02.dev.smart-x.smartsenselabs.com/0ae2975f-367a-4cf5-920f-1bef6c32f252/participant.json#0\"\r\n        },\r\n        \"gx:exposedThrough\": {\r\n          \"id\": \"https://ambuja.dev.smart-x.smartsenselabs.com/2c9317d0-f1b2-451b-a80e-ef40750417ce/service_y66P.json\"\r\n        },\r\n        \"gx:containsPII\": false,\r\n        \"gx:license\": [\r\n          \"https://spdx.org/licenses/Abstyles.html\"\r\n        ],\r\n        \"gx:policy\": [\r\n          \"https://wizard-api.dev.smart-x.smartsenselabs.com/0ae2975f-367a-4cf5-920f-1bef6c32f252/resource_policy_3c3599fc-555a-4ca1-b663-2ab57feffdb2.json\"\r\n        ]\r\n      }\r\n    }\r\n  }\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://172.26.40.97:8000/v1/gaia-x/resource",
-					"protocol": "http",
-					"host": [
-						"172",
-						"26",
-						"40",
-						"97"
-					],
-					"port": "8000",
-					"path": [
-						"v1",
-						"gaia-x",
-						"resource"
-					]
-				},
-				"description": "Generated from cURL: curl -X 'POST' \\\r\n  'http://localhost:8000/v1/gaia-x/resource' \\\r\n  -H 'accept: application/json' \\\r\n  -H 'Content-Type: application/json' \\\r\n  -d '{\r\n  \"privateKey\": \"Vault Key || Base64 Encoded -----BEGIN PRIVATE KEY-----\\n...\\n-----END PRIVATE KEY-----\",\r\n  \"isVault\": false,\r\n  \"issuer\": \"did:web:lakhani02.dev.smart-x.smartsenselabs.com\",\r\n  \"verificationMethod\": \"did:web:lakhani02.dev.smart-x.smartsenselabs.com\",\r\n  \"vcs\": {\r\n    \"resource\": {\r\n      \"@context\": [\r\n        \"https://www.w3.org/2018/credentials/v1\",\r\n        \"https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#\"\r\n      ],\r\n      \"issuer\": \"did:web:lakhani02.dev.smart-x.smartsenselabs.com\",\r\n      \"id\": \"https://lakhani02.dev.smart-x.smartsenselabs.com/0ae2975f-367a-4cf5-920f-1bef6c32f252/resource_561ef50b-69f1-4d5d-89ba-0c9d0150ff5c.json\",\r\n      \"type\": [\r\n        \"VerifiableCredential\"\r\n      ],\r\n      \"issuanceDate\": \"2024-09-04T09:47:00.458087652Z\",\r\n      \"credentialSubject\": {\r\n        \"id\": \"https://lakhani02.dev.smart-x.smartsenselabs.com/0ae2975f-367a-4cf5-920f-1bef6c32f252/resource_561ef50b-69f1-4d5d-89ba-0c9d0150ff5c.json\",\r\n        \"type\": \"gx:DataResource\",\r\n        \"gx:name\": \"AWS\",\r\n        \"gx:description\": \"Fill the following form to publish your service to the relevant Gaia-X catalogue\",\r\n        \"gx:copyrightOwnedBy\": [\r\n          {\r\n            \"id\": \"https://lakhani02.dev.smart-x.smartsenselabs.com/0ae2975f-367a-4cf5-920f-1bef6c32f252/participant.json#0\"\r\n          }\r\n        ],\r\n        \"gx:producedBy\": {\r\n          \"id\": \"https://lakhani02.dev.smart-x.smartsenselabs.com/0ae2975f-367a-4cf5-920f-1bef6c32f252/participant.json#0\"\r\n        },\r\n        \"gx:exposedThrough\": {\r\n          \"id\": \"https://ambuja.dev.smart-x.smartsenselabs.com/2c9317d0-f1b2-451b-a80e-ef40750417ce/service_y66P.json\"\r\n        },\r\n        \"gx:containsPII\": false,\r\n        \"gx:license\": [\r\n          \"https://spdx.org/licenses/Abstyles.html\"\r\n        ],\r\n        \"gx:policy\": [\r\n          \"https://wizard-api.dev.smart-x.smartsenselabs.com/0ae2975f-367a-4cf5-920f-1bef6c32f252/resource_policy_3c3599fc-555a-4ca1-b663-2ab57feffdb2.json\"\r\n        ]\r\n      }\r\n    }\r\n  }\r\n}'"
 			},
 			"response": []
 		}
