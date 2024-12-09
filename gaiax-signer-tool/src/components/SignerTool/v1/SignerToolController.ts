@@ -7,6 +7,8 @@ import STATUS_CODES from 'http-status-codes'
 import * as jose from 'jose'
 import jsonld from 'jsonld'
 import web from 'web-did-resolver'
+import * as fs from 'fs'
+import * as path from 'path'
 
 import { ComplianceCredential, VerificationStatus } from '../../../interface'
 import Utils from '../../../utils/common-functions'
@@ -400,6 +402,13 @@ class SignerToolController {
 
 			// Calculate TrustIndex
 			const trustIndex: number = Utils.calcTrustIndex(veracity, transparency)
+			logger.debug(__filename, 'ServiceOffering', '🔒 trustIndex calculated', req.custom.uuid)
+
+			// Define el path del archivo donde guardar el JSON
+			const filePath = path.join('/usr/data', req.custom.uuid+'completeSD.json')
+
+			// Escribe el archivo JSON con el contenido de `completeSD`
+			fs.writeFileSync(filePath, JSON.stringify(completeSD, null, 2), 'utf-8');
 			logger.debug(__filename, 'ServiceOffering', '🔒 trustIndex calculated', req.custom.uuid)
 
 			res.status(STATUS_CODES.OK).json({

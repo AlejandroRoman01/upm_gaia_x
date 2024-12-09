@@ -1,5 +1,19 @@
 version: '3.8'
 services:
+  magic:
+    command: mage start upm_tecnalia_workflow
+    build:
+      context: ./mage-upm-gaiax
+      dockerfile: Dockerfile
+    environment:
+      USER_CODE_PATH: /home/src/upm_tecnalia_workflow
+    ports:
+      - 6789:6789
+    volumes:
+      - ./mage-data:/home/src/
+      - ./signer-data:/home/files/
+    restart: on-failure:5
+
   gaiax-signer-tool:
     build:
       context: ./gaiax-signer-tool
@@ -8,6 +22,7 @@ services:
       - "3000:8000"  # Cambia si tu app usa otro puerto
     volumes:
       - ./gaiax-signer-tool:/usr/src/app # Sincroniza código local con contenedor (útil para desarrollo)
+      - ./signer-data:/usr/data
     environment:
       NODE_ENV: development # Configura las variables necesarias
     restart: unless-stopped

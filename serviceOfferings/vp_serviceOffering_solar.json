@@ -103,6 +103,8 @@
                         "issuer": "did:web:datamite.digital.tecnalia.dev",
                         "issuanceDate": "2023-08-10T13:13:12.552192251Z",
                         "credentialSubject": {
+                            "gx:serviceOffering:name": "Energia Solar UPM",
+                            "gx:serviceOffering:description": "Service Offering de energia solar de la comunidad de madrid expuesto por la UPM",
                             "gx:termsAndConditions": {
                                 "gx:URL": "https://aws.amazon.com/service-terms/",
                                 "gx:hash": "689be3192f5686526bdddb450463f6c2f752c23b2820a2aae35e6779889e817a"
@@ -131,10 +133,10 @@
                         ],
                         "proof": {
                             "type": "JsonWebSignature2020",
-                            "created": "2024-12-03T14:16:40.096Z",
+                            "created": "2024-12-03T22:31:36.259Z",
                             "proofPurpose": "assertionMethod",
                             "verificationMethod": "did:web:datamite.digital.tecnalia.dev#JWK2020-RSA",
-                            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..t33XPkDU55oqmTwknzbIW0fU8tpxbM01ycktZdO2xMUhvR_A4nOhWz_3RbpTzLFqZ6CXoc-z2H0NreD6gMubIJoBGm8-R_MrcjaVo7mqeF43NMQwp2TezIbNHM7PuTLfjzoa4J7een-46gmKVUUeMuUMGo6VfRiNxuTYUHMnRDtoh-OgVEKhjdh4TPlJzPDFK4qbLAv8RhTRVojARcJfsbrQzzUzCH0f6XgPn9z0Y07ZCULF45KHFMlj5wpuBN2fD2PHgDsRkA20XqD006iYyfPwhRZDZ-_abNVaOI8ut2f1uKIYQRVi8cbGYuJLCwDiA9sWQlgQgeD7_47-wX0t0Q"
+                            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..UP5jgGPlyVyuU3eu5OunUxKznLnSGu6Ozd78wSLdyWcA7pCYLqSlAgCUEm4KcB7YQi9JSSdDncmVtxJ2em3iSNNnInCx5vDK26NBktbX49sXJhBtFsUPHGHyJ1UJR-FbuVC1UF65WE8gFlZjsDV7z0AC6H0zTB8IZmzunUrvHacsSbluxWO_mJ4ocb-jDz-ZqXjgdN__fL7d258fw4XjT4bTCrcnuHQeN3E8AJaix6Y2j_4-1SQHAd8xi6GcEU-c4itYn3I_r-6mExePhcUd05LWKduhKwxF5U8Tkjr5dmUweY6lXMsOQseAgKO5OHW4sU_60n5cOKNK_E_5T0YGAA"
                         }
                     },
                     {
@@ -218,10 +220,10 @@
                 "type": [
                     "VerifiableCredential"
                 ],
-                "id": "https://compliance.lab.gaia-x.eu/v1-staging/credential-offers/a28a0a10-81f7-4bf3-95ba-d8f521d301f1",
+                "id": "https://compliance.lab.gaia-x.eu/v1-staging/credential-offers/adc18f72-59c0-4937-ac85-552cc997df10",
                 "issuer": "did:web:compliance.lab.gaia-x.eu:v1-staging",
-                "issuanceDate": "2024-12-03T14:16:45.436Z",
-                "expirationDate": "2025-03-03T14:16:45.436Z",
+                "issuanceDate": "2024-12-03T22:31:42.105Z",
+                "expirationDate": "2025-03-03T22:31:42.105Z",
                 "credentialSubject": [
                     {
                         "type": "gx:compliance",
@@ -250,7 +252,7 @@
                     {
                         "type": "gx:compliance",
                         "id": "https://datamite.digital.tecnalia.dev/.well-known/serviceOffering0.json",
-                        "gx:integrity": "sha256-29431a0856b366b2332b0b83be97b877af0728af71c8d266921c4d48592ed1b4",
+                        "gx:integrity": "sha256-7306655955e0182583e1418ad9aefaf28f784d35c281623330d3ebf82cc650f6",
                         "gx:integrityNormalization": "RFC8785:JCS",
                         "gx:version": "22.10",
                         "gx:type": "gx:ServiceOffering"
@@ -274,10 +276,10 @@
                 ],
                 "proof": {
                     "type": "JsonWebSignature2020",
-                    "created": "2024-12-03T14:16:45.454Z",
+                    "created": "2024-12-03T22:31:42.116Z",
                     "proofPurpose": "assertionMethod",
                     "verificationMethod": "did:web:compliance.lab.gaia-x.eu:v1-staging#X509-JWK2020",
-                    "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..HCURWWh_FMxhSLwSf3qHXI-YhET_HHlhd28Bsnxz95V3n4fCfdNfVO5HUJmVB_WHg2Dh7ZyAlqM7Zy20FxwyZMHb9QcXOp-Afrmxp79LYBKio-RF68OUXNv_QPKlJgPBKy0QEMgiWdwbsWo-Zng8H3lUcjv3rgHQqPCqsoHDxV6RRxz9O4yDLcL7_4QDIkt6B_Mxn394st1O4F3yjBeQKrAZxrnlmADUeIe-BSLH_PTPQX6G-N-iseWIYfjxWDduvtIGOs5cxHxbRsFl6wHBJJcsW6FrQJ4sbPWA_d1JyfLrgiWGJNhG9divyb4fEEOMP6SUJW5CFTbEeoPkAEbvrA"
+                    "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..exmHf--rs9-AgMhLKIs4blYourbY0qBpcOtqrvcVJ_lJYlPy-X2546A4WO5aFngstVmTRDmzuYd8ocMCtgw4JyBhvImBfd1FTNiX_AsQRrtWad-gLKSnWEIoCVMtksGqg8f1TehSqU-tJb-GheJGhUOQUnVpDoreJ5OGOUT0rtOP6Fl-ExvaIkNkoUkgUxC9Rfah4Figmmxom9am4AeriI0lXn2vXCOsYVAsKTxk9mYIPFDVaWMSGSENXc67HNNsaWpx553Zvld-XqIGDbzV33q4HBpjlRtfWJAZxkyVRESs6ssl_u3XJsbB5KG44JYu_RCesZUWCwx7lhhbIPG3tA"
                 }
             }
         },

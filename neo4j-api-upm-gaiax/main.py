@@ -58,7 +58,7 @@ async def process_json(file: UploadFile = File(...), db: Session = Depends(get_d
         # TODO añadir el uuid al grafo
         create_nodes_and_relationships(db, data)
         # TODO añadir el json a CES
-
+        create_nodes_and_relationships(db, data)
         return JSONResponse(content={"message": "Archivo JSON subido exitosamente", "filename": file.filename})
 
     except json.JSONDecodeError:
